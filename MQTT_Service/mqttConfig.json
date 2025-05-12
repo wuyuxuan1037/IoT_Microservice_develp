@@ -1,0 +1,7 @@
+{
+    "mqtt":{
+        "broker": "mqtt.eclipseprojects.io",
+        "port": 1883,
+        "keepAlive": 60
+    }
+}

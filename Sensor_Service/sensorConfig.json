@@ -1,0 +1,26 @@
+{
+    "sensors":[{
+            "deviceID": "000",
+            "deviceType": "temperature",
+            "deviceLocation": "Lingotto/Area_A/Position_01",
+            "topic": "TO_IotSmartFarm/Lingotto/Area_A/Position_01/temperature/000",
+            "unit": "Cel",
+            "info_frequency": 10
+        },
+        {
+            "deviceID": "027",
+            "deviceType": "Lightness",
+            "deviceLocation": "Lingotto/Area_B/Position_01",
+            "topic": "TO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/027",
+            "unit": "Lx",
+            "info_frequency": 20
+        }, 
+        {
+            "deviceID": "010",
+            "deviceType": "CO2 Concentration",
+            "deviceLocation": "Lingotto/Area_A/Position_02",
+            "topic": "TO_IotSmartFarm/Lingotto/Area_B/Position_02/Lightness/010",
+            "unit": "ppm",
+            "info_frequency": 15
+        }]
+}

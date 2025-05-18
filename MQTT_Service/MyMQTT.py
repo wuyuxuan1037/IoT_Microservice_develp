@@ -1,9 +1,12 @@
 import paho.mqtt.client as PahoMQTT
-from utils_tool.fileUtils import FileUtils
+import os,sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+from Util.PathUtils import PathUtils
+from Util.FileUtils import FileUtils
 import json
 
 class MyMQTT:
-    def __init__(self, client_id = FileUtils.random_uuid_create(), notifier=None, configfile = "configs/mqttConfig.json"):
+    def __init__(self, client_id = FileUtils.random_uuid_create(), notifier=None, configfile = os.path.join(PathUtils.project_path(),"cataLog.json")):
         # obtain config file
         self.config = FileUtils.load_config(configfile)
         self.broker = self.config["mqtt"]["broker"]

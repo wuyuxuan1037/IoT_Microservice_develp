@@ -7,6 +7,7 @@ class FileUtils:
     
     @staticmethod
     def load_config(filepath: str) -> dict:
+        
         with open(filepath, 'r', encoding='utf-8') as f:
             config_str = f.read()
         
@@ -25,3 +26,4 @@ class FileUtils:
     def random_uuid_create() -> str:
         client_ID = str(uuid.uuid4())
         return client_ID
+    

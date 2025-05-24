@@ -1,51 +1,61 @@
 {
     "project_name": "Smart Farm Iot Project",
-    "project_owner": ["Ning Zhang","Yuxuan Wu","Shui Jiang"],
-    "mqtt":{
+    "project_owner": [
+        "Ning Zhang",
+        "Yuxuan Wu",
+        "Shui Jiang"
+    ],
+    "mqtt": {
         "broker": "mqtt.eclipseprojects.io",
         "port": 1883,
         "keepAlive": 60
     },
-    "sensor_list":[
+    "sensor_list": [
         {
-            "deviceID": "000",
-            "deviceType": "temperature",
+            "deviceID": "9f42a1c3",
+            "deviceType": "Temperature",
             "deviceLocation": "Lingotto/Area_A/Position_01",
-            "topic": "TO_IotSmartFarm/Lingotto/Area_A/Position_01/temperature/000",
+            "topic": "TO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3",
             "unit": "Cel",
             "info_frequency": 5,
             "status": true
         },
         {
-            "deviceID": "027",
+            "deviceID": "f47ac10b",
             "deviceType": "Lightness",
             "deviceLocation": "Lingotto/Area_B/Position_01",
-            "topic": "TO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/027",
-            "unit": "Lx",
+            "topic": "TO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b",
+            "unit": "lx",
             "info_frequency": 7,
             "status": true
-        }, 
+        },
         {
-            "deviceID": "010",
+            "deviceID": "c3d47900",
+            "deviceType": "Lightness",
+            "deviceLocation": "Lingotto/Area_B/Position_03",
+            "topic": "TO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900",
+            "unit": "lx",
+            "info_frequency": 9,
+            "status": false
+        },
+        {
+            "deviceID": "4b1e9d2f",
             "deviceType": "CO2_Concentration",
             "deviceLocation": "Lingotto/Area_A/Position_02",
-            "topic": "TO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/010",
+            "topic": "TO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f",
             "unit": "ppm",
             "info_frequency": 8,
             "status": true
         },
         {
-            "deviceID": "019",
-            "deviceType": "Moisture",
+            "deviceID": "a7b8c6d4",
+            "deviceType": "Soil_Moisture",
             "deviceLocation": "Lingotto/Area_C/Position_03",
-            "topic": "TO_IotSmartFarm/Lingotto/Area_C/Position_03/Moisture/019",
+            "topic": "TO_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4",
             "unit": "%",
             "info_frequency": 4,
             "status": false
         }
     ],
-    "controller_list":[
-        
-    ]
-    
+    "controller_list": []
 }

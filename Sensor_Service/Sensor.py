@@ -11,6 +11,7 @@ import threading
 class Sensor:
     
     def __init__(self, deviceID, deviceType, deviceLocation, topic, unit, info_frequency, status):
+        
         #attribution
         self.deviceID = deviceID 
         self.deviceType = deviceType 
@@ -19,10 +20,8 @@ class Sensor:
         self.unit = unit
         self.info_frequency = info_frequency
         self.status = status
-        #set an threading attribution for the Sensor Class
-        self.update_thread = threading.Thread(target=self.run,daemon=True)
         self.client = MyMQTT()
-        self.client.start()
+        self.update_thread = None
         self.msg = {
             'bn': f'{self.topic}',
             'e':[
@@ -34,7 +33,8 @@ class Sensor:
                 }
             ]
         }
-        
+    
+    #As the functional body of the targeted threading
     def run(self):
         while self.status:
             self.publish_data()
@@ -47,11 +47,15 @@ class Sensor:
     #stop running when the user delete or stop the device. 
     def stop(self):
         self.status = False
-        self.update_thread.join()
+        if self.update_thread is not None:
+            self.update_thread.join()
         
     #start running when the user resume the device. 
     def start(self):
         if self.status:
+            self.client.start()
+            #set an threading attribution for the Sensor Class
+            self.update_thread = threading.Thread(target=self.run,daemon=True)
             self.update_thread.start()
     
     #publish the data to the broker    

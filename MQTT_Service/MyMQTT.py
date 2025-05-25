@@ -21,7 +21,7 @@ class MyMQTT:
         # register the callback
         self._paho_mqtt.on_connect = self.myOnConnect
         self._paho_mqtt.on_message = self.myOnMessageReceived
- 
+
     def myOnConnect (self, paho_mqtt, userdata,flag, rc):
         # print ("Connected to %s with result code: %d" % (self.broker, rc))
         pass
@@ -29,7 +29,7 @@ class MyMQTT:
     def myOnMessageReceived (self,paho_mqtt,userdata, msg):
         # A new message is received
         self.notifier.notify (msg.topic, msg.payload, msg.qos, msg.retain)
- 
+
     def myPublish (self, topic, msg):
         # publish a message with a certain topic
         self._paho_mqtt.publish(topic, json.dumps(msg), 2)
@@ -41,7 +41,7 @@ class MyMQTT:
         self._isSubscriber = True
         self._topic = topic
         print ("subscribed to %s" % (topic))
- 
+
     def start(self):
         #manage connection to broker
         self._paho_mqtt.connect(self.broker , self.port)

@@ -47,7 +47,7 @@ class SensorServer:
         sensorsList = FileUtils.load_config(os.path.join(PathUtils.project_path(),"cataLog.json"))["sensor_list"]
         return sensorsList
     
-    #insert a new sensor's configuration to the cataLog.json
+    #add a new sensor device
     @cherrypy.expose
     @cherrypy.tools.json_in()
     @cherrypy.tools.json_out()
@@ -89,24 +89,94 @@ class SensorServer:
         
         new_config["sensor_list"].append(newSensor)
         
-        #store the file
+        #save the file
         with open(os.path.join(PathUtils.project_path(),"cataLog.json"), 'w', encoding='utf-8') as f:
             json.dump(new_config, f, indent=4)
         
         return { "status": "success", "message": "Device added successfully." }
     
+    #delete a existed sensor device
+    @cherrypy.expose
+    @cherrypy.tools.json_in()
+    @cherrypy.tools.json_out()
+    def deleteSensorDevice(self):
+        # handle CORS pre-request
+        if cherrypy.request.method == 'OPTIONS':
+            cherrypy.response.status = 200
+            return ""
+
+        #obtain the ID that need to be deleted
+        deviceID = cherrypy.request.json.get('deviceID')
+        #delete the sensor from the registeredList and stop running
+        for sensor in self.registered_sensors:
+            if sensor.deviceID == deviceID:
+                sensor.stop()
+                print(f"Sensor {deviceID} stopped")
+                self.registered_sensors.remove(sensor)
+                break
+            
+        #delete the sensor from the configuration
+        sensorList = FileUtils.load_config(os.path.join(PathUtils.project_path(),"cataLog.json"))
+        for sensor in sensorList["sensor_list"]:
+            if sensor['deviceID'] == deviceID:
+                sensorList["sensor_list"].remove(sensor)
+                break
+            
+        #save the file
+        with open(os.path.join(PathUtils.project_path(),"cataLog.json"), 'w', encoding='utf-8') as f:
+            json.dump(sensorList, f, indent=4)        
+        
+        return { "status": "success", "message": "Device deleted successfully." }
+    
+    #update the status of the sensor
+    @cherrypy.expose
+    @cherrypy.tools.json_in()
+    @cherrypy.tools.json_out()
+    def updateDeviceStatus(self):
+        # handle CORS pre-request
+        if cherrypy.request.method == 'OPTIONS':
+            cherrypy.response.status = 200
+            return ""
+        
+        #obtain the parameter from the front # end 
+        deviceList = cherrypy.request.json.get('device_ids')
+        targetStatus = cherrypy.request.json.get('target_status')
+        
+        #update the device in the registeredList
+        for deviceID in deviceList:
+            for sensor in self.registered_sensors:
+                if deviceID == sensor.deviceID:
+                    if targetStatus:
+                        sensor.status=True
+                        sensor.start()
+                    else:
+                        sensor.stop()
+                    break
+                
+        #update the sensors status of the cataLog
+        sensorList = FileUtils.load_config(os.path.join(PathUtils.project_path(),"cataLog.json"))
+        for deviceID in deviceList:
+            for sensor in sensorList["sensor_list"]:
+                if sensor['deviceID'] == deviceID:
+                    sensor['status'] = targetStatus
+                    break
+                
+        #save the file
+        with open(os.path.join(PathUtils.project_path(),"cataLog.json"), 'w', encoding='utf-8') as f:
+            json.dump(sensorList, f, indent=4) 
+        
+        return { "status": "success", "message": "Status updated successfully." }
+    
+    #exit the server by using URL
     @cherrypy.expose
     def shutdown(self):
         cherrypy.engine.exit()
-        return "SensorServer shut down Successfully!"
-    
-
+        return "SensorServer shut down Successfully!"   
     
     @cherrypy.expose
     def OPTIONS(self, *args, **kwargs):
         Utility.CORS()
         return ""
-    
 
 if __name__ == '__main__':
 
@@ -115,3 +185,5 @@ if __name__ == '__main__':
     cherrypy.tree.mount(Server, '/', Server.app_config)
     cherrypy.engine.start()
     cherrypy.engine.block()
+
+

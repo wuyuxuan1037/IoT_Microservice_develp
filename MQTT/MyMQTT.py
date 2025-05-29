@@ -1,8 +1,8 @@
 import paho.mqtt.client as PahoMQTT
 import os,sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-from Util.PathUtils import PathUtils
-from Util.FileUtils import FileUtils
+from Util.Utility import PathUtils
+from Util.Utility import FileUtils
 import json
 
 class MyMQTT:
@@ -19,16 +19,17 @@ class MyMQTT:
         # create an instance of paho.mqtt.client
         self._paho_mqtt = PahoMQTT.Client(client_id,True)  
         # register the callback
-        self._paho_mqtt.on_connect = self.myOnConnect
-        self._paho_mqtt.on_message = self.myOnMessageReceived
+        self._paho_mqtt.on_connect = self.on_connect
+        self._paho_mqtt.on_message = self.on_message
 
-    def myOnConnect (self, paho_mqtt, userdata,flag, rc):
+    def on_connect (self, paho_mqtt, userdata,flag, rc):
         # print ("Connected to %s with result code: %d" % (self.broker, rc))
         pass
 
-    def myOnMessageReceived (self,paho_mqtt,userdata, msg):
+    def on_message (self,paho_mqtt,userdata, msg):
         # A new message is received
-        self.notifier.notify (msg.topic, msg.payload, msg.qos, msg.retain)
+        # self.notifier.notify (msg.topic, msg.payload, msg.qos, msg.retain)
+        pass
 
     def myPublish (self, topic, msg):
         # publish a message with a certain topic
@@ -42,7 +43,7 @@ class MyMQTT:
         self._topic = topic
         print ("subscribed to %s" % (topic))
 
-    def start(self):
+    def mqttStart(self):
         #manage connection to broker
         self._paho_mqtt.connect(self.broker , self.port)
         self._paho_mqtt.loop_start()
@@ -52,7 +53,7 @@ class MyMQTT:
             # remember to unsuscribe if it is working also as subscriber 
             self._paho_mqtt.unsubscribe(self._topic)
             
-    def stop (self):
+    def mqttStop (self):
         if (self._isSubscriber):
             # remember to unsuscribe if it is working also as subscriber 
             self._paho_mqtt.unsubscribe(self._topic)

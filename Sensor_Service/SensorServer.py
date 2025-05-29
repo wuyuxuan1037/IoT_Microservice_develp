@@ -2,29 +2,23 @@ import cherrypy
 import json
 import os, sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-from Util.PathUtils import PathUtils
-from Util.FileUtils import FileUtils
+from Util.Utility import PathUtils
+from Util.Utility import FileUtils
 from Util.Utility import Utility
-from Sensor import Sensor
+from Sensor_Service.Sensor import Sensor
 
 class SensorServer:
     
     def __init__(self):
-        #basic settings for the server
-        cherrypy.config.update({
-        'server.socket_host': '127.0.0.1',
-        'server.socket_port': 8081
-    })
         
-        #start the CORS service
         cherrypy.tools.CORS = cherrypy.Tool('before_handler', Utility.CORS)
         
-        self.app_config = {
+        self.config = {
             '/': {
                 'tools.sessions.on': True,
                 'tools.staticdir.root': os.path.abspath(os.getcwd()),
-                'tools.CORS.on': True
-        }
+                'tools.CORS.on': True,
+            }
     }
         #register all sensors for servers
         self.sensorList = FileUtils.load_config(os.path.join(PathUtils.project_path(),"cataLog.json"))["sensor_list"]
@@ -63,7 +57,7 @@ class SensorServer:
         #obtain the parameter from the front-end page
         deviceType = cherrypy.request.json.get("type")
         deviceLocation = cherrypy.request.json.get("location")
-        topic = f"TO_IotSmartFarm/{deviceLocation}/temperature/{deviceID}"
+        topic = f"TO_IotSmartFarm/{deviceLocation}/{deviceType}/{deviceID}"
         unit = cherrypy.request.json.get("unit")
         info_frequency = cherrypy.request.json.get("updateFrequency")
         status = True
@@ -111,7 +105,6 @@ class SensorServer:
         for sensor in self.registered_sensors:
             if sensor.deviceID == deviceID:
                 sensor.stop()
-                print(f"Sensor {deviceID} stopped")
                 self.registered_sensors.remove(sensor)
                 break
             
@@ -167,23 +160,9 @@ class SensorServer:
         
         return { "status": "success", "message": "Status updated successfully." }
     
-    #exit the server by using URL
-    @cherrypy.expose
-    def shutdown(self):
-        cherrypy.engine.exit()
-        return "SensorServer shut down Successfully!"   
-    
     @cherrypy.expose
     def OPTIONS(self, *args, **kwargs):
         Utility.CORS()
         return ""
-
-if __name__ == '__main__':
-
-    Server = SensorServer()
-
-    cherrypy.tree.mount(Server, '/', Server.app_config)
-    cherrypy.engine.start()
-    cherrypy.engine.block()
 
 

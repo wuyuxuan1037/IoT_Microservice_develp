@@ -1,8 +1,7 @@
-# from mqtt_client.MyMQTT import MyMQTT
 import os, sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-from MQTT_Service.MyMQTT import MyMQTT
+from MQTT.MyMQTT import MyMQTT
 import random
 import threading
 import logging
@@ -11,10 +10,10 @@ logging.basicConfig(
     level=logging.DEBUG,  # DEBUG/INFO/WARNING/ERROR/CRITICAL
     format='%(asctime)s - %(levelname)s - %(message)s',
     datefmt='%Y-%m-%d %H:%M:%S',
-    # filename='sensor.log'
+    filename='sensor.log'
 )
 
-class Sensor:
+class Sensor(MyMQTT):
     
     def __init__(self, deviceID, deviceType, deviceLocation, topic, unit, info_frequency, status):
         
@@ -26,8 +25,8 @@ class Sensor:
         self.unit = unit
         self.info_frequency = info_frequency
         self.status = status  #sign for the front-end
-        self.client = MyMQTT()
-        self.client.start()
+        super().__init__()
+        self.mqttStart()
         self.update_thread = None #assign the value when calls start()
         self._stop_event = threading.Event()  #sign for threading
         self.msg = {
@@ -45,14 +44,17 @@ class Sensor:
     #As the functional body of the targeted threading
     def run(self):
         while not self._stop_event.is_set():
-            self.publish_data()
+            try:
+                self.publish_data()
+            except Exception as e:
+                logging.error(f"Error in publish_data: {e}")
             self._stop_event.wait(timeout=self.info_frequency)  
     
     #simulate the IOT sensor generate the data based on the different type of       
     def sensor_value(self,deviceType):
         if deviceType == 'Temperature':  
             # room temperature usually float between 15~35℃
-            return round(random.uniform(15, 35), 1)
+            return round(random.uniform(15, 45), 1)
         elif deviceType == 'Soil_Moisture':  
             # 10%~80%
             return round(random.uniform(10, 80), 1)
@@ -68,9 +70,9 @@ class Sensor:
     def stop(self):
         self._stop_event.set()
         self.status = False
-        self.client.stop()
+        self.mqttStop()
         if self.update_thread and self.update_thread.is_alive():
-            self.update_thread.join(timeout=0)
+            self.update_thread.join()
         
     #start running when the user resume the device. 
     def start(self):
@@ -85,5 +87,5 @@ class Sensor:
         var = self.sensor_value(self.deviceType)
         self.msg['e'][0]['v'] = var
         # self.msg['e'][0]['t'] = time.time()
-        self.client.myPublish(self.topic,self.msg)
+        self.myPublish(self.topic,self.msg)
         logging.info(f'{self.topic} - {self.deviceType} - {self.msg["e"][0]["v"]} {self.msg["e"][0]["u"]}')

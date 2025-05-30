@@ -1,7 +1,9 @@
 import os, sys
+import time
+from MQTT.MyMQTT import MyMQTT
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-from MQTT.MyMQTT import MyMQTT
+from Util.Utility import FileUtils
 import random
 import threading
 import logging
@@ -19,10 +21,10 @@ class Sensor (MyMQTT):
         self.unit = unit
         self.info_frequency = info_frequency
         self.status = status  #sign for the front-end
-        super().__init__()
-        self.mqttStart()
         self.update_thread = None #assign the value when calls start()
         self._stop_event = threading.Event()  #sign for threading
+        super().__init__(FileUtils.random_uuid_create())
+        self.mqttStart()
         self.msg = {
             'bn': f'{self.topic}',
             'e':[
@@ -64,7 +66,6 @@ class Sensor (MyMQTT):
     def stop(self):
         self._stop_event.set()
         self.status = False
-        self.mqttStop()
         if self.update_thread and self.update_thread.is_alive():
             self.update_thread.join()
         
@@ -80,12 +81,9 @@ class Sensor (MyMQTT):
     def publish_data(self):
         var = self.sensor_value(self.deviceType)
         self.msg['e'][0]['v'] = var
-        # self.msg['e'][0]['t'] = time.time()
+        self.msg['e'][0]['t'] = time.time()
         self.myPublish(self.topic,self.msg)
-        logger.info(f'{self.topic} - {self.deviceType} - {self.msg["e"][0]["v"]} {self.msg["e"][0]["u"]}')
-        
-    def on_connect (self, paho_mqtt, userdata,flag, rc):
-        pass
+        logger.info(f'{self.topic} - {self.deviceType} - {self.msg["e"][0]["v"]} {self.msg["e"][0]["u"]} - infoFre {self.info_frequency}')
     
-    def _on_message(self, paho_mqtt, userdata, msg):
+    def on_message(self, paho_mqtt, userdata, msg):
         pass

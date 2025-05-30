@@ -38,7 +38,7 @@ class FileUtils:
     
     @staticmethod
     def random_uuid_create() -> str:
-        client_ID = str(uuid.uuid4())
+        client_ID = str(uuid.uuid4().hex[:18])
         return client_ID
 
 class PathUtils:

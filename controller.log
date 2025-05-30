@@ -1,6 +1,9 @@
-2025-05-30 09:37:54,221 - INFO - Controller started
-2025-05-30 09:37:54,221 - DEBUG - Debugging controller value
-2025-05-30 09:37:54,221 - ERROR - Something went wrong
-2025-05-30 09:40:11,802 - INFO - Controller started
-2025-05-30 09:40:11,802 - DEBUG - Debugging controller value
-2025-05-30 09:40:11,802 - ERROR - Something went wrong
+2025-05-30 18:00:47,988 - INFO - Received message on topic TO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb: {"bn": "TO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1748620847.699493, "v": 44.4}]}
+2025-05-30 18:00:57,000 - INFO - Received message on topic TO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb: {"bn": "TO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1748620856.7087033, "v": 75.2}]}
+2025-05-30 18:01:05,889 - INFO - Received message on topic TO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900: {"bn": "TO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900", "e": [{"n": "Lightness", "u": "lx", "t": null, "v": 191.0}]}
+2025-05-30 18:01:06,021 - INFO - Received message on topic TO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb: {"bn": "TO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1748620865.719059, "v": 60.1}]}
+2025-05-30 18:01:06,174 - INFO - Received message on topic TO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900: {"bn": "TO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900", "e": [{"n": "Lightness", "u": "lx", "t": null, "v": 648.0}]}
+2025-05-30 18:01:06,274 - INFO - Received message on topic TO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900: {"bn": "TO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900", "e": [{"n": "Lightness", "u": "lx", "t": null, "v": 709.0}]}
+2025-05-30 18:01:15,014 - INFO - Received message on topic TO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb: {"bn": "TO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1748620874.7242298, "v": 50.2}]}
+2025-05-30 18:01:24,027 - INFO - Received message on topic TO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb: {"bn": "TO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1748620883.7389138, "v": 53.5}]}
+2025-05-30 18:01:26,015 - INFO - Received message on topic TO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900: {"bn": "TO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900", "e": [{"n": "Lightness", "u": "lx", "t": null, "v": 988.0}]}

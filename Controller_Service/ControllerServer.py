@@ -7,6 +7,8 @@ from Util.Utility import PathUtils
 from Util.Utility import FileUtils
 from Util.Utility import Utility
 from Controller_Service.Controller import Controller
+import logging
+logger = logging.getLogger('controller')
 
 class ControllerServer:
     
@@ -32,8 +34,8 @@ class ControllerServer:
             self.registered_controllers.append(controllerObject)
 
         # #update controller status (control the sensor published to the MQTT broker)
-        # for sensor in self.registered_sensors:
-        #     sensor.start()
+        for controller in self.registered_controllers:
+            controller.start()
         
     #show all controllers form the configuration     
     @cherrypy.expose
@@ -44,6 +46,40 @@ class ControllerServer:
     
     #update the MAX and MIN of threshold
     @cherrypy.expose
+    @cherrypy.tools.json_in()
+    @cherrypy.tools.json_out()
+    def updateControllerThreshold(self):
+        # handle CORS pre-request
+        if cherrypy.request.method == 'OPTIONS':
+            cherrypy.response.status = 200
+            return ""
+        
+        #obtain the parameter from the front # end 
+        deviceType = cherrypy.request.json.get("deviceType")
+        thresholdMax = cherrypy.request.json.get("thresholdMax")
+        thresholdMin = cherrypy.request.json.get('thresholdMin')
+        
+        #iterating the self.registered_controllers to change the value of the device
+        for controller in self.registered_controllers:
+            if controller.deviceType == deviceType:
+                controller.thresholdMax = thresholdMax
+                controller.thresholdMin = thresholdMin
+                logger.info(f'{controller.deviceType} - {controller.thresholdMax} - {controller.thresholdMin}')
+                break
+                
+        #update the controllers status of the cataLog
+        controllerList = FileUtils.load_config(os.path.join(PathUtils.project_path(),"cataLog.json"))
+        for controller in controllerList["controller_list"]:
+            if controller['deviceType'] == deviceType:
+                controller['thresholdMax'] = thresholdMax
+                controller['thresholdMin'] = thresholdMin
+                break    
+        
+        #save the file
+        with open(os.path.join(PathUtils.project_path(),"cataLog.json"), 'w', encoding='utf-8') as f:
+            json.dump(controllerList, f, indent=4) 
+            
+        return { "status": "success", "message": "Threshold modified successfully." }
     
     
     @cherrypy.expose

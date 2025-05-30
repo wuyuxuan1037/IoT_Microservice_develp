@@ -18,7 +18,7 @@
             "topic": "TO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3",
             "unit": "Cel",
             "info_frequency": 11,
-            "status": true
+            "status": false
         },
         {
             "deviceID": "f47ac10b",
@@ -72,7 +72,7 @@
             "topic": "TO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb",
             "unit": "%",
             "info_frequency": 9,
-            "status": false
+            "status": true
         },
         {
             "deviceID": "d559dc98",
@@ -136,8 +136,8 @@
         {
             "deviceType": "Temperature",
             "subscribeTopic": "TO_IotSmartFarm/Lingotto/+/+/Temperature/+",
-            "thresholdMax": 38,
-            "thresholdMin": 20
+            "thresholdMax": 40,
+            "thresholdMin": 25
         },
         {
             "deviceType": "Lightness",

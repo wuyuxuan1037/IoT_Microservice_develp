@@ -1,7 +1,6 @@
-2025-05-30 09:40:11,802 - INFO - Sensor started
-2025-05-30 09:40:11,802 - DEBUG - Debugging sensor value
-2025-05-30 09:40:11,802 - ERROR - Something went wrong
-2025-05-30 09:40:13,067 - INFO - TO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3 - Temperature - 16.0 Cel
-2025-05-30 09:40:24,069 - INFO - TO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3 - Temperature - 23.0 Cel
-2025-05-30 09:40:35,081 - INFO - TO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3 - Temperature - 39.7 Cel
-2025-05-30 09:40:46,090 - INFO - TO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3 - Temperature - 20.8 Cel
+2025-05-30 18:00:38,687 - INFO - TO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb - Soil_Moisture - 76.9 % - infoFre 9
+2025-05-30 18:00:47,699 - INFO - TO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb - Soil_Moisture - 44.4 % - infoFre 9
+2025-05-30 18:00:56,708 - INFO - TO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb - Soil_Moisture - 75.2 % - infoFre 9
+2025-05-30 18:01:05,719 - INFO - TO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb - Soil_Moisture - 60.1 % - infoFre 9
+2025-05-30 18:01:14,724 - INFO - TO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb - Soil_Moisture - 50.2 % - infoFre 9
+2025-05-30 18:01:23,740 - INFO - TO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb - Soil_Moisture - 53.5 % - infoFre 9

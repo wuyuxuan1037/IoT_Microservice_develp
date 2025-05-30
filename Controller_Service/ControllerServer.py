@@ -2,6 +2,7 @@ import cherrypy
 import json
 import os, sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 from Util.Utility import PathUtils
 from Util.Utility import FileUtils
 from Util.Utility import Utility
@@ -40,6 +41,10 @@ class ControllerServer:
     def getControllerThreshold(self):
         controllerList = FileUtils.load_config(os.path.join(PathUtils.project_path(),"cataLog.json"))["controller_list"]
         return controllerList
+    
+    #update the MAX and MIN of threshold
+    @cherrypy.expose
+    
     
     @cherrypy.expose
     def OPTIONS(self, *args, **kwargs):

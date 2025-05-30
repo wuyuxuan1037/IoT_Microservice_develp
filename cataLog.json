@@ -18,7 +18,7 @@
             "topic": "TO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3",
             "unit": "Cel",
             "info_frequency": 11,
-            "status": false
+            "status": true
         },
         {
             "deviceID": "f47ac10b",
@@ -117,7 +117,7 @@
             "topic": "TO_IotSmartFarm/Lingotto/Area_B/Position_02/Temperature/cc5fc7eb",
             "unit": "Cel",
             "info_frequency": 15,
-            "status": true
+            "status": false
         }
     ],
     "controller_list": [

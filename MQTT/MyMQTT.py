@@ -1,9 +1,13 @@
 import paho.mqtt.client as PahoMQTT
 import os,sys
+
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from Util.Utility import PathUtils
 from Util.Utility import FileUtils
 import json
+
+import logging
+logger = logging.getLogger('mqtt')
 
 class MyMQTT:
     def __init__(self, client_id = FileUtils.random_uuid_create(), notifier=None, configfile = os.path.join(PathUtils.project_path(),"cataLog.json")):
@@ -19,17 +23,18 @@ class MyMQTT:
         # create an instance of paho.mqtt.client
         self._paho_mqtt = PahoMQTT.Client(client_id,True)  
         # register the callback
-        self._paho_mqtt.on_connect = self.on_connect
-        self._paho_mqtt.on_message = self.on_message
+        self._paho_mqtt.on_connect = self._on_connect
+        self._paho_mqtt.on_message = self._on_message
 
-    def on_connect (self, paho_mqtt, userdata,flag, rc):
-        # print ("Connected to %s with result code: %d" % (self.broker, rc))
-        pass
+    def _on_connect (self, paho_mqtt, userdata,flag, rc):
+        logger.info(f'Connected to {self.broker} with result code: {rc} ')
+        self.on_connect(paho_mqtt, userdata,flag, rc)
 
-    def on_message (self,paho_mqtt,userdata, msg):
+    def _on_message (self,paho_mqtt,userdata, msg):
         # A new message is received
+        logger.info(f"Received message on {msg.topic}: {msg.payload.decode()}")
+        self.on_message(paho_mqtt,userdata, msg)
         # self.notifier.notify (msg.topic, msg.payload, msg.qos, msg.retain)
-        pass
 
     def myPublish (self, topic, msg):
         # publish a message with a certain topic
@@ -41,7 +46,7 @@ class MyMQTT:
         # just to remember that it works also as a subscriber
         self._isSubscriber = True
         self._topic = topic
-        print ("subscribed to %s" % (topic))
+        logger.info(f"subscribed to {topic}")
 
     def mqttStart(self):
         #manage connection to broker

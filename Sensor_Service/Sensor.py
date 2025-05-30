@@ -5,15 +5,9 @@ from MQTT.MyMQTT import MyMQTT
 import random
 import threading
 import logging
+logger = logging.getLogger('sensor')
 
-logging.basicConfig(
-    level=logging.DEBUG,  # DEBUG/INFO/WARNING/ERROR/CRITICAL
-    format='%(asctime)s - %(levelname)s - %(message)s',
-    datefmt='%Y-%m-%d %H:%M:%S',
-    filename='sensor.log'
-)
-
-class Sensor(MyMQTT):
+class Sensor (MyMQTT):
     
     def __init__(self, deviceID, deviceType, deviceLocation, topic, unit, info_frequency, status):
         
@@ -47,7 +41,7 @@ class Sensor(MyMQTT):
             try:
                 self.publish_data()
             except Exception as e:
-                logging.error(f"Error in publish_data: {e}")
+                logger.error(f"Error in publish_data: {e}")
             self._stop_event.wait(timeout=self.info_frequency)  
     
     #simulate the IOT sensor generate the data based on the different type of       
@@ -88,4 +82,10 @@ class Sensor(MyMQTT):
         self.msg['e'][0]['v'] = var
         # self.msg['e'][0]['t'] = time.time()
         self.myPublish(self.topic,self.msg)
-        logging.info(f'{self.topic} - {self.deviceType} - {self.msg["e"][0]["v"]} {self.msg["e"][0]["u"]}')
+        logger.info(f'{self.topic} - {self.deviceType} - {self.msg["e"][0]["v"]} {self.msg["e"][0]["u"]}')
+        
+    def on_connect (self, paho_mqtt, userdata,flag, rc):
+        pass
+    
+    def _on_message(self, paho_mqtt, userdata, msg):
+        pass

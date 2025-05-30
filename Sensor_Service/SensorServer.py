@@ -20,6 +20,7 @@ class SensorServer:
                 'tools.CORS.on': True,
             }
     }
+        
         #register all sensors for servers
         self.sensorList = FileUtils.load_config(os.path.join(PathUtils.project_path(),"cataLog.json"))["sensor_list"]
         #store registered sensors in the List for dynamic to adjust the running sensors 
@@ -164,5 +165,3 @@ class SensorServer:
     def OPTIONS(self, *args, **kwargs):
         Utility.CORS()
         return ""
-
-

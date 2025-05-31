@@ -8,19 +8,9 @@ from Sensor_Service.Sensor import Sensor
 
 class SensorServer:
     
-    def __init__(self):
-        
-        cherrypy.tools.CORS = cherrypy.Tool('before_handler', Utility.CORS)
-        
-        self.config = {
-            '/': {
-                'tools.sessions.on': True,
-                # 'tools.staticdir.root': os.path.abspath(os.getcwd()),
-                'tools.CORS.on': True,
-            }
-    }   
+    def __init__(self):  
         #register all sensors for servers
-        self.sensorList = FileUtils.load_config(os.path.join(PathUtils.project_path(),"config/cataLog.json"))["sensor_list"]
+        self.sensorList = FileUtils.load_config(os.path.join(PathUtils.project_path(),'config','cataLog.json'))["sensor_list"]
         #store registered sensors in the List for dynamic to adjust the running sensors 
         self.registered_sensors = []
         #iterate the sensor list
@@ -37,7 +27,7 @@ class SensorServer:
     @cherrypy.expose
     @cherrypy.tools.json_out()
     def getSensorDevice(self):
-        sensorsList = FileUtils.load_config(os.path.join(PathUtils.project_path(),"config/cataLog.json"))["sensor_list"]
+        sensorsList = FileUtils.load_config(os.path.join(PathUtils.project_path(),'config','cataLog.json'))["sensor_list"]
         return sensorsList
     
     #add a new sensor device
@@ -45,11 +35,7 @@ class SensorServer:
     @cherrypy.tools.json_in()
     @cherrypy.tools.json_out()
     def addSensorDevice(self):
-        # handle CORS pre-request
-        if cherrypy.request.method == 'OPTIONS':
-            cherrypy.response.status = 200
-            return ""
-        
+    
         #allocate the ID to the new device
         deviceID = Utility.generate_device_id()
         
@@ -67,7 +53,7 @@ class SensorServer:
         newDeviceObject.start()
         
         #loading configuration file
-        new_config = FileUtils.load_config(os.path.join(PathUtils.project_path(),"config/cataLog.json"))
+        new_config = FileUtils.load_config(os.path.join(PathUtils.project_path(),'config','cataLog.json'))
         
         #update the information of the cataLog
         newSensor = {
@@ -83,7 +69,7 @@ class SensorServer:
         new_config["sensor_list"].append(newSensor)
         
         #save the file
-        with open(os.path.join(PathUtils.project_path(),"config/cataLog.json"), 'w', encoding='utf-8') as f:
+        with open(os.path.join(PathUtils.project_path(),'config','cataLog.json'), 'w', encoding='utf-8') as f:
             json.dump(new_config, f, indent=4)
         
         return { "status": "success", "message": "Device added successfully." }
@@ -93,10 +79,6 @@ class SensorServer:
     @cherrypy.tools.json_in()
     @cherrypy.tools.json_out()
     def deleteSensorDevice(self):
-        # handle CORS pre-request
-        if cherrypy.request.method == 'OPTIONS':
-            cherrypy.response.status = 200
-            return ""
 
         #obtain the ID that need to be deleted
         deviceID = cherrypy.request.json.get('deviceID')
@@ -108,14 +90,14 @@ class SensorServer:
                 break
             
         #delete the sensor from the configuration
-        sensorList = FileUtils.load_config(os.path.join(PathUtils.project_path(),"config/cataLog.json"))
+        sensorList = FileUtils.load_config(os.path.join(PathUtils.project_path(),'config','cataLog.json'))
         for sensor in sensorList["sensor_list"]:
             if sensor['deviceID'] == deviceID:
                 sensorList["sensor_list"].remove(sensor)
                 break
             
         #save the file
-        with open(os.path.join(PathUtils.project_path(),"config/cataLog.json"), 'w', encoding='utf-8') as f:
+        with open(os.path.join(PathUtils.project_path(),'config','cataLog.json'), 'w', encoding='utf-8') as f:
             json.dump(sensorList, f, indent=4)        
         
         return { "status": "success", "message": "Device deleted successfully." }
@@ -125,10 +107,6 @@ class SensorServer:
     @cherrypy.tools.json_in()
     @cherrypy.tools.json_out()
     def updateDeviceStatus(self):
-        # handle CORS pre-request
-        if cherrypy.request.method == 'OPTIONS':
-            cherrypy.response.status = 200
-            return ""
         
         #obtain the parameter from the front # end 
         deviceList = cherrypy.request.json.get('device_ids')
@@ -146,7 +124,7 @@ class SensorServer:
                     break
                 
         #update the sensors status of the cataLog
-        sensorList = FileUtils.load_config(os.path.join(PathUtils.project_path(),"config/cataLog.json"))
+        sensorList = FileUtils.load_config(os.path.join(PathUtils.project_path(),'config','cataLog.json'))
         for deviceID in deviceList:
             for sensor in sensorList["sensor_list"]:
                 if sensor['deviceID'] == deviceID:
@@ -154,12 +132,7 @@ class SensorServer:
                     break
                 
         #save the file
-        with open(os.path.join(PathUtils.project_path(),"config/cataLog.json"), 'w', encoding='utf-8') as f:
+        with open(os.path.join(PathUtils.project_path(),'config','cataLog.json'), 'w', encoding='utf-8') as f:
             json.dump(sensorList, f, indent=4) 
         
         return { "status": "success", "message": "Status updated successfully." }
-    
-    @cherrypy.expose
-    def OPTIONS(self, *args, **kwargs):
-        Utility.CORS()
-        return ""

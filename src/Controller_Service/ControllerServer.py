@@ -12,18 +12,9 @@ logger = logging.getLogger('controller')
 class ControllerServer:
     
     def __init__(self):
-        
-        cherrypy.tools.CORS = cherrypy.Tool('before_handler', Utility.CORS)
-        
-        self.config = { 
-            '/': {
-                'tools.sessions.on': True,
-                # 'tools.staticdir.root': os.path.abspath(os.getcwd()),
-                'tools.CORS.on': True,
-            }
-    }
+
         #register all controllers for servers
-        self.controllerList = FileUtils.load_config(os.path.join(PathUtils.project_path(),"config/cataLog.json"))["controller_list"]
+        self.controllerList = FileUtils.load_config(os.path.join(PathUtils.project_path(),'config','cataLog.json'))["controller_list"]
         #store registered controllers in the List for dynamic to adjust the running sensors 
         self.registered_controllers = []
         #iterate the controller list
@@ -36,7 +27,7 @@ class ControllerServer:
     @cherrypy.expose
     @cherrypy.tools.json_out()
     def getControllerThreshold(self):
-        controllerList = FileUtils.load_config(os.path.join(PathUtils.project_path(),"config/cataLog.json"))["controller_list"]
+        controllerList = FileUtils.load_config(os.path.join(PathUtils.project_path(),'config','cataLog.json'))["controller_list"]
         return controllerList
     
     #update the MAX and MIN of threshold
@@ -44,11 +35,7 @@ class ControllerServer:
     @cherrypy.tools.json_in()
     @cherrypy.tools.json_out()
     def updateControllerThreshold(self):
-        # handle CORS pre-request
-        if cherrypy.request.method == 'OPTIONS':
-            cherrypy.response.status = 200
-            return ""
-        
+
         #obtain the parameter from the front # end 
         deviceType = cherrypy.request.json.get("deviceType")
         thresholdMax = cherrypy.request.json.get("thresholdMax")
@@ -63,7 +50,7 @@ class ControllerServer:
                 break
                 
         #update the controllers status of the cataLog
-        controllerList = FileUtils.load_config(os.path.join(PathUtils.project_path(),"config/cataLog.json"))
+        controllerList = FileUtils.load_config(os.path.join(PathUtils.project_path(),'config','cataLog.json'))
         for controller in controllerList["controller_list"]:
             if controller['deviceType'] == deviceType:
                 controller['thresholdMax'] = thresholdMax
@@ -71,14 +58,7 @@ class ControllerServer:
                 break    
         
         #save the file
-        with open(os.path.join(PathUtils.project_path(),"config/cataLog.json"), 'w', encoding='utf-8') as f:
+        with open(os.path.join(PathUtils.project_path(),'config','cataLog.json'), 'w', encoding='utf-8') as f:
             json.dump(controllerList, f, indent=4) 
             
         return { "status": "success", "message": "Threshold modified successfully." }
-    
-    
-    @cherrypy.expose
-    def OPTIONS(self, *args, **kwargs):
-        Utility.CORS()
-        return ""
-    

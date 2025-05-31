@@ -10,7 +10,7 @@ logger = logging.getLogger('mqtt')
 
 class MyMQTT:
     
-    def __init__(self, client_id, notifier=None, configfile = os.path.join(PathUtils.project_path(),"/config/cataLog.json")):
+    def __init__(self, client_id, notifier=None, configfile = os.path.join(PathUtils.project_path(),'config','cataLog.json')):
         # obtain config file
         self.config = FileUtils.load_config(configfile)
         self.broker = self.config["mqtt"]["broker"]

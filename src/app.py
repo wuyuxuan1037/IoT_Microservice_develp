@@ -1,8 +1,19 @@
+import os
 import cherrypy
 import logging
 from Sensor_Service.SensorServer import SensorServer
 from Controller_Service.ControllerServer import ControllerServer
 from TelegramBot_Service.TelebotServer import MyTelegramBot
+
+#Create a global CORS
+def CORS_tool():
+    cherrypy.response.headers["Access-Control-Allow-Origin"] = "*"
+    cherrypy.response.headers["Access-Control-Allow-Methods"] = "GET, POST, OPTIONS"
+    cherrypy.response.headers["Access-Control-Allow-Headers"] = "Content-Type"
+    
+# Register a global CORS tool to allow cross-origin requests from any origin (*)
+# Applied via decorator @cherrypy.tools.CORS() or via config: 'tools.CORS.on': True
+cherrypy.tools.CORS = cherrypy.Tool('before_handler', CORS_tool)
 
 class App:
     
@@ -11,30 +22,36 @@ class App:
         #run logger
         self.setup_loggers()
         
-        #initiate the server object
-        sensor_server = SensorServer()
-        controller_server = ControllerServer()
-        telegramBot_server = MyTelegramBot()
-        telegramBot_server.run()
-        
-        #add a path to stop the server by url
-        cherrypy.tree.mount(self, '/', {
+        self.config_staticdir = {
             '/': {
-                    'tools.sessions.on': True,
-                }
-        })
+                'tools.staticdir.root': os.path.abspath(os.getcwd()),
+                'tools.CORS.on': True,
+            }
+    }   
+        self.config_noStaticdir = {
+            '/': {
+                'tools.CORS.on': True,
+            }
+    } 
+        #initiate the server object
+        self.sensor_server = SensorServer()
+        self.controller_server = ControllerServer()
+        self.telegramBot_server = MyTelegramBot()
         
         #mount the resource of the severs
-        cherrypy.tree.mount(sensor_server, '/sensor', sensor_server.config)
-        cherrypy.tree.mount(controller_server, '/controller', controller_server.config)
-        cherrypy.tree.mount(telegramBot_server, '/telegramBot', controller_server.config)
+        cherrypy.tree.mount(self, '/', self.config_noStaticdir)
+        cherrypy.tree.mount(self.sensor_server, '/sensor', self.config_noStaticdir)
+        cherrypy.tree.mount(self.controller_server, '/controller', self.config_noStaticdir)
 
+        #set the ip and port
         cherrypy.config.update({
             'server.socket_host': '127.0.0.1',
             'server.socket_port': 8080,
-            'tools.sessions.on': True,
+            'tools.sessions.on': False,
         })
 
+        #start the servers
+        self.telegramBot_server.run()
         cherrypy.engine.start()
         cherrypy.engine.block()
         
@@ -45,6 +62,11 @@ class App:
             self.telegramBot_server.stop()
         cherrypy.engine.exit()
         return "Server shut down Successfully!"
+    
+    @cherrypy.expose
+    def OPTIONS(self, *args, **kwargs):
+        CORS_tool()
+        return ""
     
     def setup_loggers(self):
         log_formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')

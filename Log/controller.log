@@ -1,0 +1,30 @@
+2025-05-31 18:43:26,964 - INFO - Controller:3b2095e5e1074fdd88 Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-05-31 18:43:27,107 - INFO - Controller:d63340babc5543119a Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-05-31 18:43:27,238 - INFO - Controller:e544509043e44276bb Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-05-31 18:43:27,366 - INFO - Controller:e6c2d51208ef4955a3 Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-05-31 18:43:36,099 - INFO - Received message on topic PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec: {"bn": "PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1748709815.6896744, "v": 798.0}]}
+2025-05-31 18:43:36,099 - INFO - CO2_Concentration - average value - 798.0
+2025-05-31 18:43:45,158 - INFO - Received message on topic PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec: {"bn": "PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1748709824.7023625, "v": 537.0}]}
+2025-05-31 18:43:45,158 - INFO - CO2_Concentration - average value - 667.5
+2025-05-31 18:43:54,132 - INFO - Received message on topic PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec: {"bn": "PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1748709833.7095044, "v": 515.0}]}
+2025-05-31 18:43:54,132 - INFO - CO2_Concentration - average value - 591.25
+2025-05-31 18:44:03,152 - INFO - Received message on topic PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec: {"bn": "PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1748709842.7130673, "v": 987.0}]}
+2025-05-31 18:44:03,152 - INFO - CO2_Concentration - average value - 789.125
+2025-05-31 18:44:12,156 - INFO - Received message on topic PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec: {"bn": "PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1748709851.7213564, "v": 713.0}]}
+2025-05-31 18:44:12,156 - INFO - CO2_Concentration - average value - 751.0625
+2025-05-31 18:44:21,155 - INFO - Received message on topic PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec: {"bn": "PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1748709860.7354636, "v": 480.0}]}
+2025-05-31 18:44:21,155 - INFO - CO2_Concentration - average value - 615.53125
+2025-05-31 18:44:30,192 - INFO - Received message on topic PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec: {"bn": "PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1748709869.7439349, "v": 914.0}]}
+2025-05-31 18:44:30,192 - INFO - CO2_Concentration - average value - 764.765625
+2025-05-31 18:44:39,155 - INFO - Received message on topic PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec: {"bn": "PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1748709878.7496088, "v": 916.0}]}
+2025-05-31 18:44:39,155 - INFO - CO2_Concentration - average value - 840.3828125
+2025-05-31 18:44:48,192 - INFO - Received message on topic PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec: {"bn": "PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1748709887.7574606, "v": 704.0}]}
+2025-05-31 18:44:48,192 - INFO - CO2_Concentration - average value - 772.19140625
+2025-05-31 18:44:57,169 - INFO - Received message on topic PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec: {"bn": "PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1748709896.7594535, "v": 708.0}]}
+2025-05-31 18:44:57,169 - INFO - CO2_Concentration - average value - 740.095703125
+2025-05-31 18:45:06,219 - INFO - Received message on topic PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec: {"bn": "PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1748709905.7620873, "v": 670.0}]}
+2025-05-31 18:45:06,219 - INFO - CO2_Concentration - average value - 705.0478515625
+2025-05-31 18:45:15,179 - INFO - Received message on topic PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec: {"bn": "PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1748709914.771643, "v": 638.0}]}
+2025-05-31 18:45:15,179 - INFO - CO2_Concentration - average value - 671.52392578125
+2025-05-31 18:45:24,209 - INFO - Received message on topic PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec: {"bn": "PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1748709923.782549, "v": 746.0}]}
+2025-05-31 18:45:24,209 - INFO - CO2_Concentration - average value - 708.761962890625

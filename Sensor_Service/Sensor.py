@@ -1,11 +1,9 @@
-import os, sys
 import time
 from MQTT.MyMQTT import MyMQTT
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-
 from Util.Utility import FileUtils
 import random
 import threading
+
 import logging
 logger = logging.getLogger('sensor')
 
@@ -24,7 +22,9 @@ class Sensor (MyMQTT):
         self.update_thread = None #assign the value when calls start()
         self._stop_event = threading.Event()  #sign for threading
         super().__init__(FileUtils.random_uuid_create())
-        self.mqttStart()
+        self.Start()
+        self._paho_mqtt.on_message = self.on_message
+        self._paho_mqtt.on_connect = self.on_connect
         self.msg = {
             'bn': f'{self.topic}',
             'e':[
@@ -87,3 +87,6 @@ class Sensor (MyMQTT):
     
     def on_message(self, paho_mqtt, userdata, msg):
         pass
+    
+    def on_connect (self, paho_mqtt, userdata,flag, rc):
+        logger.info(f'Sensor:{self.clientID} Connected to {self.broker} with result code: {rc} ')

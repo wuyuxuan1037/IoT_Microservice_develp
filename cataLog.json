@@ -15,7 +15,7 @@
             "deviceID": "9f42a1c3",
             "deviceType": "Temperature",
             "deviceLocation": "Lingotto/Area_A/Position_01",
-            "topic": "TO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3",
+            "topic": "PoliTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3",
             "unit": "Cel",
             "info_frequency": 11,
             "status": false
@@ -24,7 +24,7 @@
             "deviceID": "f47ac10b",
             "deviceType": "Lightness",
             "deviceLocation": "Lingotto/Area_B/Position_01",
-            "topic": "TO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b",
+            "topic": "PoliTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b",
             "unit": "lx",
             "info_frequency": 13,
             "status": false
@@ -33,7 +33,7 @@
             "deviceID": "c3d47900",
             "deviceType": "Lightness",
             "deviceLocation": "Lingotto/Area_B/Position_03",
-            "topic": "TO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900",
+            "topic": "PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900",
             "unit": "lx",
             "info_frequency": 17,
             "status": false
@@ -42,7 +42,7 @@
             "deviceID": "4b1e9d2f",
             "deviceType": "CO2_Concentration",
             "deviceLocation": "Lingotto/Area_A/Position_02",
-            "topic": "TO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f",
+            "topic": "PoliTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f",
             "unit": "ppm",
             "info_frequency": 11,
             "status": false
@@ -51,7 +51,7 @@
             "deviceID": "a7b8c6d4",
             "deviceType": "Soil_Moisture",
             "deviceLocation": "Lingotto/Area_C/Position_03",
-            "topic": "TO_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4",
+            "topic": "PoliTO_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4",
             "unit": "%",
             "info_frequency": 14,
             "status": false
@@ -60,7 +60,7 @@
             "deviceID": "ffee552a",
             "deviceType": "Soil_Moisture",
             "deviceLocation": "Lingotto/Area_C/Position_05",
-            "topic": "TO_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a",
+            "topic": "PoliTO_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a",
             "unit": "%",
             "info_frequency": 10,
             "status": false
@@ -69,16 +69,16 @@
             "deviceID": "203045fb",
             "deviceType": "Soil_Moisture",
             "deviceLocation": "Lingotto/Area_A/Position_02",
-            "topic": "TO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb",
+            "topic": "PoliTO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb",
             "unit": "%",
             "info_frequency": 9,
-            "status": true
+            "status": false
         },
         {
             "deviceID": "d559dc98",
             "deviceType": "Temperature",
             "deviceLocation": "Lingotto/Area_A/Position_02",
-            "topic": "TO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98",
+            "topic": "PoliTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98",
             "unit": "Cel",
             "info_frequency": 13,
             "status": false
@@ -87,7 +87,7 @@
             "deviceID": "9947c72f",
             "deviceType": "CO2_Concentration",
             "deviceLocation": "Lingotto/Area_B/Position_06",
-            "topic": "TO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f",
+            "topic": "PoliTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f",
             "unit": "ppm",
             "info_frequency": 19,
             "status": false
@@ -96,7 +96,7 @@
             "deviceID": "a8830d33",
             "deviceType": "Soil_Moisture",
             "deviceLocation": "Lingotto/Area_D/Position_01",
-            "topic": "TO_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33",
+            "topic": "PoliTO_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33",
             "unit": "%",
             "info_frequency": 23,
             "status": false
@@ -105,45 +105,107 @@
             "deviceID": "faf26dec",
             "deviceType": "CO2_Concentration",
             "deviceLocation": "Lingotto/Area_B/Position_03",
-            "topic": "TO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec",
+            "topic": "PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec",
             "unit": "ppm",
             "info_frequency": 9,
-            "status": false
+            "status": true
         },
         {
-            "deviceID": "cc5fc7eb",
+            "deviceID": "580f8d2d",
             "deviceType": "Temperature",
-            "deviceLocation": "Lingotto/Area_B/Position_02",
-            "topic": "TO_IotSmartFarm/Lingotto/Area_B/Position_02/Temperature/cc5fc7eb",
+            "deviceLocation": "Lingotto/Area_B/Position_03",
+            "topic": "PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d",
             "unit": "Cel",
-            "info_frequency": 15,
+            "info_frequency": 8,
             "status": false
         }
     ],
     "controller_list": [
         {
             "deviceType": "Soil_Moisture",
-            "subscribeTopic": "TO_IotSmartFarm/Lingotto/+/+/Soil_Moisture/+",
+            "subscribeTopic": "PoliTO_IotSmartFarm/Lingotto/+/+/Soil_Moisture/+",
+            "unit": "%",
             "thresholdMax": 70,
             "thresholdMin": 20
         },
         {
             "deviceType": "CO2_Concentration",
-            "subscribeTopic": "TO_IotSmartFarm/Lingotto/+/+/CO2_Concentration/+",
+            "subscribeTopic": "PoliTO_IotSmartFarm/Lingotto/+/+/CO2_Concentration/+",
+            "unit": "ppm",
             "thresholdMax": 700,
             "thresholdMin": 500
         },
         {
             "deviceType": "Temperature",
-            "subscribeTopic": "TO_IotSmartFarm/Lingotto/+/+/Temperature/+",
+            "subscribeTopic": "PoliTO_IotSmartFarm/Lingotto/+/+/Temperature/+",
+            "unit": "Cel",
             "thresholdMax": 40,
             "thresholdMin": 25
         },
         {
             "deviceType": "Lightness",
-            "subscribeTopic": "TO_IotSmartFarm/Lingotto/+/+/Lightness/+",
-            "thresholdMax": 800,
-            "thresholdMin": 100
+            "subscribeTopic": "PoliTO_IotSmartFarm/Lingotto/+/+/Lightness/+",
+            "unit": "lx",
+            "thresholdMax": 801,
+            "thresholdMin": 101
+        }
+    ],
+    "actuator_list": [
+        {
+            "deviceID": "a3f7c79f",
+            "deviceType": "Drip_Irrigation_Pipe",
+            "subscribeTopic": "PoliTO_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/+/Drip_Irrigation_Pipe",
+            "deviceLocation": "Lingotto/Area_D/Position_01",
+            "description":"this area is vegetable",
+            "status": true
+        },
+        {
+            "deviceID": "7e2e63ef",
+            "deviceType": "Exhaust_Fan",
+            "subscribeTopic": "PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/+/Exhaust_Fan",
+            "deviceLocation": "Lingotto/Area_B/Position_03",
+            "description":"this area is fruit",
+            "status": true
+        },
+        {
+            "deviceID": "baf49b45",
+            "deviceType": "Carbon_Dioxide_Generator",
+            "deviceLocation": "Lingotto/Area_B/Position_06",
+            "topic": "PoliTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/+/Carbon_Dioxide_Generator",
+            "description": "",
+            "status": false
+        },
+        {
+            "deviceID": "f89cd694",
+            "deviceType": "Sunshade_Net",
+            "deviceLocation": "Lingotto/Area_B/Position_01",
+            "topic": "PoliTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/+/Sunshade_Net",
+            "description": "",
+            "status": false
+        },
+        {
+            "deviceID": "b6c46f2c",
+            "deviceType": "LED_Light",
+            "deviceLocation": "Lingotto/Area_B/Position_03",
+            "topic": "PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/+/LED_Light",
+            "description": "watching",
+            "status": false
+        },
+        {
+            "deviceID": "d0676e7b",
+            "deviceType": "Cooler",
+            "deviceLocation": "Lingotto/Area_A/Position_01",
+            "topic": "PoliTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/+/Cooler",
+            "description": "careful",
+            "status": false
+        },
+        {
+            "deviceID": "fe3a3799",
+            "deviceType": "Heater",
+            "deviceLocation": "Lingotto/Area_A/Position_02",
+            "topic": "PoliTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/+/Heater",
+            "description": "pay attention",
+            "status": false
         }
     ]
 }

@@ -1,7 +1,6 @@
 import cherrypy
 import json
-import os, sys
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+import os
 from Util.Utility import PathUtils
 from Util.Utility import FileUtils
 from Util.Utility import Utility
@@ -16,7 +15,7 @@ class SensorServer:
         self.config = {
             '/': {
                 'tools.sessions.on': True,
-                'tools.staticdir.root': os.path.abspath(os.getcwd()),
+                # 'tools.staticdir.root': os.path.abspath(os.getcwd()),
                 'tools.CORS.on': True,
             }
     }   

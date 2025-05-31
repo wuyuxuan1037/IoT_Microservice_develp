@@ -1,12 +1,11 @@
 import cherrypy
 import json
-import os, sys
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-
+import os
 from Util.Utility import PathUtils
 from Util.Utility import FileUtils
 from Util.Utility import Utility
 from Controller_Service.Controller import Controller
+
 import logging
 logger = logging.getLogger('controller')
 
@@ -19,7 +18,7 @@ class ControllerServer:
         self.config = { 
             '/': {
                 'tools.sessions.on': True,
-                'tools.staticdir.root': os.path.abspath(os.getcwd()),
+                # 'tools.staticdir.root': os.path.abspath(os.getcwd()),
                 'tools.CORS.on': True,
             }
     }
@@ -30,12 +29,8 @@ class ControllerServer:
         #iterate the controller list
         for controller in self.controllerList:
             controllerObject = Controller(controller["deviceType"], controller["subscribeTopic"], 
-                                            controller["thresholdMax"], controller["thresholdMin"])
+                                            controller["thresholdMax"], controller["thresholdMin"],controller["unit"])
             self.registered_controllers.append(controllerObject)
-
-        # #update controller status (control the sensor published to the MQTT broker)
-        for controller in self.registered_controllers:
-            controller.start()
         
     #show all controllers form the configuration     
     @cherrypy.expose

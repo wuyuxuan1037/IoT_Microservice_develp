@@ -1,8 +1,8 @@
 import paho.mqtt.client as PahoMQTT
 import os
 
-from Util.Utility import PathUtils
-from Util.Utility import FileUtils
+from ..Util.Utility import PathUtils
+from ..Util.Utility import FileUtils
 import json
 
 import logging

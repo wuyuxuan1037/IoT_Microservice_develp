@@ -1,6 +1,6 @@
 import time
-from MQTT.MyMQTT import MyMQTT
-from Util.Utility import FileUtils
+from ..MQTT.MyMQTT import MyMQTT
+from ..Util.Utility import FileUtils
 import random
 import threading
 

@@ -1,8 +1,8 @@
 import json
 import time
 
-from MQTT.MyMQTT import MyMQTT
-from Util.Utility import FileUtils
+from ..MQTT.MyMQTT import MyMQTT
+from ..Util.Utility import FileUtils
 
 import logging
 logger = logging.getLogger('controller')

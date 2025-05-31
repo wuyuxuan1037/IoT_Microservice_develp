@@ -1,9 +1,9 @@
 import os
 import cherrypy
 import logging
-from Sensor_Service.SensorServer import SensorServer
-from Controller_Service.ControllerServer import ControllerServer
-from TelegramBot_Service.TelebotServer import MyTelegramBot
+from ..Sensor.SensorServer import SensorServer
+from ..Controller.ControllerServer import ControllerServer
+from ..TelegramBot.TelebotServer import MyTelegramBot
 
 #Create a global CORS
 def CORS_tool():

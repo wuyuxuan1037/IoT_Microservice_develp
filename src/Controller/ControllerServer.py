@@ -1,10 +1,10 @@
 import cherrypy
 import json
 import os
-from Util.Utility import PathUtils
-from Util.Utility import FileUtils
-from Util.Utility import Utility
-from Controller_Service.Controller import Controller
+from ..Util.Utility import PathUtils
+from ..Util.Utility import FileUtils
+from ..Util.Utility import Utility
+from ..Controller.Controller import Controller
 
 import logging
 logger = logging.getLogger('controller')

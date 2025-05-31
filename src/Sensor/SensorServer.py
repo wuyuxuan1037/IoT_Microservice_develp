@@ -1,10 +1,10 @@
 import cherrypy
 import json
 import os
-from Util.Utility import PathUtils
-from Util.Utility import FileUtils
-from Util.Utility import Utility
-from Sensor_Service.Sensor import Sensor
+from ..Util.Utility import PathUtils
+from ..Util.Utility import FileUtils
+from ..Util.Utility import Utility
+from ..Sensor.Sensor import Sensor
 
 class SensorServer:
     

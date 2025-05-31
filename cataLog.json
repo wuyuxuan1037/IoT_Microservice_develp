@@ -165,7 +165,7 @@
             "subscribeTopic": "PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/+/Exhaust_Fan",
             "deviceLocation": "Lingotto/Area_B/Position_03",
             "description":"this area is fruit",
-            "status": true
+            "status": false
         },
         {
             "deviceID": "baf49b45",

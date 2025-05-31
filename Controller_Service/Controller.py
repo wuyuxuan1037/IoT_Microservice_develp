@@ -20,8 +20,8 @@ class Controller (MyMQTT):
         self.unit = unit
         self.averageValue = 0
         self.infoFrequency = infoFrequency
-        super().__init__(FileUtils.random_uuid_create())
-        self.Start()
+        self.clientMqtt = super().__init__(FileUtils.random_uuid_create())
+        self.start()
         self._paho_mqtt.on_message = self.on_message
         self._paho_mqtt.on_connect = self.on_connect
         self.mySubscribe(self.subscribeTopic)   

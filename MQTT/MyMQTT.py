@@ -50,7 +50,7 @@ class MyMQTT:
         self._topic = topic
         logger.info(f"subscribed to {topic}")
 
-    def Start(self):
+    def start(self):
         #manage connection to broker
         self._paho_mqtt.connect(self.broker , self.port, keepalive=self.keepalive)
         self._paho_mqtt.loop_start()
@@ -60,7 +60,7 @@ class MyMQTT:
             # remember to unsuscribe if it is working also as subscriber 
             self._paho_mqtt.unsubscribe(self._topic)
             
-    def Stop (self):
+    def stop (self):
         if (self._isSubscriber):
             # remember to unsuscribe if it is working also as subscriber 
             self._paho_mqtt.unsubscribe(self._topic)

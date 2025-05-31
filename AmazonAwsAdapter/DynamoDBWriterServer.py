@@ -1,5 +1,3 @@
-import os,sys
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from MQTT.MyMQTT import MyMQTT
 from DynamoDBWriter import DynamoDBWriter
 import json
@@ -7,6 +5,7 @@ from decimal import Decimal
 import time
 
 class DynamoDBWriterServer:
+    
     def __init__(self, client_id, topic):
         self.client = MyMQTT(client_id, self)
         self.client.start()

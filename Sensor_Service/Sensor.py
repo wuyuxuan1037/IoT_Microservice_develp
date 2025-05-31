@@ -21,8 +21,8 @@ class Sensor (MyMQTT):
         self.status = status  #sign for the front-end
         self.update_thread = None #assign the value when calls start()
         self._stop_event = threading.Event()  #sign for threading
-        super().__init__(FileUtils.random_uuid_create())
-        self.Start()
+        self.clientMqtt = super().__init__(FileUtils.random_uuid_create())
+        self.start()
         self._paho_mqtt.on_message = self.on_message
         self._paho_mqtt.on_connect = self.on_connect
         self.msg = {

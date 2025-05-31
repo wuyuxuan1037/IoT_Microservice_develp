@@ -108,7 +108,7 @@
             "topic": "PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec",
             "unit": "ppm",
             "info_frequency": 9,
-            "status": true
+            "status": false
         },
         {
             "deviceID": "580f8d2d",
@@ -156,7 +156,7 @@
             "deviceType": "Drip_Irrigation_Pipe",
             "subscribeTopic": "PoliTO_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/+/Drip_Irrigation_Pipe",
             "deviceLocation": "Lingotto/Area_D/Position_01",
-            "description":"this area is vegetable",
+            "description": "this area is vegetable",
             "status": true
         },
         {
@@ -164,7 +164,7 @@
             "deviceType": "Exhaust_Fan",
             "subscribeTopic": "PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/+/Exhaust_Fan",
             "deviceLocation": "Lingotto/Area_B/Position_03",
-            "description":"this area is fruit",
+            "description": "this area is fruit",
             "status": false
         },
         {

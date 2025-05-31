@@ -1,3 +1,12 @@
-2025-06-01 00:19:43,521 - ERROR - Error in publish_data: 'Sensor' object has no attribute 'msg'
-2025-06-01 00:19:52,535 - INFO - PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec - CO2_Concentration - 855.0 ppm - infoFre 9
-2025-06-01 00:20:01,539 - INFO - PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec - CO2_Concentration - 913.0 ppm - infoFre 9
+2025-06-01 01:37:00,074 - INFO - Sensor:6eadacb6bb844ced9b Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-01 01:37:00,189 - INFO - Sensor:c2a0689ce50841ef95 Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-01 01:37:00,303 - INFO - Sensor:4547efb5e9a24e5b8d Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-01 01:37:00,401 - INFO - Sensor:787db9370a334bf482 Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-01 01:37:00,502 - INFO - Sensor:efb19039afc54d7897 Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-01 01:37:00,599 - INFO - Sensor:06b14b5e19d94303ab Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-01 01:37:00,698 - INFO - Sensor:8e665549b56e493e9f Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-01 01:37:00,794 - INFO - Sensor:6746143c08804b758b Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-01 01:37:00,908 - INFO - Sensor:d6f9e26a5679489284 Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-01 01:37:01,006 - INFO - Sensor:dd8aed9d59a140aab7 Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-01 01:37:01,107 - INFO - Sensor:27faa2eed78941c9b4 Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-01 01:37:01,207 - INFO - Sensor:fe4c82d20d694c08bc Connected to mqtt.eclipseprojects.io with result code: 0 

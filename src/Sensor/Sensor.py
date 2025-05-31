@@ -22,7 +22,7 @@ class Sensor (MyMQTT):
         self.update_thread = None #assign the value when calls start()
         self._stop_event = threading.Event()  #sign for threading
         self.clientMqtt = super().__init__(FileUtils.random_uuid_create())
-        self.start()
+        super().start()
         self._paho_mqtt.on_message = self.on_message
         self._paho_mqtt.on_connect = self.on_connect
         self.msg = {
@@ -44,7 +44,7 @@ class Sensor (MyMQTT):
                 self.publish_data()
             except Exception as e:
                 logger.error(f"Error in publish_data: {e}")
-            self._stop_event.wait(timeout=self.info_frequency)  
+            self._stop_event.wait(self.info_frequency)  
     
     #simulate the IOT sensor generate the data based on the different type of       
     def sensor_value(self,deviceType):
@@ -68,6 +68,9 @@ class Sensor (MyMQTT):
         self.status = False
         if self.update_thread and self.update_thread.is_alive():
             self.update_thread.join()
+            logger.info(f'{self.update_thread} threading CLOSED')
+        else:
+            logger.info("No alive thread to join.")
         
     #start running when the user resume the device. 
     def start(self):

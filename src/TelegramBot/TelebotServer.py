@@ -260,7 +260,7 @@ class MyTelegramBot:
     def run(self):
         self.running = True
         self.bot_thread = threading.Thread(target=self._polling_loop)
-        self.bot_thread.daemon = True
+        self.bot_thread.daemon = False
         self.bot_thread.start()
         
     def _polling_loop(self):
@@ -269,12 +269,13 @@ class MyTelegramBot:
                 self.bot.polling(none_stop=True, interval=0)
             except Exception as e:
                 logger.exception(f"Polling error: {e}")
+                time.sleep(1)
     
     def stop(self):
         self.running = False
         self.bot.stop_polling()
-        if self.bot_thread is not None:
-            self.bot_thread.join()
+        if self.bot_thread and self.bot_thread.is_alive():
+            self.bot_thread.join(timeout=1)
 
     
 

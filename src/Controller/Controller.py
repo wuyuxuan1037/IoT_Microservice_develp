@@ -15,13 +15,14 @@ class Controller (MyMQTT):
         self.deviceType = deviceType
         self.subscribeTopic = subscribeTopic
         self.sensorTopic = ''
+        self.publishTopic =''
         self.thresholdMax = thresholdMax
         self.thresholdMin = thresholdMin
         self.unit = unit
         self.averageValue = 0
         self.infoFrequency = infoFrequency
         self.clientMqtt = super().__init__(FileUtils.random_uuid_create())
-        self.start()
+        super().start()
         self._paho_mqtt.on_message = self.on_message
         self._paho_mqtt.on_connect = self.on_connect
         self.mySubscribe(self.subscribeTopic)   
@@ -71,14 +72,15 @@ class Controller (MyMQTT):
             #         self.publish_data('/Exhaust_Fan',False)
             #         self.publish_data('/Carbon_Dioxide_Generator',False)
             case _:
-                pass       
+                pass 
+        logger.info(f'{self.deviceType} - {self.publishTopic} -')      
 
             
     #publish the data to the broker    
     def publish_data(self, actualPath, actuatorStatus):
-        publishTopic = self.sensorTopic + actualPath
+        self.publishTopic = self.sensorTopic + actualPath
         msg = {
-            'bn': f'{publishTopic}',
+            'bn': f'{self.publishTopic}',
             'e':[
                 {
                     'n': f'{self.deviceType}',
@@ -88,8 +90,8 @@ class Controller (MyMQTT):
                 }
             ]
         }
-        self.myPublish(publishTopic,msg)
-        logger.info(f'{publishTopic} - PUBLISH TO ACTUATOR - {self.averageValue} - {actuatorStatus} - {self.thresholdMax} - {self.thresholdMin}')
+        self.myPublish(self.publishTopic,msg)
+        logger.info(f'{self.publishTopic} - PUBLISH TO ACTUATOR - {self.averageValue} - {actuatorStatus} - {self.thresholdMax} - {self.thresholdMin}')
         
     #callback function to receive data periodically    
     def on_message(self, paho_mqtt, userdata, msg):

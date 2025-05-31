@@ -20,7 +20,7 @@ class SensorServer:
             }
     }   
         #register all sensors for servers
-        self.sensorList = FileUtils.load_config(os.path.join(PathUtils.project_path(),"cataLog.json"))["sensor_list"]
+        self.sensorList = FileUtils.load_config(os.path.join(PathUtils.project_path(),"config/cataLog.json"))["sensor_list"]
         #store registered sensors in the List for dynamic to adjust the running sensors 
         self.registered_sensors = []
         #iterate the sensor list
@@ -37,7 +37,7 @@ class SensorServer:
     @cherrypy.expose
     @cherrypy.tools.json_out()
     def getSensorDevice(self):
-        sensorsList = FileUtils.load_config(os.path.join(PathUtils.project_path(),"cataLog.json"))["sensor_list"]
+        sensorsList = FileUtils.load_config(os.path.join(PathUtils.project_path(),"config/cataLog.json"))["sensor_list"]
         return sensorsList
     
     #add a new sensor device
@@ -67,7 +67,7 @@ class SensorServer:
         newDeviceObject.start()
         
         #loading configuration file
-        new_config = FileUtils.load_config(os.path.join(PathUtils.project_path(),"cataLog.json"))
+        new_config = FileUtils.load_config(os.path.join(PathUtils.project_path(),"config/cataLog.json"))
         
         #update the information of the cataLog
         newSensor = {
@@ -83,7 +83,7 @@ class SensorServer:
         new_config["sensor_list"].append(newSensor)
         
         #save the file
-        with open(os.path.join(PathUtils.project_path(),"cataLog.json"), 'w', encoding='utf-8') as f:
+        with open(os.path.join(PathUtils.project_path(),"config/cataLog.json"), 'w', encoding='utf-8') as f:
             json.dump(new_config, f, indent=4)
         
         return { "status": "success", "message": "Device added successfully." }
@@ -108,14 +108,14 @@ class SensorServer:
                 break
             
         #delete the sensor from the configuration
-        sensorList = FileUtils.load_config(os.path.join(PathUtils.project_path(),"cataLog.json"))
+        sensorList = FileUtils.load_config(os.path.join(PathUtils.project_path(),"config/cataLog.json"))
         for sensor in sensorList["sensor_list"]:
             if sensor['deviceID'] == deviceID:
                 sensorList["sensor_list"].remove(sensor)
                 break
             
         #save the file
-        with open(os.path.join(PathUtils.project_path(),"cataLog.json"), 'w', encoding='utf-8') as f:
+        with open(os.path.join(PathUtils.project_path(),"config/cataLog.json"), 'w', encoding='utf-8') as f:
             json.dump(sensorList, f, indent=4)        
         
         return { "status": "success", "message": "Device deleted successfully." }
@@ -146,7 +146,7 @@ class SensorServer:
                     break
                 
         #update the sensors status of the cataLog
-        sensorList = FileUtils.load_config(os.path.join(PathUtils.project_path(),"cataLog.json"))
+        sensorList = FileUtils.load_config(os.path.join(PathUtils.project_path(),"config/cataLog.json"))
         for deviceID in deviceList:
             for sensor in sensorList["sensor_list"]:
                 if sensor['deviceID'] == deviceID:
@@ -154,7 +154,7 @@ class SensorServer:
                     break
                 
         #save the file
-        with open(os.path.join(PathUtils.project_path(),"cataLog.json"), 'w', encoding='utf-8') as f:
+        with open(os.path.join(PathUtils.project_path(),"config/cataLog.json"), 'w', encoding='utf-8') as f:
             json.dump(sensorList, f, indent=4) 
         
         return { "status": "success", "message": "Status updated successfully." }

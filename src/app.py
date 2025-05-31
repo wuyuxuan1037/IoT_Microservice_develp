@@ -61,10 +61,10 @@ class App:
             logger.addHandler(handler)
 
         # Configure the log for different modules
-        setup_logger('mqtt', 'log/mqtt.log')
-        setup_logger('sensor', 'log/sensor.log')
-        setup_logger('controller', 'log/controller.log')
-        setup_logger('telebot', 'log/telebot.log')
+        setup_logger('mqtt', 'logs/mqtt.log')
+        setup_logger('sensor', 'logs/sensor.log')
+        setup_logger('controller', 'logs/controller.log')
+        setup_logger('telebot', 'logs/telebot.log')
     
 
 

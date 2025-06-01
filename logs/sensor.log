@@ -1,12 +1,17 @@
-2025-06-01 01:41:27,136 - INFO - Sensor:ddf896bf4fdf435ba7 Connected to mqtt.eclipseprojects.io with result code: 0 
-2025-06-01 01:41:27,233 - INFO - Sensor:450e5549b04249c48a Connected to mqtt.eclipseprojects.io with result code: 0 
-2025-06-01 01:41:27,333 - INFO - Sensor:5d2cd35a85e94c2d82 Connected to mqtt.eclipseprojects.io with result code: 0 
-2025-06-01 01:41:27,433 - INFO - Sensor:c7968b6322234f1daf Connected to mqtt.eclipseprojects.io with result code: 0 
-2025-06-01 01:41:27,532 - INFO - Sensor:9fa586ba6175466a8f Connected to mqtt.eclipseprojects.io with result code: 0 
-2025-06-01 01:41:27,631 - INFO - Sensor:be2ca30f40d3415ba2 Connected to mqtt.eclipseprojects.io with result code: 0 
-2025-06-01 01:41:27,750 - INFO - Sensor:47a12b00aac443cfa3 Connected to mqtt.eclipseprojects.io with result code: 0 
-2025-06-01 01:41:27,850 - INFO - Sensor:69de4fc7c110445f8e Connected to mqtt.eclipseprojects.io with result code: 0 
-2025-06-01 01:41:27,967 - INFO - Sensor:324c316e2ed24bd192 Connected to mqtt.eclipseprojects.io with result code: 0 
-2025-06-01 01:41:28,077 - INFO - Sensor:868dfc46b4424f16a5 Connected to mqtt.eclipseprojects.io with result code: 0 
-2025-06-01 01:41:28,174 - INFO - Sensor:21951ebfb3624ce091 Connected to mqtt.eclipseprojects.io with result code: 0 
-2025-06-01 01:41:28,286 - INFO - Sensor:f0e0b9bfdfb9430abd Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-01 17:33:39,269 - INFO - Sensor:b6fe900abf3f4b1f91 Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-01 17:33:39,368 - INFO - Sensor:abc933223e2f480281 Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-01 17:33:39,488 - INFO - Sensor:04693408704d492395 Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-01 17:33:39,587 - INFO - Sensor:48e15ad8c3724023b5 Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-01 17:33:39,694 - INFO - Sensor:978bb23cc8524096b6 Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-01 17:33:39,795 - INFO - Sensor:a73487c547914dcbad Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-01 17:33:39,908 - INFO - Sensor:faae678bd18840429e Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-01 17:33:40,036 - INFO - Sensor:a0470195fc12443fb8 Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-01 17:33:40,134 - INFO - Sensor:6b82af430ddf46709d Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-01 17:33:40,252 - INFO - Sensor:42674fe3e7384fe5b8 Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-01 17:33:40,394 - INFO - Sensor:bbc77148b813452084 Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-01 17:33:40,396 - INFO - PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec - CO2_Concentration - 916.0 ppm - infoFre 9
+2025-06-01 17:33:40,512 - INFO - Sensor:a448960006f842bfb3 Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-01 17:33:49,410 - INFO - PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec - CO2_Concentration - 945.0 ppm - infoFre 9
+2025-06-01 17:33:58,415 - INFO - PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec - CO2_Concentration - 559.0 ppm - infoFre 9
+2025-06-01 17:34:01,875 - INFO - Sensor server is closed successfully
+2025-06-01 17:34:07,430 - INFO - PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec - CO2_Concentration - 875.0 ppm - infoFre 9

@@ -1,0 +1,16 @@
+2025-06-01 17:33:18,437 - INFO - Controller:b6179e8130764c77bd Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-01 17:33:18,539 - INFO - Controller:1757bf295c4a476285 Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-01 17:33:18,635 - INFO - Controller:aa532445f56749a9a8 Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-01 17:33:18,749 - INFO - Controller:0d0d447647ec47b998 Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-01 17:33:40,705 - INFO - Received message on topic PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec: {"bn": "PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1748792020.3967028, "v": 916.0}]}
+2025-06-01 17:33:40,705 - INFO - CO2_Concentration - average value - 916.0
+2025-06-01 17:33:40,705 - INFO - CO2_Concentration -  -
+2025-06-01 17:33:49,699 - INFO - Received message on topic PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec: {"bn": "PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1748792029.4096909, "v": 945.0}]}
+2025-06-01 17:33:49,700 - INFO - CO2_Concentration - average value - 930.5
+2025-06-01 17:33:49,700 - INFO - CO2_Concentration -  -
+2025-06-01 17:33:58,710 - INFO - Received message on topic PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec: {"bn": "PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1748792038.4159355, "v": 559.0}]}
+2025-06-01 17:33:58,711 - INFO - CO2_Concentration - average value - 744.75
+2025-06-01 17:33:58,711 - INFO - CO2_Concentration -  -
+2025-06-01 17:34:07,722 - INFO - Received message on topic PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec: {"bn": "PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1748792047.430318, "v": 875.0}]}
+2025-06-01 17:34:07,723 - INFO - CO2_Concentration - average value - 809.875
+2025-06-01 17:34:07,723 - INFO - CO2_Concentration -  -

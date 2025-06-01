@@ -156,7 +156,7 @@
             "deviceType": "Drip_Irrigation_Pipe",
             "subscribeTopic": "PoliTO_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/+/Drip_Irrigation_Pipe",
             "deviceLocation": "Lingotto/Area_D/Position_01",
-            "description": "this area is vegetable",
+            "lastStatusUpdate": "2025/06/01 18:39:30",
             "status": true
         },
         {
@@ -164,7 +164,7 @@
             "deviceType": "Exhaust_Fan",
             "subscribeTopic": "PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/+/Exhaust_Fan",
             "deviceLocation": "Lingotto/Area_B/Position_03",
-            "description": "this area is fruit",
+            "lastStatusUpdate": "2025/06/01 18:39:30",
             "status": false
         },
         {
@@ -172,7 +172,7 @@
             "deviceType": "Carbon_Dioxide_Generator",
             "deviceLocation": "Lingotto/Area_B/Position_06",
             "topic": "PoliTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/+/Carbon_Dioxide_Generator",
-            "description": "",
+            "lastStatusUpdate": "2025/06/01 18:39:30",
             "status": false
         },
         {
@@ -180,7 +180,7 @@
             "deviceType": "Sunshade_Net",
             "deviceLocation": "Lingotto/Area_B/Position_01",
             "topic": "PoliTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/+/Sunshade_Net",
-            "description": "",
+            "lastStatusUpdate": "2025/06/01 18:39:30",
             "status": false
         },
         {
@@ -188,7 +188,7 @@
             "deviceType": "LED_Light",
             "deviceLocation": "Lingotto/Area_B/Position_03",
             "topic": "PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/+/LED_Light",
-            "description": "watching",
+            "lastStatusUpdate": "2025/06/01 18:39:30",
             "status": false
         },
         {
@@ -196,7 +196,7 @@
             "deviceType": "Cooler",
             "deviceLocation": "Lingotto/Area_A/Position_01",
             "topic": "PoliTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/+/Cooler",
-            "description": "careful",
+            "lastStatusUpdate": "2025/06/01 18:39:30",
             "status": false
         },
         {
@@ -204,7 +204,7 @@
             "deviceType": "Heater",
             "deviceLocation": "Lingotto/Area_A/Position_02",
             "topic": "PoliTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/+/Heater",
-            "description": "pay attention",
+            "lastStatusUpdate": "2025/06/01 18:39:30",
             "status": false
         }
     ]

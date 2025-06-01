@@ -14,13 +14,13 @@ class HttpServer:
     
     @cherrypy.expose
     def index(self):
-        index_path = os.path.join(project_root, 'Front-end_Resource','dist', 'index.html')
+        index_path = os.path.join(project_root, 'Static_Resource','dist', 'index.html')
         with open(index_path, 'r', encoding='utf-8') as f:
             return f.read()
         
     @cherrypy.expose
     def default(self, *args, **kwargs):
-        index_path = os.path.join(project_root, 'Front-end_Resource','dist', 'index.html')
+        index_path = os.path.join(project_root, 'Static_Resource','dist', 'index.html')
         with open(index_path, 'r', encoding='utf-8') as f:
             return f.read()
         
@@ -43,7 +43,7 @@ if __name__ == '__main__':
     config = {
             '/': {
                 'tools.staticdir.on': True,
-                'tools.staticdir.dir': os.path.join(project_root, 'Front-end_Resource','dist'),
+                'tools.staticdir.dir': os.path.join(project_root, 'Static_Resource','dist'),
                 'tools.CORS.on': True
             }
     }

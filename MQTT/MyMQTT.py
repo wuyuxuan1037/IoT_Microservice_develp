@@ -5,11 +5,12 @@ project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 if project_root not in sys.path:
     sys.path.insert(0, project_root)
 
-from Util.Utility import PathUtils
+from Util.Utility import PathUtils, Log
 from Util.Utility import FileUtils
 import json
 
 import logging
+Log.setup_loggers('mqtt')
 logger = logging.getLogger('mqtt')
 
 class MyMQTT:
@@ -45,6 +46,7 @@ class MyMQTT:
     def myPublish (self, topic, msg):
         # publish a message with a certain topic
         self._paho_mqtt.publish(topic, json.dumps(msg), 2, retain = False)
+        logger.info(f"Publish to {topic} - {msg}")
 
     def mySubscribe (self, topic,callback = None): 
         # subscribe for a topic
@@ -76,4 +78,6 @@ class MyMQTT:
             logger.warning(f"Unexpected disconnection. rc={rc}")
         else:
             logger.warning("Disconnected normally.")
+    
+    
 

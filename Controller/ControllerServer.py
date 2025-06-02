@@ -1,3 +1,4 @@
+from datetime import datetime
 import math
 import time
 import cherrypy
@@ -8,7 +9,7 @@ project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 if project_root not in sys.path:
     sys.path.insert(0, project_root)
     
-from Util.Utility import PathUtils, FileUtils, Utility, Log
+from Util.Utility import PathUtils, FileUtils, Log
 from Util import CORS
 from Controller.Controller import Controller
 
@@ -25,8 +26,7 @@ class ControllerServer:
         self.registered_controllers = []
         #iterate the controller list
         for controller in self.controllerList:
-            controllerObject = Controller(controller["deviceType"], controller["subscribeTopic"], 
-                                            controller["thresholdMax"], controller["thresholdMin"],controller["unit"])
+            controllerObject = Controller(controller["deviceType"], controller["subscribeTopic"], controller["thresholdMax"], controller["thresholdMin"],controller["unit"])
             self.registered_controllers.append(controllerObject)
             
         self.dashboardData = []
@@ -48,6 +48,9 @@ class ControllerServer:
         deviceType = cherrypy.request.json.get("deviceType")
         thresholdMax = cherrypy.request.json.get("thresholdMax")
         thresholdMin = cherrypy.request.json.get('thresholdMin')
+        
+        if deviceType not in ["Soil_Moisture","CO2_Concentration","Temperature","Lightness"]:
+            return "Wrong Device Type!"
         
         #iterating the self.registered_controllers to change the value of the device
         for controller in self.registered_controllers:
@@ -71,6 +74,7 @@ class ControllerServer:
             
         return { "status": "success", "message": "Threshold modified successfully." }
     
+    #This server for web dashboard
     @cherrypy.expose
     @cherrypy.tools.json_out()
     def getControllerAverageValue(self):
@@ -80,6 +84,16 @@ class ControllerServer:
             dict[f"{controller.deviceType}"] = math.floor(controller.averageValue)
         self.dashboardData.append(dict)
         return self.dashboardData
+    
+    #This server for environmental condition of the TeleBot
+    @cherrypy.expose
+    @cherrypy.tools.json_out()
+    def getControllerAverageValue2TeleBot(self):
+        dict = {}
+        dict["Time"] = datetime.fromtimestamp(time.time()).strftime("%Y-%m-%d %H:%M:%S")
+        for controller in self.registered_controllers:
+            dict[f"{controller.deviceType}"] = f'{math.floor(controller.averageValue)}' + f' {controller.unit}'
+        return dict
     
     @cherrypy.expose
     def shutdown(self):

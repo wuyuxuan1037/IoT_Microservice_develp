@@ -31,54 +31,54 @@ class Controller (MyMQTT):
         super().start()
         self._paho_mqtt.on_message = self.on_message
         self._paho_mqtt.on_connect = self.on_connect
-        self.mySubscribe(self.subscribeTopic)   
+        super().mySubscribe(self.subscribeTopic)   
         
     def run (self, deviceType):
         match deviceType:
-            # case 'Temperature':
-            #     # when average value is higher than MAX, turn on the Cooler
-            #     if self.averageValue > self.thresholdMax:
-            #         self.publish_data('/Cooler',True)
-            #         self.publish_data('/Heater',False)
-            #     # when average value is lower than MIN, turn on the Heater
-            #     elif self.averageValue < self.thresholdMin:
-            #         self.publish_data('/Cooler',False)
-            #         self.publish_data('/Heater',True)
-            #     else :
-            #         self.publish_data('/Cooler',False)
-            #         self.publish_data('/Heater',False)
-            # case 'Soil_Moisture':  
-            #     # when average value is higher than MAX, turn on the Drip_Irrigation_Pipe
-            #     if self.averageValue > self.thresholdMax:
-            #         self.publish_data('/Drip_Irrigation_Pipe',True)
-            #     else:
-            #         self.publish_data('/Drip_Irrigation_Pipe',False)
-            # case 'Lightness':  
-            #     # when average value is higher than MAX, turn on the Sunshade_Net
-            #     if self.averageValue > self.thresholdMax:
-            #         self.publish_data('/Sunshade_Net',True)
-            #         self.publish_data('/LED_Light',False)
-            #     # when average value is lower than MIN, turn on the LED_Light
-            #     elif self.averageValue < self.thresholdMin:
-            #         self.publish_data('/Sunshade_Net',False)
-            #         self.publish_data('/LED_Light',True)
-            #     else:
-            #         self.publish_data('/Sunshade_Net',False)
-            #         self.publish_data('/LED_Light',False)
-            # case 'CO2_Concentration':  
-            #     # when average value is higher than MAX, turn on the Exhaust_Fan
-            #     if self.averageValue > self.thresholdMax:
-            #         self.publish_data('/Exhaust_Fan',True)
-            #         self.publish_data('/Carbon_Dioxide_Generator',False)
-            #     # when average value is lower than MIN, turn on the Carbon_Dioxide_Generator
-            #     elif self.averageValue < self.thresholdMin:
-            #         self.publish_data('/Exhaust_Fan',False)
-            #         self.publish_data('/Carbon_Dioxide_Generator',True)
-            #     else:
-            #         self.publish_data('/Exhaust_Fan',False)
-            #         self.publish_data('/Carbon_Dioxide_Generator',False)
+            case 'Temperature':
+                # when average value is higher than MAX, turn on the Cooler
+                if self.averageValue > self.thresholdMax:
+                    self.publish_data('/Cooler',True)
+                    self.publish_data('/Heater',False)
+                # when average value is lower than MIN, turn on the Heater
+                elif self.averageValue < self.thresholdMin:
+                    self.publish_data('/Cooler',False)
+                    self.publish_data('/Heater',True)
+                else :
+                    self.publish_data('/Cooler',False)
+                    self.publish_data('/Heater',False)
+            case 'Soil_Moisture':  
+                # when average value is higher than MAX, turn on the Drip_Irrigation_Pipe
+                if self.averageValue > self.thresholdMax:
+                    self.publish_data('/Drip_Irrigation_Pipe',True)
+                else:
+                    self.publish_data('/Drip_Irrigation_Pipe',False)
+            case 'Lightness':  
+                # when average value is higher than MAX, turn on the Sunshade_Net
+                if self.averageValue > self.thresholdMax:
+                    self.publish_data('/Sunshade_Net',True)
+                    self.publish_data('/LED_Light',False)
+                # when average value is lower than MIN, turn on the LED_Light
+                elif self.averageValue < self.thresholdMin:
+                    self.publish_data('/Sunshade_Net',False)
+                    self.publish_data('/LED_Light',True)
+                else:
+                    self.publish_data('/Sunshade_Net',False)
+                    self.publish_data('/LED_Light',False)
+            case 'CO2_Concentration':  
+                # when average value is higher than MAX, turn on the Exhaust_Fan
+                if self.averageValue > self.thresholdMax:
+                    self.publish_data('/Exhaust_Fan',True)
+                    self.publish_data('/Carbon_Dioxide_Generator',False)
+                # when average value is lower than MIN, turn on the Carbon_Dioxide_Generator
+                elif self.averageValue < self.thresholdMin:
+                    self.publish_data('/Exhaust_Fan',False)
+                    self.publish_data('/Carbon_Dioxide_Generator',True)
+                else:
+                    self.publish_data('/Exhaust_Fan',False)
+                    self.publish_data('/Carbon_Dioxide_Generator',False)
             case _:
-                pass 
+                logger.info(f'CONTROLLER:No match')  
         logger.info(f'{self.deviceType} - {self.publishTopic} -')      
 
             

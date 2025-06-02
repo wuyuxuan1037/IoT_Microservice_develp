@@ -18,7 +18,7 @@
             "topic": "PoliTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3",
             "unit": "Cel",
             "info_frequency": 11,
-            "status": false
+            "status": true
         },
         {
             "deviceID": "f47ac10b",
@@ -36,7 +36,7 @@
             "topic": "PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900",
             "unit": "lx",
             "info_frequency": 17,
-            "status": false
+            "status": true
         },
         {
             "deviceID": "4b1e9d2f",
@@ -45,7 +45,7 @@
             "topic": "PoliTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f",
             "unit": "ppm",
             "info_frequency": 11,
-            "status": false
+            "status": true
         },
         {
             "deviceID": "a7b8c6d4",
@@ -54,7 +54,7 @@
             "topic": "PoliTO_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4",
             "unit": "%",
             "info_frequency": 14,
-            "status": false
+            "status": true
         },
         {
             "deviceID": "ffee552a",
@@ -72,7 +72,7 @@
             "topic": "PoliTO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb",
             "unit": "%",
             "info_frequency": 9,
-            "status": false
+            "status": true
         },
         {
             "deviceID": "d559dc98",
@@ -81,7 +81,7 @@
             "topic": "PoliTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98",
             "unit": "Cel",
             "info_frequency": 13,
-            "status": false
+            "status": true
         },
         {
             "deviceID": "9947c72f",
@@ -90,7 +90,7 @@
             "topic": "PoliTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f",
             "unit": "ppm",
             "info_frequency": 19,
-            "status": false
+            "status": true
         },
         {
             "deviceID": "a8830d33",
@@ -99,7 +99,7 @@
             "topic": "PoliTO_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33",
             "unit": "%",
             "info_frequency": 23,
-            "status": false
+            "status": true
         },
         {
             "deviceID": "faf26dec",
@@ -126,28 +126,28 @@
             "subscribeTopic": "PoliTO_IotSmartFarm/Lingotto/+/+/Soil_Moisture/+",
             "unit": "%",
             "thresholdMax": 70,
-            "thresholdMin": 20
+            "thresholdMin": 35
         },
         {
             "deviceType": "CO2_Concentration",
             "subscribeTopic": "PoliTO_IotSmartFarm/Lingotto/+/+/CO2_Concentration/+",
             "unit": "ppm",
-            "thresholdMax": 700,
-            "thresholdMin": 500
+            "thresholdMax": 800,
+            "thresholdMin": 450
         },
         {
             "deviceType": "Temperature",
             "subscribeTopic": "PoliTO_IotSmartFarm/Lingotto/+/+/Temperature/+",
             "unit": "Cel",
-            "thresholdMax": 41,
-            "thresholdMin": 24
+            "thresholdMax": 40,
+            "thresholdMin": 25
         },
         {
             "deviceType": "Lightness",
             "subscribeTopic": "PoliTO_IotSmartFarm/Lingotto/+/+/Lightness/+",
             "unit": "lx",
             "thresholdMax": 800,
-            "thresholdMin": 100
+            "thresholdMin": 300
         }
     ],
     "actuator_list": [
@@ -156,15 +156,15 @@
             "deviceType": "Drip_Irrigation_Pipe",
             "topic": "PoliTO_IotSmartFarm/Lingotto/Area_D/Position_01/+/+/Drip_Irrigation_Pipe",
             "deviceLocation": "Lingotto/Area_D/Position_01",
-            "lastStatusUpdate": "2025/06/01 18:39:30",
-            "status": true
+            "lastStatusUpdate": "2025-06-03 00:02:26",
+            "status": false
         },
         {
             "deviceID": "7e2e63ef",
             "deviceType": "Exhaust_Fan",
             "topic": "PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/+/+/Exhaust_Fan",
             "deviceLocation": "Lingotto/Area_B/Position_03",
-            "lastStatusUpdate": "2025/06/01 18:39:30",
+            "lastStatusUpdate": "2025-06-03 00:09:05",
             "status": false
         },
         {
@@ -172,7 +172,7 @@
             "deviceType": "Carbon_Dioxide_Generator",
             "deviceLocation": "Lingotto/Area_B/Position_06",
             "topic": "PoliTO_IotSmartFarm/Lingotto/Area_B/Position_06/+/+/Carbon_Dioxide_Generator",
-            "lastStatusUpdate": "2025/06/01 18:39:30",
+            "lastStatusUpdate": "2025-06-02 23:49:18",
             "status": false
         },
         {
@@ -180,7 +180,7 @@
             "deviceType": "Sunshade_Net",
             "deviceLocation": "Lingotto/Area_B/Position_01",
             "topic": "PoliTO_IotSmartFarm/Lingotto/Area_B/Position_01/+/+/Sunshade_Net",
-            "lastStatusUpdate": "2025/06/01 18:39:30",
+            "lastStatusUpdate": "2025-06-03 00:02:43",
             "status": false
         },
         {
@@ -188,7 +188,7 @@
             "deviceType": "LED_Light",
             "deviceLocation": "Lingotto/Area_B/Position_03",
             "topic": "PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/+/+/LED_Light",
-            "lastStatusUpdate": "2025-06-01 18:39:30",
+            "lastStatusUpdate": "2025-06-03 00:01:16",
             "status": false
         },
         {
@@ -196,15 +196,15 @@
             "deviceType": "Cooler",
             "deviceLocation": "Lingotto/Area_A/Position_01",
             "topic": "PoliTO_IotSmartFarm/Lingotto/Area_A/Position_01/+/+/Cooler",
-            "lastStatusUpdate": "2025-06-01 18:39:30",
-            "status": true
+            "lastStatusUpdate": "2025-06-02 23:38:23",
+            "status": false
         },
         {
             "deviceID": "fe3a3799",
             "deviceType": "Heater",
             "deviceLocation": "Lingotto/Area_A/Position_02",
             "topic": "PoliTO_IotSmartFarm/Lingotto/Area_A/Position_02/+/+/Heater",
-            "lastStatusUpdate": "2025-06-01 18:39:30",
+            "lastStatusUpdate": "2025-06-03 00:08:35",
             "status": true
         }
     ]

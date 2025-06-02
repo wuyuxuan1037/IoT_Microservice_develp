@@ -25,8 +25,7 @@ class ActuatorServer:
         self.registered_actuators = []
         #iterate the actuator list
         for actuator in self.actuatorList:
-            actuatorObject = Actuator(actuator["deviceID"], actuator["deviceType"], actuator["deviceLocation"], 
-                                actuator["topic"], actuator["lastStatusUpdate"], actuator["status"])
+            actuatorObject = Actuator(actuator["deviceID"], actuator["deviceType"], actuator["deviceLocation"], actuator["topic"], actuator["lastStatusUpdate"], actuator["status"])
             self.registered_actuators.append(actuatorObject)
             
     #show all actuators from the configuration     
@@ -127,6 +126,13 @@ class ActuatorServer:
     @cherrypy.tools.json_out()
     def updateActuatorStatus(self):
         
+        #obtain current time
+        timestamp = time.time()
+        #convert timestamp into time object
+        dt = datetime.fromtimestamp(timestamp)
+        #define the format  of the time to display
+        formatted_time = dt.strftime("%Y-%m-%d %H:%M:%S")
+        
         #obtain the parameter from the front # end 
         deviceList = cherrypy.request.json.get('device_ids')
         targetStatus = cherrypy.request.json.get('target_status')
@@ -138,6 +144,7 @@ class ActuatorServer:
                 if deviceID == actuator.deviceID:
                     if targetStatus:
                         actuator.status=True
+                        actuator.lastStatusUpdate=formatted_time
                         actuator.start()
                     else:
                         actuator.stop()
@@ -149,6 +156,8 @@ class ActuatorServer:
             for actuator in actuatorList["actuator_list"]:
                 if actuator['deviceID'] == deviceID:
                     actuator['status'] = targetStatus
+                    actuator['lastStatusUpdate'] = formatted_time
+                    
                     break
         
         logger.info(f'Change the configuration [{deviceList}] to status [{targetStatus}]')

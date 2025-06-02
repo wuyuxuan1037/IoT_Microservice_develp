@@ -21,8 +21,7 @@ class SensorServer:
         self.registered_sensors = []
         #iterate the sensor list
         for sensor in self.sensorList:
-            sensorObject = Sensor(sensor["deviceID"], sensor["deviceType"], sensor["deviceLocation"], 
-                                sensor["topic"], sensor["unit"], sensor["info_frequency"], sensor["status"])
+            sensorObject = Sensor(sensor["deviceID"], sensor["deviceType"], sensor["deviceLocation"], sensor["topic"], sensor["unit"], sensor["info_frequency"], sensor["status"])
             self.registered_sensors.append(sensorObject)
 
         #update sensor status (control the sensor published to the MQTT broker)

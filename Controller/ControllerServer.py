@@ -1,3 +1,5 @@
+import math
+import time
 import cherrypy
 import json
 import os, sys
@@ -26,6 +28,8 @@ class ControllerServer:
             controllerObject = Controller(controller["deviceType"], controller["subscribeTopic"], 
                                             controller["thresholdMax"], controller["thresholdMin"],controller["unit"])
             self.registered_controllers.append(controllerObject)
+            
+        self.dashboardData = []
         
     #show all controllers form the configuration     
     @cherrypy.expose
@@ -68,9 +72,20 @@ class ControllerServer:
         return { "status": "success", "message": "Threshold modified successfully." }
     
     @cherrypy.expose
+    @cherrypy.tools.json_out()
+    def getControllerAverageValue(self):
+        dict = {}
+        dict["time"] = math.floor(time.time()*1000)
+        for controller in self.registered_controllers:
+            dict[f"{controller.deviceType}"] = math.floor(controller.averageValue)
+        self.dashboardData.append(dict)
+        return self.dashboardData
+    
+    @cherrypy.expose
     def shutdown(self):
         logger.info('Controller server is closed successfully')
         cherrypy.engine.exit()
+        return "Controller server is closed successfully"
     
 if __name__ == '__main__':
     

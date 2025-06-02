@@ -103,16 +103,16 @@ class Controller (MyMQTT):
     def on_message(self, paho_mqtt, userdata, msg):
         # if self.deviceType in msg.topic :
         # handle the message
-            payload = msg.payload.decode('utf-8')  # decode the received message
-            logger.info(f"Received message on topic {msg.topic}: {payload}")
-            currentValue = json.loads(payload)['e'][0]['v']
-            self.sensorTopic = msg.topic
-            if self.averageValue == 0 :
-                self.averageValue = currentValue
-            else:
-                self.averageValue = (currentValue + self.averageValue) / 2
-            logger.info(f'{self.deviceType} - average value - {self.averageValue}')
-            self.run(self.deviceType)
+        payload = msg.payload.decode('utf-8')  # decode the received message
+        logger.info(f"Received message on topic {msg.topic}: {payload}")
+        currentValue = json.loads(payload)['e'][0]['v']
+        self.sensorTopic = msg.topic
+        if self.averageValue == 0 :
+            self.averageValue = currentValue
+        else:
+            self.averageValue = (currentValue + self.averageValue) / 2
+        logger.info(f'{self.deviceType} - average value - {self.averageValue}')
+        self.run(self.deviceType)
 
     def on_connect (self, paho_mqtt, userdata,flag, rc):
         logger.info(f'Controller:{self.clientID} Connected to {self.broker} with result code: {rc} ')

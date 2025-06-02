@@ -29,7 +29,7 @@ class SensorServer:
         for sensor in self.registered_sensors:
             sensor.start()
     
-    #show all sensors form the configuration     
+    #show all sensors from the configuration     
     @cherrypy.expose
     @cherrypy.tools.json_out()
     def getSensorDevice(self):
@@ -48,7 +48,7 @@ class SensorServer:
         #obtain the parameter from the front-end page
         deviceType = cherrypy.request.json.get("type")
         deviceLocation = cherrypy.request.json.get("location")
-        topic = f"TO_IotSmartFarm/{deviceLocation}/{deviceType}/{deviceID}"
+        topic = f"PoliTO_IotSmartFarm/{deviceLocation}/{deviceType}/{deviceID}"
         unit = cherrypy.request.json.get("unit")
         info_frequency = cherrypy.request.json.get("updateFrequency")
         status = True
@@ -112,7 +112,7 @@ class SensorServer:
     @cherrypy.expose
     @cherrypy.tools.json_in()
     @cherrypy.tools.json_out()
-    def updateDeviceStatus(self):
+    def updateSensorStatus(self):
         
         #obtain the parameter from the front # end 
         deviceList = cherrypy.request.json.get('device_ids')
@@ -147,6 +147,7 @@ class SensorServer:
     def shutdown(self):
         logger.info('Sensor server is closed successfully')
         cherrypy.engine.exit()
+        return 'Sensor server is closed successfully'
     
 if __name__ == '__main__':
     

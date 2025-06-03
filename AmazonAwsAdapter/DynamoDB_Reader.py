@@ -19,8 +19,8 @@ class DynamoDBReader:
     def __init__(self, table_name='IoTSensorData'):
         self.dynamodb = boto3.resource('dynamodb',
                                         region_name='eu-north-1',
-                                        aws_access_key_id='AKIA4OEY2SAU5ZZZGZLT',
-                                        aws_secret_access_key='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')
+                                         aws_access_key_id='AKIA4OEY2SAUY4JKU3GD',
+                                       aws_secret_access_key='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')
         self.table = self.dynamodb.Table(table_name)
 
     def get_latest_data(self, deviceID):

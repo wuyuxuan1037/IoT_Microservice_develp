@@ -111,7 +111,7 @@ class SensorServer:
             json.dump(sensorList, f, indent=4)      
         
         logger.info(f"deleteSensorDevice: {deviceID}")
-          
+        
         return { "status": "success", "message": "Device deleted successfully." }
     
     #update the status of the sensor

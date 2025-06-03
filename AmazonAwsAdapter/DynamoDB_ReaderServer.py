@@ -83,10 +83,7 @@ class DynamoDBReaderServer:
     @cherrypy.expose
     @cherrypy.tools.json_out()
     def getAllHistoryData(self, limit=500):
-        try:
-            limit = int(limit)
-        except Exception:
-            limit = 500
+
         data = self.reader.get_all_history_data(limit)
         if data:
             return convert_decimal(data)

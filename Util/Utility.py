@@ -54,7 +54,7 @@ class Log:
             if logger.hasHandlers():
                 logger.handlers.clear()
 
-            handler = logging.FileHandler(filename, mode='w')
+            handler = logging.FileHandler(filename, mode='a')
             handler.setFormatter(log_formatter)
             logger.addHandler(handler)
 

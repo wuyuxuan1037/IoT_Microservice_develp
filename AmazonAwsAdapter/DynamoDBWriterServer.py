@@ -1,5 +1,8 @@
-import json
 from decimal import Decimal
+import json
+import boto3
+from botocore.exceptions import ClientError
+import logging
 import time
 
 import os, sys
@@ -7,51 +10,79 @@ import os, sys
 project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 if project_root not in sys.path:
     sys.path.insert(0, project_root)
-    
-from Util.Utility import Log
+
+from Util.Utility import Log, FileUtils
 from MQTT.MyMQTT import MyMQTT
-from AmazonAwsAdapter.DynamoDBWriter import DynamoDBWriter
-from Util import CORS
 
 import logging
 Log.setup_loggers('DB_writerServer')
 logger = logging.getLogger('DB_writerServer')
 
-class DynamoDBWriterServer:
-    
-    def __init__(self, client_id, topic):
-        self.client = MyMQTT(client_id, self)
-        self.client.start()
-        self.client.mySubscribe(topic)
-        self.writer = DynamoDBWriter()
-
-    def notify(self, topic, payload, qos=None, retain=None):
+class DynamoDBWriter(MyMQTT):
+    def __init__(self, table_name='IoTSensorData', region_name='eu-north-1'):
+        self.dynamodb = boto3.resource('dynamodb', region_name=region_name,
+                                       aws_access_key_id='AKIA4OEY2SAUY4JKU3GD',
+                                       aws_secret_access_key='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'
+                                       )
+        self.table = self.dynamodb.Table(table_name)
+        self.clientMqtt = super().__init__(FileUtils.random_uuid_create())
+        super().start()
+        self._paho_mqtt.on_message = self.on_message
+        self._paho_mqtt.on_connect = self.on_connect
+        super().mySubscribe("UniTO_IotSmartFarm/Lingotto/#")
+        
+    def on_message(self, paho_mqtt, userdata, msg):
         try:
-            data = json.loads(payload.decode())
-            value = data['e'][0]['v']
+            data = json.loads(msg.payload.decode('utf-8'))
             deviceType = data['e'][0]['n']
             unit = data['e'][0]['u']
-            # 从 bn 字段提取 deviceID
-            bn = data.get('bn', '')
-            deviceID = bn.split('/')[-1] if bn else ''
-            deviceLocation = '/'.join(bn.split('/')[1:-2]) if bn else ''
-            self.writer.write_sensor_data(
+            value = data['e'][0]['v'] if isinstance(data['e'][0]['v'], bool) else Decimal(str(data['e'][0]['v']))
+            time = data['e'][0]['t']
+            topic = data.get('bn', '')
+            deviceID = topic.split('/')[5]
+            deviceLocation = '/'.join(topic.split('/')[1:-2]) if len(topic.split('/')) == 6 else '/'.join(topic.split('/')[1:-3])
+            self.write_sensor_data(
                 deviceID=deviceID,
                 deviceType=deviceType,
                 deviceLocation=deviceLocation,
-                value=Decimal(str(value)),
+                value=value,
                 unit=unit,
-                topic=topic
+                topic=topic,
+                timestamp = Decimal(int(time))
             )
             logger.info(f"Written to DynamoDB: {data}")
 
         except Exception as e:
             logger.exception(f"Error:Written to DynamoDB. Processing message: {e}")
 
+    def write_sensor_data(self, deviceID, deviceType, deviceLocation, value, unit, topic, timestamp=None):
+        item = {
+            'deviceID': deviceID,
+            'timestamp': timestamp,
+            'deviceType': deviceType,
+            'deviceLocation': deviceLocation,
+            'value': value,
+            'unit': unit,
+            'topic': topic
+        }
+        try:
+            self.table.put_item(Item=item)
+            logger.info(f"Data written to DynamoDB: {item}")
+            return True
+        except ClientError as e:
+            logger.error(f"Failed to write to DynamoDB: {e}")
+            return False
+        
+    def on_connect (self, paho_mqtt, userdata,flag, rc):
+        logger.info(f'DynamoDBWriter: Connected to {self.broker} with result code: {rc} ')
+        
 
+    
 if __name__ == "__main__":
-    client_id = "DynamoDBWriter"
-    topic = "PoliTO_IotSmartFarm/Lingotto/#"
-    server = DynamoDBWriterServer(client_id, topic)
-    while True:
-        time.sleep(1)
+    
+    writer = DynamoDBWriter()
+    try:
+        while True:
+            time.sleep(1)
+    except KeyboardInterrupt:
+        writer.stop()

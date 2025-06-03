@@ -14,19 +14,20 @@ import logging
 Log.setup_loggers('DB_reader')
 logger = logging.getLogger('DB_reader')
 
-from dotenv import load_dotenv
-import os
+# from dotenv import load_dotenv
+# import os
 
-load_dotenv()
+# load_dotenv()
 
-aws_access_key_id = os.getenv('AWS_ACCESS_KEY_ID')
-aws_secret_access_key = os.getenv('AWS_SECRET_ACCESS_KEY')
+# aws_access_key_id = os.getenv('AWS_ACCESS_KEY_ID')
+# aws_secret_access_key = os.getenv('AWS_SECRET_ACCESS_KEY')
 class DynamoDBReader:
     def __init__(self, table_name='IoTSensorData'):
         self.dynamodb = boto3.resource('dynamodb',
                                         region_name='eu-north-1',
-                                        aws_access_key_id=aws_access_key_id,
-                                        aws_secret_access_key=aws_secret_access_key)
+                                        aws_access_key_id='AKIA4OEY2SAUY4JKU3GD',
+                                        aws_secret_access_key='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'
+                                        )
         self.table = self.dynamodb.Table(table_name)
 
     def get_latest_data(self, deviceID):

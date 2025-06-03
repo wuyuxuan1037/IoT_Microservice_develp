@@ -1,5 +1,6 @@
 from datetime import datetime
 import math
+import threading
 import time
 import cherrypy
 import json
@@ -31,6 +32,17 @@ class ControllerServer:
             self.registered_controllers.append(controllerObject)
             
         self.dashboardData = []
+        self.threading = threading.Thread(target = self.run)
+        self.threading.start()
+        
+    def run(self):
+        while True:
+            dict = {}
+            dict["time"] = math.floor(time.time()*1000)
+            for controller in self.registered_controllers:
+                dict[f"{controller.deviceType}"] = math.floor(controller.averageValue)
+            self.dashboardData.append(dict)
+            time.sleep(5)
         
     #show all controllers form the configuration     
     @cherrypy.expose
@@ -83,14 +95,9 @@ class ControllerServer:
     @cherrypy.expose
     @cherrypy.tools.json_out()
     def getControllerAverageValue(self):
-        dict = {}
-        dict["time"] = math.floor(time.time()*1000)
-        for controller in self.registered_controllers:
-            dict[f"{controller.deviceType}"] = math.floor(controller.averageValue)
-        self.dashboardData.append(dict)
-        
-        logger.info(f"getControllerAverageValue: {dict}")
-        
+
+        logger.info(f"getControllerAverageValue")
+ 
         return self.dashboardData
     
     #This server for environmental condition of the TeleBot

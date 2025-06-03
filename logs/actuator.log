@@ -1,25 +1,7 @@
-2025-06-03 15:57:43,360 - INFO - Actuator:52f7cd86038c4cf78f Connected to mqtt.eclipseprojects.io with result code: 0 
-2025-06-03 15:57:43,470 - INFO - Actuator:06ab010a125d4084b6 Connected to mqtt.eclipseprojects.io with result code: 0 
-2025-06-03 15:57:43,573 - INFO - Actuator:6d854700923040febf Connected to mqtt.eclipseprojects.io with result code: 0 
-2025-06-03 15:57:43,684 - INFO - Actuator:80bfee61a7aa425da6 Connected to mqtt.eclipseprojects.io with result code: 0 
-2025-06-03 15:57:43,795 - INFO - Actuator:f9c4a153b597416fb4 Connected to mqtt.eclipseprojects.io with result code: 0 
-2025-06-03 15:57:43,891 - INFO - Actuator:4ea0c8b1f61b480bb8 Connected to mqtt.eclipseprojects.io with result code: 0 
-2025-06-03 15:57:43,997 - INFO - Actuator:1e161fda67c84766b0 Connected to mqtt.eclipseprojects.io with result code: 0 
-2025-06-03 15:57:46,640 - INFO - Received message on topic PoliTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Cooler: {"bn": "PoliTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Cooler", "e": [{"n": "Temperature", "u": "Cel", "t": 1748959066.2476752, "v": false}]}
-2025-06-03 15:57:46,640 - INFO - Status of [d0676e7b - Cooler] doesn't need to change
-2025-06-03 15:57:47,188 - INFO - Received message on topic PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan: {"bn": "PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1748959066.6401572, "v": false}]}
-2025-06-03 15:57:47,188 - INFO - Status of [7e2e63ef - Exhaust_Fan] doesn't need to change
-2025-06-03 15:57:50,481 - INFO - Received message on topic PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light: {"bn": "PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light", "e": [{"n": "Lightness", "u": "lx", "t": 1748959069.999398, "v": false}]}
-2025-06-03 15:57:50,481 - INFO - Status of [b6c46f2c - LED_Light] doesn't need to change
-2025-06-03 15:57:55,536 - INFO - Received message on topic PoliTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net: {"bn": "PoliTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net", "e": [{"n": "Lightness", "u": "lx", "t": 1748959075.1349967, "v": false}]}
-2025-06-03 15:57:55,536 - INFO - Status of [f89cd694 - Sunshade_Net] doesn't need to change
-2025-06-03 15:57:55,631 - INFO - Received message on topic PoliTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater: {"bn": "PoliTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater", "e": [{"n": "Temperature", "u": "Cel", "t": 1748959075.1349967, "v": false}]}
-2025-06-03 15:57:55,631 - INFO - Status of [fe3a3799 - Heater] doesn't need to change
-2025-06-03 15:57:55,792 - INFO - Received message on topic PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan: {"bn": "PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1748959075.4044518, "v": false}]}
-2025-06-03 15:57:55,792 - INFO - Status of [7e2e63ef - Exhaust_Fan] doesn't need to change
-2025-06-03 15:57:56,499 - INFO - Received message on topic PoliTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator: {"bn": "PoliTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1748959076.0329235, "v": false}]}
-2025-06-03 15:57:56,499 - INFO - Status of [baf49b45 - Carbon_Dioxide_Generator] doesn't need to change
-2025-06-03 15:57:57,740 - INFO - Received message on topic PoliTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Cooler: {"bn": "PoliTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Cooler", "e": [{"n": "Temperature", "u": "Cel", "t": 1748959077.2525218, "v": false}]}
-2025-06-03 15:57:57,740 - INFO - Status of [d0676e7b - Cooler] doesn't need to change
-2025-06-03 15:58:04,782 - INFO - Received message on topic PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan: {"bn": "PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1748959084.395763, "v": false}]}
-2025-06-03 15:58:04,798 - INFO - Status of [7e2e63ef - Exhaust_Fan] doesn't need to change
+2025-06-03 16:35:19,235 - INFO - Actuator:6506c05b57484d3289 Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-03 16:35:19,334 - INFO - Actuator:59441aafcc5c49ab8f Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-03 16:35:19,443 - INFO - Actuator:7904dbfe2f8c4e27bd Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-03 16:35:19,536 - INFO - Actuator:3d86d0deaa5f448ca7 Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-03 16:35:19,650 - INFO - Actuator:dd58e4f86fad481e84 Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-03 16:35:19,760 - INFO - Actuator:514ba5e886af4c75b6 Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-03 16:35:19,874 - INFO - Actuator:d1fadc9edcb5498c9f Connected to mqtt.eclipseprojects.io with result code: 0 

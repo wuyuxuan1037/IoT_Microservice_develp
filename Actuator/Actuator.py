@@ -35,7 +35,7 @@ class Actuator (MyMQTT):
         super().mySubscribe(self.topic)
         
         self.BOT_TOKEN = '7312600355:AAHOD25LLkWUX-kWxsBbpSI7Zyk38bqOn6E'
-        self.CHAT_ID = '6565978127'
+        self.CHAT_ID = [6565978127, 6449847177]
         self.bot = telebot.TeleBot(self.BOT_TOKEN)
     
         
@@ -83,14 +83,17 @@ class Actuator (MyMQTT):
                 f"Location: {self.deviceLocation}\n"
                 f"Current Status: {'ON' if self.status else 'OFF'}\n"
             )
-            try:
-                self.bot.send_message(self.CHAT_ID, message)
-                logger.info(f"Info has pushed into Telegram: {message}")
-            except Exception as e:
-                logger.error(f"Info has failed to push into Telegram: {e}")
+            self.notify_all_users(message)
         else:
             logger.info(f"Status of [{self.deviceID} - {self.deviceType}] doesn't need to change")
-            
+    
+    #push message to user        
+    def notify_all_users(self,message_text):
+        for chat_id in self.CHAT_ID:
+            try:
+                self.bot.send_message(chat_id, message_text)
+            except Exception as e:
+                logger.exception(f"Failed to send to {chat_id}: {e}")
         
     def on_connect (self, paho_mqtt, userdata,flag, rc):
         logger.info(f'Actuator:{self.clientID} Connected to {self.broker} with result code: {rc} ')

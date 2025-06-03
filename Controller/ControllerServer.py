@@ -32,7 +32,7 @@ class ControllerServer:
             self.registered_controllers.append(controllerObject)
             
         self.dashboardData = []
-        self.threading = threading.Thread(target = self.run)
+        self.threading = threading.Thread(target = self.run, daemon = True)
         self.threading.start()
         
     def run(self):

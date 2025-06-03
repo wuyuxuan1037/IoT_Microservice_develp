@@ -11,8 +11,8 @@ from Util.Utility import PathUtils, FileUtils, Utility, Log
 from Util import CORS
 from Sensor.Sensor import Sensor
 
-Log.setup_loggers('sensor')
-logger = logging.getLogger('sensor')
+Log.setup_loggers('sensorServer')
+logger = logging.getLogger('sensorServer')
 
 class SensorServer:
     
@@ -35,6 +35,7 @@ class SensorServer:
     @cherrypy.tools.json_out()
     def getSensorDevice(self):
         sensorsList = FileUtils.load_config(os.path.join(PathUtils.project_path(),'config','cataLog.json'))["sensor_list"]
+        logger.info(f"getSensorDevice: [{sensorsList}]")
         return sensorsList
     
     #add a new sensor device
@@ -78,6 +79,8 @@ class SensorServer:
         #save the file
         with open(os.path.join(PathUtils.project_path(),'config','cataLog.json'), 'w', encoding='utf-8') as f:
             json.dump(new_config, f, indent=4)
+            
+        logger.info(f"addSensorDevice: {newSensor}")
         
         return { "status": "success", "message": "Device added successfully." }
     
@@ -105,8 +108,10 @@ class SensorServer:
             
         #save the file
         with open(os.path.join(PathUtils.project_path(),'config','cataLog.json'), 'w', encoding='utf-8') as f:
-            json.dump(sensorList, f, indent=4)        
+            json.dump(sensorList, f, indent=4)      
         
+        logger.info(f"deleteSensorDevice: {deviceID}")
+          
         return { "status": "success", "message": "Device deleted successfully." }
     
     #update the status of the sensor
@@ -141,6 +146,8 @@ class SensorServer:
         #save the file
         with open(os.path.join(PathUtils.project_path(),'config','cataLog.json'), 'w', encoding='utf-8') as f:
             json.dump(sensorList, f, indent=4) 
+            
+        logger.info(f"updateSensorStatus: [{deviceList}] INTO [{targetStatus}]")
         
         return { "status": "success", "message": "Status updated successfully." }
 
@@ -151,8 +158,6 @@ class SensorServer:
         return 'Sensor server is closed successfully'
     
 if __name__ == '__main__':
-    
-    
     
     cherrypy.config.update({
         'server.socket_host': '127.0.0.1',

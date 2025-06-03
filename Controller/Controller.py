@@ -8,9 +8,10 @@ if project_root not in sys.path:
     sys.path.insert(0, project_root)
 
 from MQTT.MyMQTT import MyMQTT
-from Util.Utility import FileUtils
+from Util.Utility import FileUtils,Log
 
 import logging
+Log.setup_loggers('controller')
 logger = logging.getLogger('controller')
 
 class Controller (MyMQTT):

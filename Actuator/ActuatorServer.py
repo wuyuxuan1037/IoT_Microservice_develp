@@ -13,8 +13,8 @@ from Util import CORS
 from Actuator.Actuator import Actuator
 
 import logging
-Log.setup_loggers('actuator')
-logger = logging.getLogger('actuator')
+Log.setup_loggers('actuatorServer')
+logger = logging.getLogger('actuatorServer')
 
 class ActuatorServer:
     
@@ -34,7 +34,7 @@ class ActuatorServer:
     @cherrypy.tools.json_out()
     def getActuatorDevice(self):
         actuatorList = FileUtils.load_config(os.path.join(PathUtils.project_path(),'config','cataLog.json'))["actuator_list"]
-        logger.info(f'Print the actuator lists.')
+        logger.info(f'getActuatorDevice: {actuatorList}')
         return actuatorList
     
     #add a new actuator device
@@ -87,6 +87,8 @@ class ActuatorServer:
         #save the file
         with open(os.path.join(PathUtils.project_path(),'config','cataLog.json'), 'w', encoding='utf-8') as f:
             json.dump(new_config, f, indent=4)
+            
+        logger.info(f"addActuatorDevice: {newActuator}")
         
         return { "status": "success", "message": "Device added successfully." }
     
@@ -119,6 +121,8 @@ class ActuatorServer:
         with open(os.path.join(PathUtils.project_path(),'config','cataLog.json'), 'w', encoding='utf-8') as f:
             json.dump(actuatorList, f, indent=4)        
         
+        logger.info(f"deleteActuatorDevice: {deviceID}")
+
         return { "status": "success", "message": "Device deleted successfully." }
     
     #update the status of the actuator

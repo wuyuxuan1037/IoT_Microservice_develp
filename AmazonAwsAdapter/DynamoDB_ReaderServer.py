@@ -3,6 +3,19 @@ from DynamoDB_Reader import DynamoDBReader
 import json
 import decimal
 
+import os, sys
+
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+if project_root not in sys.path:
+    sys.path.insert(0, project_root)
+
+from Util.Utility import Log
+from Util import CORS
+
+import logging
+Log.setup_loggers('DB_readerServer')
+logger = logging.getLogger('DB_readerServer')
+
 def convert_decimal(obj):
     if isinstance(obj, list):
         return [convert_decimal(i) for i in obj]
@@ -21,11 +34,13 @@ class DynamoDBReaderServer:
     @cherrypy.tools.json_out()
     def getLatestData(self, deviceID=None):
         if not deviceID:
+            logger.error("error: deviceID is required")
             return {"error": "deviceID is required"}
         data = self.reader.get_latest_data(deviceID)
         if data:
             return convert_decimal(data)
         else:
+            logger.error (f"error: No data found for {deviceID}")
             return {"error": f"No data found for {deviceID}"}
 
     @cherrypy.expose
@@ -41,7 +56,9 @@ class DynamoDBReaderServer:
         if data:
             return convert_decimal(data)
         else:
+            logger.error (f"error: No history data found for {deviceID}")
             return {"error": f"No history data found for {deviceID}"}
+    
 
     @cherrypy.expose
     @cherrypy.tools.json_out()
@@ -58,22 +75,37 @@ class DynamoDBReaderServer:
                     result.append(data)
             return convert_decimal(result)
         except Exception as e:
-            print(f"Error in getAllLatestData: {str(e)}")  # 添加服务器端日志
+            logger.exception(f"Error in getAllLatestData: {str(e)}")
             return {"status": "error", "message": str(e)}
+        
+        
+# 获取所有类型历史数据
+    @cherrypy.expose
+    @cherrypy.tools.json_out()
+    def getAllHistoryData(self, limit=500):
+        try:
+            limit = int(limit)
+        except Exception:
+            limit = 500
+        data = self.reader.get_all_history_data(limit)
+        if data:
+            return convert_decimal(data)
+        else:
+            logger.error (f"error: No history data found")
+            return {"error": "No history data found"}
 
 if __name__ == '__main__':
+    
     cherrypy.config.update({
-        'server.socket_host': '127.0.0.1',
-        'server.socket_port': 5002,
-        # 添加 CORS 支持
-        'tools.CORS.on': True
+    'server.socket_host': '127.0.0.1',
+    'server.socket_port': 8084,
+    'tools.sessions.on': False
     })
     
-    # 配置 CORS
-    def CORS():
-        cherrypy.response.headers["Access-Control-Allow-Origin"] = "*"
-        cherrypy.response.headers["Access-Control-Allow-Methods"] = "GET, POST, PUT, DELETE, OPTIONS"
-        cherrypy.response.headers["Access-Control-Allow-Headers"] = "Content-Type, Authorization"
+    config = {
+            '/': {
+                'tools.CORS.on': True,
+            }
+    }
     
-    cherrypy.tools.CORS = cherrypy.Tool('before_finalize', CORS)
-    cherrypy.quickstart(DynamoDBReaderServer())
+    cherrypy.quickstart(DynamoDBReaderServer(), '/DBreader', config)

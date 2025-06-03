@@ -4,6 +4,18 @@ from botocore.exceptions import ClientError
 import logging
 import time
 
+import os, sys
+
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+if project_root not in sys.path:
+    sys.path.insert(0, project_root)
+
+from Util.Utility import Log
+
+import logging
+Log.setup_loggers('DB_writer')
+logger = logging.getLogger('DB_writer')
+
 class DynamoDBWriter:
     def __init__(self, table_name='IoTSensorData', region_name='eu-north-1'):
         self.dynamodb = boto3.resource('dynamodb', region_name=region_name)

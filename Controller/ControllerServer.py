@@ -14,8 +14,8 @@ from Util import CORS
 from Controller.Controller import Controller
 
 import logging
-Log.setup_loggers('actuator')
-logger = logging.getLogger('controller')
+Log.setup_loggers('controllerServer')
+logger = logging.getLogger('controllerServer')
 
 class ControllerServer:
     
@@ -37,6 +37,8 @@ class ControllerServer:
     @cherrypy.tools.json_out()
     def getControllerThreshold(self):
         controllerList = FileUtils.load_config(os.path.join(PathUtils.project_path(),'config','cataLog.json'))["controller_list"]
+        logger.info(f"getControllerThreshold: [{controllerList}]")
+
         return controllerList
     
     #update the MAX and MIN of threshold
@@ -72,6 +74,8 @@ class ControllerServer:
         #save the file
         with open(os.path.join(PathUtils.project_path(),'config','cataLog.json'), 'w', encoding='utf-8') as f:
             json.dump(controllerList, f, indent=4) 
+        
+        logger.info(f"updateControllerThreshold: {deviceType} - {thresholdMax} - {thresholdMin}")
             
         return { "status": "success", "message": "Threshold modified successfully." }
     
@@ -84,6 +88,9 @@ class ControllerServer:
         for controller in self.registered_controllers:
             dict[f"{controller.deviceType}"] = math.floor(controller.averageValue)
         self.dashboardData.append(dict)
+        
+        logger.info(f"getControllerAverageValue: {dict}")
+        
         return self.dashboardData
     
     #This server for environmental condition of the TeleBot
@@ -94,6 +101,9 @@ class ControllerServer:
         dict["Time"] = datetime.fromtimestamp(time.time()).strftime("%Y-%m-%d %H:%M:%S")
         for controller in self.registered_controllers:
             dict[f"{controller.deviceType}"] = f'{math.floor(controller.averageValue)}' + f' {controller.unit}'
+            
+        logger.info(f"getControllerAverageValue2TeleBot: {dict}")
+        
         return dict
     
     @cherrypy.expose

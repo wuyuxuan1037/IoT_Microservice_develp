@@ -4,12 +4,24 @@ import json
 from decimal import Decimal
 import time
 
+import os, sys
+
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+if project_root not in sys.path:
+    sys.path.insert(0, project_root)
+
+from Util.Utility import Log
+from Util import CORS
+
+import logging
+Log.setup_loggers('DB_writerServer')
+logger = logging.getLogger('DB_writerServer')
+
 class DynamoDBWriterServer:
     
     def __init__(self, client_id, topic):
         self.client = MyMQTT(client_id, self)
         self.client.start()
-        time.sleep(1)
         self.client.mySubscribe(topic)
         self.writer = DynamoDBWriter()
 
@@ -31,9 +43,11 @@ class DynamoDBWriterServer:
                 unit=unit,
                 topic=topic
             )
-            print(f"Written to DynamoDB: {data}")
+            logger.info(f"Written to DynamoDB: {data}")
+
         except Exception as e:
-            print(f"Error processing message: {e}")
+            logger.exception(f"Error processing message: {e}")
+
 
 if __name__ == "__main__":
     client_id = "DynamoDBWriter"

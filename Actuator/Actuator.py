@@ -11,9 +11,10 @@ if project_root not in sys.path:
     sys.path.insert(0, project_root)
 
 from MQTT.MyMQTT import MyMQTT
-from Util.Utility import FileUtils, PathUtils
+from Util.Utility import FileUtils, PathUtils,Log
 
 import logging
+Log.setup_loggers('actuator')
 logger = logging.getLogger('actuator')
 
 class Actuator (MyMQTT):

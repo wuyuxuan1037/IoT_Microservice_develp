@@ -1,5 +1,3 @@
-from MQTT.MyMQTT import MyMQTT
-from DynamoDBWriter import DynamoDBWriter
 import json
 from decimal import Decimal
 import time
@@ -9,8 +7,10 @@ import os, sys
 project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 if project_root not in sys.path:
     sys.path.insert(0, project_root)
-
+    
 from Util.Utility import Log
+from MQTT.MyMQTT import MyMQTT
+from AmazonAwsAdapter.DynamoDBWriter import DynamoDBWriter
 from Util import CORS
 
 import logging
@@ -46,12 +46,12 @@ class DynamoDBWriterServer:
             logger.info(f"Written to DynamoDB: {data}")
 
         except Exception as e:
-            logger.exception(f"Error processing message: {e}")
+            logger.exception(f"Error:Written to DynamoDB. Processing message: {e}")
 
 
 if __name__ == "__main__":
     client_id = "DynamoDBWriter"
-    topic = "TO_IotSmartFarm/#"
+    topic = "PoliTO_IotSmartFarm/Lingotto/#"
     server = DynamoDBWriterServer(client_id, topic)
     while True:
         time.sleep(1)

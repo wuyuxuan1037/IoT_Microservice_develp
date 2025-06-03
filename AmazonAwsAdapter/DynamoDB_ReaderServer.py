@@ -90,6 +90,12 @@ class DynamoDBReaderServer:
         else:
             logger.error (f"error: No history data found")
             return {"error": "No history data found"}
+        
+    @cherrypy.expose
+    def shutdown(self):
+        logger.info('DBreader server is closed successfully')
+        cherrypy.engine.exit()
+        return 'DBreader server is closed successfully'
 
 if __name__ == '__main__':
     

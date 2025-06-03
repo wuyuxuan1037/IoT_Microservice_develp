@@ -140,7 +140,7 @@
             "subscribeTopic": "PoliTO_IotSmartFarm/Lingotto/+/+/Temperature/+",
             "unit": "Cel",
             "thresholdMax": 45,
-            "thresholdMin": 15
+            "thresholdMin": 13
         },
         {
             "deviceType": "Lightness",
@@ -204,7 +204,7 @@
             "deviceType": "Heater",
             "deviceLocation": "Lingotto/Area_A/Position_02",
             "topic": "PoliTO_IotSmartFarm/Lingotto/Area_A/Position_02/+/+/Heater",
-            "lastStatusUpdate": "2025-06-03 11:20:17",
+            "lastStatusUpdate": "2025-06-03 15:30:55",
             "status": false
         }
     ]

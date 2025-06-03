@@ -178,7 +178,7 @@ class MyTelegramBot:
                 return "No sensor registered."
             lines = []
             for s in sensors:
-                line = f"ID: {s['deviceID']}\nType: {s['deviceType']}\nLocation: {s['deviceLocation']}\nUnit: {s.get('unit', '')}\nStatus: {'ON' if s.get('status', True) else 'OFF'}\n"
+                line = f"ID: {s['deviceID']}\nType: {s['deviceType']}\nLocation: {s['deviceLocation']}\nFrequency: {s.get('info_frequency', ' s')}\nUnit: {s.get('unit', '')}\nStatus: {'ON' if s.get('status', True) else 'OFF'}\n"
                 lines.append(line)
             return "\n".join(lines)
         except Exception as e:

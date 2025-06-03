@@ -79,8 +79,8 @@ class Actuator (MyMQTT):
                 f'Actuator Status Changed :\n\n'
                 f"DeviceID: {self.deviceID}\n"
                 f"Device Type: {self.deviceType}\n"
-                f"Time: {self.lastStatusUpdate}\n"
                 f"Location: {self.deviceLocation}\n"
+                f"Time: {self.lastStatusUpdate}\n"
                 f"Current Status: {'ON' if self.status else 'OFF'}\n"
             )
             self.notify_all_users(message)

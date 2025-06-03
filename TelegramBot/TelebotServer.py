@@ -9,6 +9,7 @@ if project_root not in sys.path:
 
 import logging
 from Util.Utility import Log
+Log.setup_loggers('telebot')
 logger = logging.getLogger('telebot')
 
 # TeleBot: SmartAgrBot
@@ -427,7 +428,5 @@ class MyTelegramBot:
         self.bot.polling()
     
 if __name__ == '__main__':
-    
-    Log.setup_loggers('telebot')
 
     MyTelegramBot().run()

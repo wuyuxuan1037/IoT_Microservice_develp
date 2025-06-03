@@ -14,6 +14,7 @@ from Util import CORS
 from Controller.Controller import Controller
 
 import logging
+Log.setup_loggers('actuator')
 logger = logging.getLogger('controller')
 
 class ControllerServer:
@@ -102,8 +103,6 @@ class ControllerServer:
         return "Controller server is closed successfully"
     
 if __name__ == '__main__':
-    
-    Log.setup_loggers('controller')
     
     cherrypy.config.update({
         'server.socket_host': '127.0.0.1',

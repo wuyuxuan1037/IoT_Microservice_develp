@@ -10,6 +10,8 @@ if project_root not in sys.path:
 from Util.Utility import PathUtils, FileUtils, Utility, Log
 from Util import CORS
 from Sensor.Sensor import Sensor
+
+Log.setup_loggers('sensor')
 logger = logging.getLogger('sensor')
 
 class SensorServer:
@@ -150,7 +152,7 @@ class SensorServer:
     
 if __name__ == '__main__':
     
-    Log.setup_loggers('sensor')
+    
     
     cherrypy.config.update({
         'server.socket_host': '127.0.0.1',

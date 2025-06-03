@@ -72,15 +72,16 @@ class Actuator (MyMQTT):
 
             logger.info(f'[{self.lastStatusUpdate}] successfully WRITE the status of [{self.deviceID}] into [{self.status}]')
             
+
             #push information to my TeleBot
-            message = {
+            message = (
                 f'Actuator Status Changed :\n\n'
                 f"DeviceID: {self.deviceID}\n"
                 f"Device Type: {self.deviceType}\n"
+                f"Time: {self.lastStatusUpdate}\n"
                 f"Location: {self.deviceLocation}\n"
-                f"Status: {'ON' if self.status else 'OFF'}\n"
-                f"Time: {self.lastStatusUpdate}"
-            }
+                f"Current Status: {'ON' if self.status else 'OFF'}\n"
+            )
             try:
                 self.bot.send_message(self.CHAT_ID, message)
                 logger.info(f"Info has pushed into Telegram: {message}")

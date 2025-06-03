@@ -8,6 +8,7 @@ if project_root not in sys.path:
 import logging
 from Util import CORS
 from Util.Utility import Log
+Log.setup_loggers('http')
 logger = logging.getLogger('http')
 
 class HttpServer:
@@ -31,8 +32,6 @@ class HttpServer:
         
 
 if __name__ == '__main__':
-    
-    Log.setup_loggers('http')
     
     cherrypy.config.update({
         'server.socket_host': '127.0.0.1',

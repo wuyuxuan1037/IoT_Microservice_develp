@@ -125,29 +125,29 @@
             "deviceType": "Soil_Moisture",
             "subscribeTopic": "PoliTO_IotSmartFarm/Lingotto/+/+/Soil_Moisture/+",
             "unit": "%",
-            "thresholdMax": 70,
-            "thresholdMin": 35
+            "thresholdMax": 80,
+            "thresholdMin": 10
         },
         {
             "deviceType": "CO2_Concentration",
             "subscribeTopic": "PoliTO_IotSmartFarm/Lingotto/+/+/CO2_Concentration/+",
             "unit": "ppm",
-            "thresholdMax": 800,
-            "thresholdMin": 450
+            "thresholdMax": 1000,
+            "thresholdMin": 400
         },
         {
             "deviceType": "Temperature",
             "subscribeTopic": "PoliTO_IotSmartFarm/Lingotto/+/+/Temperature/+",
             "unit": "Cel",
-            "thresholdMax": 40,
-            "thresholdMin": 25
+            "thresholdMax": 45,
+            "thresholdMin": 15
         },
         {
             "deviceType": "Lightness",
             "subscribeTopic": "PoliTO_IotSmartFarm/Lingotto/+/+/Lightness/+",
             "unit": "lx",
-            "thresholdMax": 800,
-            "thresholdMin": 300
+            "thresholdMax": 1000,
+            "thresholdMin": 10
         }
     ],
     "actuator_list": [
@@ -156,7 +156,7 @@
             "deviceType": "Drip_Irrigation_Pipe",
             "topic": "PoliTO_IotSmartFarm/Lingotto/Area_D/Position_01/+/+/Drip_Irrigation_Pipe",
             "deviceLocation": "Lingotto/Area_D/Position_01",
-            "lastStatusUpdate": "2025-06-03 00:02:26",
+            "lastStatusUpdate": "2025-06-03 11:01:56",
             "status": false
         },
         {
@@ -164,7 +164,7 @@
             "deviceType": "Exhaust_Fan",
             "topic": "PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/+/+/Exhaust_Fan",
             "deviceLocation": "Lingotto/Area_B/Position_03",
-            "lastStatusUpdate": "2025-06-03 00:09:05",
+            "lastStatusUpdate": "2025-06-03 11:03:05",
             "status": false
         },
         {
@@ -172,7 +172,7 @@
             "deviceType": "Carbon_Dioxide_Generator",
             "deviceLocation": "Lingotto/Area_B/Position_06",
             "topic": "PoliTO_IotSmartFarm/Lingotto/Area_B/Position_06/+/+/Carbon_Dioxide_Generator",
-            "lastStatusUpdate": "2025-06-02 23:49:18",
+            "lastStatusUpdate": "2025-06-03 11:22:46",
             "status": false
         },
         {
@@ -180,7 +180,7 @@
             "deviceType": "Sunshade_Net",
             "deviceLocation": "Lingotto/Area_B/Position_01",
             "topic": "PoliTO_IotSmartFarm/Lingotto/Area_B/Position_01/+/+/Sunshade_Net",
-            "lastStatusUpdate": "2025-06-03 00:02:43",
+            "lastStatusUpdate": "2025-06-03 11:20:30",
             "status": false
         },
         {
@@ -188,7 +188,7 @@
             "deviceType": "LED_Light",
             "deviceLocation": "Lingotto/Area_B/Position_03",
             "topic": "PoliTO_IotSmartFarm/Lingotto/Area_B/Position_03/+/+/LED_Light",
-            "lastStatusUpdate": "2025-06-03 00:01:16",
+            "lastStatusUpdate": "2025-06-03 11:48:20",
             "status": false
         },
         {
@@ -196,7 +196,7 @@
             "deviceType": "Cooler",
             "deviceLocation": "Lingotto/Area_A/Position_01",
             "topic": "PoliTO_IotSmartFarm/Lingotto/Area_A/Position_01/+/+/Cooler",
-            "lastStatusUpdate": "2025-06-02 23:38:23",
+            "lastStatusUpdate": "2025-06-03 11:48:40",
             "status": false
         },
         {
@@ -204,8 +204,8 @@
             "deviceType": "Heater",
             "deviceLocation": "Lingotto/Area_A/Position_02",
             "topic": "PoliTO_IotSmartFarm/Lingotto/Area_A/Position_02/+/+/Heater",
-            "lastStatusUpdate": "2025-06-03 00:08:35",
-            "status": true
+            "lastStatusUpdate": "2025-06-03 11:20:17",
+            "status": false
         }
     ]
 }

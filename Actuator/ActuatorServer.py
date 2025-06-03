@@ -13,6 +13,7 @@ from Util import CORS
 from Actuator.Actuator import Actuator
 
 import logging
+Log.setup_loggers('actuator')
 logger = logging.getLogger('actuator')
 
 class ActuatorServer:
@@ -142,12 +143,8 @@ class ActuatorServer:
         for deviceID in deviceList:
             for actuator in self.registered_actuators:
                 if deviceID == actuator.deviceID:
-                    if targetStatus:
-                        actuator.status=True
-                        actuator.lastStatusUpdate=formatted_time
-                        actuator.start()
-                    else:
-                        actuator.stop()
+                    actuator.status=targetStatus
+                    actuator.lastStatusUpdate=formatted_time
                     break
         logger.info(f'Change the registered_actuators [{deviceList}] to status [{targetStatus}]')
         #update the actuators status of the cataLog
@@ -176,8 +173,6 @@ class ActuatorServer:
         return "Actuator server is closed successfully"
     
 if __name__ == '__main__':
-    
-    Log.setup_loggers('actuator')
     
     cherrypy.config.update({
         'server.socket_host': '127.0.0.1',

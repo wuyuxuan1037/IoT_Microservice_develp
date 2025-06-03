@@ -178,7 +178,7 @@ class MyTelegramBot:
                 return "No sensor registered."
             lines = []
             for s in sensors:
-                line = f"ID: {s['deviceID']}\nType: {s['deviceType']}\nLocation: {s['deviceLocation']}\nFrequency: {s.get('info_frequency', ' s')}\nUnit: {s.get('unit', '')}\nStatus: {'ON' if s.get('status', True) else 'OFF'}\n"
+                line = f"ID: {s['deviceID']}\nType: {s['deviceType']}\nLocation: {s['deviceLocation']}\nFrequency(unit: s): {s['info_frequency']}\nUnit: {s.get('unit', '')}\nStatus: {'ON' if s.get('status', True) else 'OFF'}\n"
                 lines.append(line)
             return "\n".join(lines)
         except Exception as e:
@@ -210,7 +210,7 @@ class MyTelegramBot:
         chat_id = message.chat.id
         actuator_type = message.text.strip()
         if actuator_type not in ['Cooler', 'Heater', 'Sunshade_Net', 'LED_Light', 'Drip_Irrigation_Pipe', 'Carbon_Dioxide_Generator', 'Exhaust_Fan']:
-            self.bot.send_message(chat_id, "❌ Wrong actuator type. Please try again.")
+            self.bot.send_message(chat_id, "Wrong actuator type. Please try again.")
             return
 
         self.add_sensor_data[chat_id]['type'] = actuator_type

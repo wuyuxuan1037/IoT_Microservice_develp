@@ -18,11 +18,14 @@ import logging
 Log.setup_loggers('DB_writerServer')
 logger = logging.getLogger('DB_writerServer')
 
+my_YOUR_SECRET_KEY = 'UIR+Q8Kn23xfBX0yauHuT99e2ipt3G+jf2umhDz/'
+my_ACCESS_KEY = 'AKIA4OEY2SAUY4JKU3GD'
+
 class DynamoDBWriter(MyMQTT):
     def __init__(self, table_name='IoTSensorData', region_name='eu-north-1'):
         self.dynamodb = boto3.resource('dynamodb', region_name=region_name,
-                                       aws_access_key_id='AKIA4OEY2SAUY4JKU3GD',
-                                       aws_secret_access_key='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'
+                                       aws_access_key_id= my_ACCESS_KEY,
+                                       aws_secret_access_key= my_YOUR_SECRET_KEY
                                        )
         self.table = self.dynamodb.Table(table_name)
         self.clientMqtt = super().__init__(FileUtils.random_uuid_create())

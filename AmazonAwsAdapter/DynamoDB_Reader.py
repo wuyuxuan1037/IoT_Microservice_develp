@@ -14,13 +14,14 @@ import logging
 Log.setup_loggers('DB_reader')
 logger = logging.getLogger('DB_reader')
 
-
+my_YOUR_SECRET_KEY = 'UIR+Q8Kn23xfBX0yauHuT99e2ipt3G+jf2umhDz/'
+my_ACCESS_KEY = 'AKIA4OEY2SAUY4JKU3GD'
 class DynamoDBReader:
     def __init__(self, table_name='IoTSensorData'):
         self.dynamodb = boto3.resource('dynamodb',
                                         region_name='eu-north-1',
-                                         aws_access_key_id='AKIA4OEY2SAUY4JKU3GD',
-                                       aws_secret_access_key='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')
+                                         aws_access_key_id=my_ACCESS_KEY,
+                                       aws_secret_access_key=my_YOUR_SECRET_KEY)
         self.table = self.dynamodb.Table(table_name)
 
     def get_latest_data(self, deviceID):

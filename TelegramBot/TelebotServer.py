@@ -24,13 +24,6 @@ class MyTelegramBot:
         self._register_handlers()
         self.running = False
         self.bot_thread = None
-        self.config = { 
-            '/': {
-                'tools.sessions.on': True,
-                # 'tools.staticdir.root': os.path.abspath(os.getcwd()),
-                'tools.CORS.on': True,
-            }
-    }
 
     def create_home_keyboard(self):
         """CREATE HOME KEYBOARD"""

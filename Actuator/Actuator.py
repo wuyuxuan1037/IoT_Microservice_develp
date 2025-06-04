@@ -19,7 +19,8 @@ logger = logging.getLogger('actuator')
 
 class Actuator (MyMQTT):
     
-    def __init__(self,deviceID, deviceType, deviceLocation, topic, lastStatusUpdate, status):
+    def __init__(self,deviceID, deviceType, deviceLocation, topic, 
+                lastStatusUpdate, status):
         
         #attribution
         self.deviceID = deviceID 

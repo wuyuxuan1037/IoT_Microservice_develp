@@ -16,7 +16,8 @@ logger = logging.getLogger('controller')
 
 class Controller (MyMQTT):
     
-    def __init__(self, deviceType, subscribeTopic, thresholdMax, thresholdMin, unit, infoFrequency=1):
+    def __init__(self, deviceType, subscribeTopic, thresholdMax, 
+                thresholdMin, unit, infoFrequency=1):
         
         #attribution
         self.deviceType = deviceType

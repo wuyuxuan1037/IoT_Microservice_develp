@@ -63,7 +63,7 @@ class MyTelegramBot:
             chat_id = message.chat.id
             keyboard = self.create_home_keyboard() # create keyboard
             self.bot.send_message(chat_id, "Main Menu - Please Select an Option:", 
-                                  reply_markup=keyboard) # add keyboard
+                                reply_markup=keyboard) # add keyboard
     
     # handle button click events in the call back  
     def _handle_callback_query(self, call):  
@@ -86,9 +86,9 @@ class MyTelegramBot:
         elif callback_data == "control_devices":
             device_keyboard = self.on_device_keyboard()
             self.bot.edit_message_text(chat_id=chat_id,
-                                         message_id=message_id,
-                                         text="Please select an option:", # device菜单文本
-                                         reply_markup=device_keyboard) # 跳转至device菜单键盘
+                                        message_id=message_id,
+                                        text="Please select an option:", # device菜单文本
+                                        reply_markup=device_keyboard) # 跳转至device菜单键盘
         elif callback_data == "view_actuator_status":
             actuator_list_text = self.get_actuator_list()
             self.bot.send_message(chat_id, f"Registered Actuators:\n{actuator_list_text}")

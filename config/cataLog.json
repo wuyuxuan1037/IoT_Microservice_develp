@@ -139,8 +139,8 @@
             "deviceType": "Temperature",
             "subscribeTopic": "Torino_IotSmartFarm/Lingotto/+/+/Temperature/+",
             "unit": "Cel",
-            "thresholdMax": 44,
-            "thresholdMin": 14
+            "thresholdMax": 43,
+            "thresholdMin": 15
         },
         {
             "deviceType": "Light_Intensity",
@@ -156,7 +156,7 @@
             "deviceType": "Drip_Irrigation_Pipe",
             "topic": "Torino_IotSmartFarm/Lingotto/Area_D/Position_01/+/+/Drip_Irrigation_Pipe",
             "deviceLocation": "Lingotto/Area_D/Position_01",
-            "lastStatusUpdate": "2025-06-04 12:05:08",
+            "lastStatusUpdate": "2025-06-04 18:09:04",
             "status": false
         },
         {
@@ -164,7 +164,7 @@
             "deviceType": "Exhaust_Fan",
             "topic": "Torino_IotSmartFarm/Lingotto/Area_B/Position_03/+/+/Exhaust_Fan",
             "deviceLocation": "Lingotto/Area_B/Position_03",
-            "lastStatusUpdate": "2025-06-04 12:05:08",
+            "lastStatusUpdate": "2025-06-04 18:08:50",
             "status": false
         },
         {
@@ -172,7 +172,7 @@
             "deviceType": "Carbon_Dioxide_Generator",
             "deviceLocation": "Lingotto/Area_B/Position_06",
             "topic": "Torino_IotSmartFarm/Lingotto/Area_B/Position_06/+/+/Carbon_Dioxide_Generator",
-            "lastStatusUpdate": "2025-06-04 12:06:43",
+            "lastStatusUpdate": "2025-06-04 18:09:00",
             "status": false
         },
         {
@@ -180,7 +180,7 @@
             "deviceType": "Sunshade_Net",
             "deviceLocation": "Lingotto/Area_B/Position_01",
             "topic": "Torino_IotSmartFarm/Lingotto/Area_B/Position_01/+/+/Sunshade_Net",
-            "lastStatusUpdate": "2025-06-04 12:05:08",
+            "lastStatusUpdate": "2025-06-04 18:08:54",
             "status": false
         },
         {
@@ -188,7 +188,7 @@
             "deviceType": "LED_Light",
             "deviceLocation": "Lingotto/Area_B/Position_03",
             "topic": "Torino_IotSmartFarm/Lingotto/Area_B/Position_03/+/+/LED_Light",
-            "lastStatusUpdate": "2025-06-04 12:05:08",
+            "lastStatusUpdate": "2025-06-04 18:08:58",
             "status": false
         },
         {
@@ -196,7 +196,7 @@
             "deviceType": "Cooler",
             "deviceLocation": "Lingotto/Area_A/Position_01",
             "topic": "Torino_IotSmartFarm/Lingotto/Area_A/Position_01/+/+/Cooler",
-            "lastStatusUpdate": "2025-06-04 12:05:08",
+            "lastStatusUpdate": "2025-06-04 18:09:02",
             "status": false
         },
         {
@@ -204,7 +204,7 @@
             "deviceType": "Heater",
             "deviceLocation": "Lingotto/Area_A/Position_02",
             "topic": "Torino_IotSmartFarm/Lingotto/Area_A/Position_02/+/+/Heater",
-            "lastStatusUpdate": "2025-06-04 12:05:08",
+            "lastStatusUpdate": "2025-06-04 18:08:54",
             "status": false
         }
     ],

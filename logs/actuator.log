@@ -1,69 +1,99 @@
-2025-06-04 14:03:00,901 - INFO - Actuator:75f0cabf242944d8ad Connected to mqtt.eclipseprojects.io with result code: 0 
-2025-06-04 14:03:01,000 - INFO - Actuator:b0d8631aad884960b8 Connected to mqtt.eclipseprojects.io with result code: 0 
-2025-06-04 14:03:01,100 - INFO - Actuator:11f5ffa459e44649a9 Connected to mqtt.eclipseprojects.io with result code: 0 
-2025-06-04 14:03:01,201 - INFO - Actuator:c584bfea925142b98a Connected to mqtt.eclipseprojects.io with result code: 0 
-2025-06-04 14:03:01,296 - INFO - Actuator:67f4b2c1c51c4312b8 Connected to mqtt.eclipseprojects.io with result code: 0 
-2025-06-04 14:03:01,394 - INFO - Actuator:8b1b4abbbe7f401e82 Connected to mqtt.eclipseprojects.io with result code: 0 
-2025-06-04 14:03:01,515 - INFO - Actuator:9cb6c30f0a01405780 Connected to mqtt.eclipseprojects.io with result code: 0 
-2025-06-04 14:03:50,701 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light", "e": [{"n": "LED_Light", "u": "lx", "t": 1749038630.1330993, "v": false}]}
-2025-06-04 14:03:50,701 - INFO - Status of [b6c46f2c - LED_Light] doesn't need to change
-2025-06-04 14:03:50,712 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Cooler: {"bn": "Torino_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Cooler", "e": [{"n": "Cooler", "u": "Cel", "t": 1749038630.1340928, "v": false}]}
-2025-06-04 14:03:50,712 - INFO - Status of [d0676e7b - Cooler] doesn't need to change
-2025-06-04 14:03:50,798 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net", "e": [{"n": "Sunshade_Net", "u": "lx", "t": 1749038630.2284389, "v": false}]}
-2025-06-04 14:03:50,798 - INFO - Status of [f89cd694 - Sunshade_Net] doesn't need to change
-2025-06-04 14:03:50,801 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator", "e": [{"n": "Carbon_Dioxide_Generator", "u": "ppm", "t": 1749038630.2315376, "v": false}]}
-2025-06-04 14:03:50,801 - INFO - Status of [baf49b45 - Carbon_Dioxide_Generator] doesn't need to change
-2025-06-04 14:03:50,806 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater: {"bn": "Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater", "e": [{"n": "Heater", "u": "Cel", "t": 1749038630.2315376, "v": false}]}
-2025-06-04 14:03:50,806 - INFO - Status of [fe3a3799 - Heater] doesn't need to change
-2025-06-04 14:03:50,893 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan", "e": [{"n": "Exhaust_Fan", "u": "ppm", "t": 1749038630.3264375, "v": false}]}
-2025-06-04 14:03:50,893 - INFO - Status of [7e2e63ef - Exhaust_Fan] doesn't need to change
-2025-06-04 14:03:50,902 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33/Drip_Irrigation_Pipe: {"bn": "Torino_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33/Drip_Irrigation_Pipe", "e": [{"n": "Drip_Irrigation_Pipe", "u": "%", "t": 1749038630.3300762, "v": false}]}
-2025-06-04 14:03:50,902 - INFO - Status of [a3f7c79f - Drip_Irrigation_Pipe] doesn't need to change
-2025-06-04 14:03:59,434 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan", "e": [{"n": "Exhaust_Fan", "u": "ppm", "t": 1749038639.0537157, "v": false}]}
-2025-06-04 14:03:59,435 - INFO - Status of [7e2e63ef - Exhaust_Fan] doesn't need to change
-2025-06-04 14:04:03,436 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net", "e": [{"n": "Sunshade_Net", "u": "lx", "t": 1749038643.0548449, "v": false}]}
-2025-06-04 14:04:03,436 - INFO - Status of [f89cd694 - Sunshade_Net] doesn't need to change
-2025-06-04 14:04:03,526 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater: {"bn": "Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater", "e": [{"n": "Heater", "u": "Cel", "t": 1749038643.0508373, "v": false}]}
-2025-06-04 14:04:03,526 - INFO - Status of [fe3a3799 - Heater] doesn't need to change
-2025-06-04 14:04:07,517 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light", "e": [{"n": "LED_Light", "u": "lx", "t": 1749038647.0429642, "v": false}]}
-2025-06-04 14:04:07,517 - INFO - Status of [b6c46f2c - LED_Light] doesn't need to change
-2025-06-04 14:04:08,438 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan", "e": [{"n": "Exhaust_Fan", "u": "ppm", "t": 1749038648.0600119, "v": false}]}
-2025-06-04 14:04:08,438 - INFO - Status of [7e2e63ef - Exhaust_Fan] doesn't need to change
-2025-06-04 14:04:09,531 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator", "e": [{"n": "Carbon_Dioxide_Generator", "u": "ppm", "t": 1749038649.0554922, "v": false}]}
-2025-06-04 14:04:09,531 - INFO - Status of [baf49b45 - Carbon_Dioxide_Generator] doesn't need to change
-2025-06-04 14:04:11,424 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Cooler: {"bn": "Torino_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Cooler", "e": [{"n": "Cooler", "u": "Cel", "t": 1749038651.0446296, "v": false}]}
-2025-06-04 14:04:11,425 - INFO - Status of [d0676e7b - Cooler] doesn't need to change
-2025-06-04 14:04:13,473 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33/Drip_Irrigation_Pipe: {"bn": "Torino_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33/Drip_Irrigation_Pipe", "e": [{"n": "Drip_Irrigation_Pipe", "u": "%", "t": 1749038653.0451279, "v": false}]}
-2025-06-04 14:04:13,473 - INFO - Status of [a3f7c79f - Drip_Irrigation_Pipe] doesn't need to change
-2025-06-04 14:04:16,456 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net", "e": [{"n": "Sunshade_Net", "u": "lx", "t": 1749038656.0585933, "v": false}]}
-2025-06-04 14:04:16,456 - INFO - Status of [f89cd694 - Sunshade_Net] doesn't need to change
-2025-06-04 14:04:16,553 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater: {"bn": "Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater", "e": [{"n": "Heater", "u": "Cel", "t": 1749038656.0636544, "v": false}]}
-2025-06-04 14:04:16,554 - INFO - Status of [fe3a3799 - Heater] doesn't need to change
-2025-06-04 14:04:17,453 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan", "e": [{"n": "Exhaust_Fan", "u": "ppm", "t": 1749038657.070192, "v": false}]}
-2025-06-04 14:04:17,454 - INFO - Status of [7e2e63ef - Exhaust_Fan] doesn't need to change
-2025-06-04 14:04:24,529 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light", "e": [{"n": "LED_Light", "u": "lx", "t": 1749038664.0529566, "v": false}]}
-2025-06-04 14:04:24,529 - INFO - Status of [b6c46f2c - LED_Light] doesn't need to change
-2025-06-04 14:04:26,467 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan", "e": [{"n": "Exhaust_Fan", "u": "ppm", "t": 1749038666.081133, "v": false}]}
-2025-06-04 14:04:26,468 - INFO - Status of [7e2e63ef - Exhaust_Fan] doesn't need to change
-2025-06-04 14:04:28,536 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator", "e": [{"n": "Carbon_Dioxide_Generator", "u": "ppm", "t": 1749038668.0626395, "v": false}]}
-2025-06-04 14:04:28,536 - INFO - Status of [baf49b45 - Carbon_Dioxide_Generator] doesn't need to change
-2025-06-04 14:04:29,450 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net", "e": [{"n": "Sunshade_Net", "u": "lx", "t": 1749038669.0682437, "v": false}]}
-2025-06-04 14:04:29,450 - INFO - Status of [f89cd694 - Sunshade_Net] doesn't need to change
-2025-06-04 14:04:29,549 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater: {"bn": "Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater", "e": [{"n": "Heater", "u": "Cel", "t": 1749038669.0703378, "v": false}]}
-2025-06-04 14:04:29,549 - INFO - Status of [fe3a3799 - Heater] doesn't need to change
-2025-06-04 14:04:32,441 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Cooler: {"bn": "Torino_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Cooler", "e": [{"n": "Cooler", "u": "Cel", "t": 1749038672.0589786, "v": false}]}
-2025-06-04 14:04:32,441 - INFO - Status of [d0676e7b - Cooler] doesn't need to change
-2025-06-04 14:04:35,475 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan", "e": [{"n": "Exhaust_Fan", "u": "ppm", "t": 1749038675.0928657, "v": false}]}
-2025-06-04 14:04:35,475 - INFO - Status of [7e2e63ef - Exhaust_Fan] doesn't need to change
-2025-06-04 14:04:36,483 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33/Drip_Irrigation_Pipe: {"bn": "Torino_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33/Drip_Irrigation_Pipe", "e": [{"n": "Drip_Irrigation_Pipe", "u": "%", "t": 1749038676.0575242, "v": false}]}
-2025-06-04 14:04:36,484 - INFO - Status of [a3f7c79f - Drip_Irrigation_Pipe] doesn't need to change
-2025-06-04 14:04:41,541 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light", "e": [{"n": "LED_Light", "u": "lx", "t": 1749038681.0645683, "v": false}]}
-2025-06-04 14:04:41,541 - INFO - Status of [b6c46f2c - LED_Light] doesn't need to change
-2025-06-04 14:04:42,457 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net", "e": [{"n": "Sunshade_Net", "u": "lx", "t": 1749038682.0759413, "v": false}]}
-2025-06-04 14:04:42,457 - INFO - Status of [f89cd694 - Sunshade_Net] doesn't need to change
-2025-06-04 14:04:42,560 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater: {"bn": "Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater", "e": [{"n": "Heater", "u": "Cel", "t": 1749038682.080233, "v": false}]}
-2025-06-04 14:04:42,560 - INFO - Status of [fe3a3799 - Heater] doesn't need to change
-2025-06-04 14:04:44,482 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan", "e": [{"n": "Exhaust_Fan", "u": "ppm", "t": 1749038684.096872, "v": false}]}
-2025-06-04 14:04:44,482 - INFO - Status of [7e2e63ef - Exhaust_Fan] doesn't need to change
-2025-06-04 14:04:47,560 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator", "e": [{"n": "Carbon_Dioxide_Generator", "u": "ppm", "t": 1749038687.067655, "v": false}]}
-2025-06-04 14:04:47,561 - INFO - Status of [baf49b45 - Carbon_Dioxide_Generator] doesn't need to change
+2025-06-04 18:06:42,614 - INFO - Actuator:8c4e6807f51f432f88 Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-04 18:06:42,713 - INFO - Actuator:358af5e155994d6991 Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-04 18:06:42,832 - INFO - Actuator:86d9debe7aa842c69d Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-04 18:06:42,931 - INFO - Actuator:6e5a43896cd348babc Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-04 18:06:43,057 - INFO - Actuator:fba67722e05e4054aa Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-04 18:06:43,188 - INFO - Actuator:96cab3416cef4d94b7 Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-04 18:06:43,297 - INFO - Actuator:967960d5ff274abcbe Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-04 18:08:41,507 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator", "e": [{"n": "Carbon_Dioxide_Generator", "u": "ppm", "t": 1749053320.932698, "v": false}]}
+2025-06-04 18:08:41,508 - INFO - Status of [baf49b45 - Carbon_Dioxide_Generator] doesn't need to change
+2025-06-04 18:08:41,508 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater: {"bn": "Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater", "e": [{"n": "Heater", "u": "Cel", "t": 1749053320.9347148, "v": false}]}
+2025-06-04 18:08:41,509 - INFO - Status of [fe3a3799 - Heater] doesn't need to change
+2025-06-04 18:08:41,514 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Light_Intensity/c3d47900/LED_Light: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Light_Intensity/c3d47900/LED_Light", "e": [{"n": "LED_Light", "u": "lx", "t": 1749053320.9347148, "v": false}]}
+2025-06-04 18:08:41,514 - INFO - Status of [b6c46f2c - LED_Light] doesn't need to change
+2025-06-04 18:08:41,606 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan", "e": [{"n": "Exhaust_Fan", "u": "ppm", "t": 1749053321.0300887, "v": false}]}
+2025-06-04 18:08:41,606 - INFO - Status of [7e2e63ef - Exhaust_Fan] doesn't need to change
+2025-06-04 18:08:41,611 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_01/Light_Intensity/f47ac10b/Sunshade_Net: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_01/Light_Intensity/f47ac10b/Sunshade_Net", "e": [{"n": "Sunshade_Net", "u": "lx", "t": 1749053321.0346339, "v": false}]}
+2025-06-04 18:08:41,611 - INFO - Status of [f89cd694 - Sunshade_Net] doesn't need to change
+2025-06-04 18:08:41,701 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Cooler: {"bn": "Torino_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Cooler", "e": [{"n": "Cooler", "u": "Cel", "t": 1749053321.1240542, "v": false}]}
+2025-06-04 18:08:41,701 - INFO - Status of [d0676e7b - Cooler] doesn't need to change
+2025-06-04 18:08:41,702 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33/Drip_Irrigation_Pipe: {"bn": "Torino_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33/Drip_Irrigation_Pipe", "e": [{"n": "Drip_Irrigation_Pipe", "u": "%", "t": 1749053321.1240542, "v": false}]}
+2025-06-04 18:08:41,702 - INFO - Status of [a3f7c79f - Drip_Irrigation_Pipe] doesn't need to change
+2025-06-04 18:08:50,227 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan", "e": [{"n": "Exhaust_Fan", "u": "ppm", "t": 1749053329.8393872, "v": false}]}
+2025-06-04 18:08:50,227 - INFO - Exhaust_Fan - 7e2e63ef - False - 2025-06-04 18:08:50
+2025-06-04 18:08:50,228 - INFO - [2025-06-04 18:08:50] successfully change the status of [7e2e63ef] from [True] into [False]
+2025-06-04 18:08:50,230 - INFO - [2025-06-04 18:08:50] successfully WRITE the status of [7e2e63ef] into [False]
+2025-06-04 18:08:50,231 - INFO - Actuator Publish: {'bn': 'Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan/7e2e63ef/statusChanged', 'e': [{'n': 'Exhaust_Fan', 'u': ' ', 't': 1749053330.2310967, 'v': False}]}
+2025-06-04 18:08:54,238 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_01/Light_Intensity/f47ac10b/Sunshade_Net: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_01/Light_Intensity/f47ac10b/Sunshade_Net", "e": [{"n": "Sunshade_Net", "u": "lx", "t": 1749053333.8516052, "v": false}]}
+2025-06-04 18:08:54,238 - INFO - Sunshade_Net - f89cd694 - False - 2025-06-04 18:08:54
+2025-06-04 18:08:54,239 - INFO - [2025-06-04 18:08:54] successfully change the status of [f89cd694] from [True] into [False]
+2025-06-04 18:08:54,242 - INFO - [2025-06-04 18:08:54] successfully WRITE the status of [f89cd694] into [False]
+2025-06-04 18:08:54,243 - INFO - Actuator Publish: {'bn': 'Torino_IotSmartFarm/Lingotto/Area_B/Position_01/Light_Intensity/f47ac10b/Sunshade_Net/f89cd694/statusChanged', 'e': [{'n': 'Sunshade_Net', 'u': ' ', 't': 1749053334.243436, 'v': False}]}
+2025-06-04 18:08:54,319 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater: {"bn": "Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater", "e": [{"n": "Heater", "u": "Cel", "t": 1749053333.836985, "v": false}]}
+2025-06-04 18:08:54,323 - INFO - Heater - fe3a3799 - False - 2025-06-04 18:08:54
+2025-06-04 18:08:54,332 - INFO - [2025-06-04 18:08:54] successfully change the status of [fe3a3799] from [True] into [False]
+2025-06-04 18:08:54,334 - INFO - [2025-06-04 18:08:54] successfully WRITE the status of [fe3a3799] into [False]
+2025-06-04 18:08:54,334 - INFO - Actuator Publish: {'bn': 'Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater/fe3a3799/statusChanged', 'e': [{'n': 'Heater', 'u': ' ', 't': 1749053334.3349862, 'v': False}]}
+2025-06-04 18:08:58,317 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Light_Intensity/c3d47900/LED_Light: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Light_Intensity/c3d47900/LED_Light", "e": [{"n": "LED_Light", "u": "lx", "t": 1749053337.8349948, "v": false}]}
+2025-06-04 18:08:58,317 - INFO - LED_Light - b6c46f2c - False - 2025-06-04 18:08:58
+2025-06-04 18:08:58,318 - INFO - [2025-06-04 18:08:58] successfully change the status of [b6c46f2c] from [True] into [False]
+2025-06-04 18:08:58,321 - INFO - [2025-06-04 18:08:58] successfully WRITE the status of [b6c46f2c] into [False]
+2025-06-04 18:08:58,321 - INFO - Actuator Publish: {'bn': 'Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Light_Intensity/c3d47900/LED_Light/b6c46f2c/statusChanged', 'e': [{'n': 'LED_Light', 'u': ' ', 't': 1749053338.321109, 'v': False}]}
+2025-06-04 18:08:59,241 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan", "e": [{"n": "Exhaust_Fan", "u": "ppm", "t": 1749053338.849322, "v": false}]}
+2025-06-04 18:08:59,241 - INFO - Status of [7e2e63ef - Exhaust_Fan] doesn't need to change
+2025-06-04 18:09:00,317 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator", "e": [{"n": "Carbon_Dioxide_Generator", "u": "ppm", "t": 1749053339.8372786, "v": false}]}
+2025-06-04 18:09:00,317 - INFO - Carbon_Dioxide_Generator - baf49b45 - False - 2025-06-04 18:09:00
+2025-06-04 18:09:00,319 - INFO - [2025-06-04 18:09:00] successfully change the status of [baf49b45] from [True] into [False]
+2025-06-04 18:09:00,321 - INFO - [2025-06-04 18:09:00] successfully WRITE the status of [baf49b45] into [False]
+2025-06-04 18:09:00,321 - INFO - Actuator Publish: {'bn': 'Torino_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator/baf49b45/statusChanged', 'e': [{'n': 'Carbon_Dioxide_Generator', 'u': ' ', 't': 1749053340.3211124, 'v': False}]}
+2025-06-04 18:09:02,216 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Cooler: {"bn": "Torino_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Cooler", "e": [{"n": "Cooler", "u": "Cel", "t": 1749053341.828585, "v": false}]}
+2025-06-04 18:09:02,216 - INFO - Cooler - d0676e7b - False - 2025-06-04 18:09:02
+2025-06-04 18:09:02,228 - INFO - [2025-06-04 18:09:02] successfully change the status of [d0676e7b] from [True] into [False]
+2025-06-04 18:09:02,230 - INFO - [2025-06-04 18:09:02] successfully WRITE the status of [d0676e7b] into [False]
+2025-06-04 18:09:02,230 - INFO - Actuator Publish: {'bn': 'Torino_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Cooler/d0676e7b/statusChanged', 'e': [{'n': 'Cooler', 'u': ' ', 't': 1749053342.2302494, 'v': False}]}
+2025-06-04 18:09:04,256 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33/Drip_Irrigation_Pipe: {"bn": "Torino_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33/Drip_Irrigation_Pipe", "e": [{"n": "Drip_Irrigation_Pipe", "u": "%", "t": 1749053343.831355, "v": false}]}
+2025-06-04 18:09:04,257 - INFO - Drip_Irrigation_Pipe - a3f7c79f - False - 2025-06-04 18:09:04
+2025-06-04 18:09:04,258 - INFO - [2025-06-04 18:09:04] successfully change the status of [a3f7c79f] from [True] into [False]
+2025-06-04 18:09:04,260 - INFO - [2025-06-04 18:09:04] successfully WRITE the status of [a3f7c79f] into [False]
+2025-06-04 18:09:04,260 - INFO - Actuator Publish: {'bn': 'Torino_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33/Drip_Irrigation_Pipe/a3f7c79f/statusChanged', 'e': [{'n': 'Drip_Irrigation_Pipe', 'u': ' ', 't': 1749053344.2604067, 'v': False}]}
+2025-06-04 18:09:07,227 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_01/Light_Intensity/f47ac10b/Sunshade_Net: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_01/Light_Intensity/f47ac10b/Sunshade_Net", "e": [{"n": "Sunshade_Net", "u": "lx", "t": 1749053346.8418615, "v": false}]}
+2025-06-04 18:09:07,227 - INFO - Status of [f89cd694 - Sunshade_Net] doesn't need to change
+2025-06-04 18:09:07,321 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater: {"bn": "Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater", "e": [{"n": "Heater", "u": "Cel", "t": 1749053346.8398986, "v": false}]}
+2025-06-04 18:09:07,321 - INFO - Status of [fe3a3799 - Heater] doesn't need to change
+2025-06-04 18:09:08,234 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan", "e": [{"n": "Exhaust_Fan", "u": "ppm", "t": 1749053347.8502743, "v": false}]}
+2025-06-04 18:09:08,234 - INFO - Status of [7e2e63ef - Exhaust_Fan] doesn't need to change
+2025-06-04 18:09:15,321 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Light_Intensity/c3d47900/LED_Light: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Light_Intensity/c3d47900/LED_Light", "e": [{"n": "LED_Light", "u": "lx", "t": 1749053354.8357317, "v": false}]}
+2025-06-04 18:09:15,321 - INFO - Status of [b6c46f2c - LED_Light] doesn't need to change
+2025-06-04 18:09:17,245 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan", "e": [{"n": "Exhaust_Fan", "u": "ppm", "t": 1749053356.8596513, "v": false}]}
+2025-06-04 18:09:17,245 - INFO - Status of [7e2e63ef - Exhaust_Fan] doesn't need to change
+2025-06-04 18:09:19,331 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator", "e": [{"n": "Carbon_Dioxide_Generator", "u": "ppm", "t": 1749053358.8496037, "v": false}]}
+2025-06-04 18:09:19,331 - INFO - Status of [baf49b45 - Carbon_Dioxide_Generator] doesn't need to change
+2025-06-04 18:09:20,230 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_01/Light_Intensity/f47ac10b/Sunshade_Net: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_01/Light_Intensity/f47ac10b/Sunshade_Net", "e": [{"n": "Sunshade_Net", "u": "lx", "t": 1749053359.843475, "v": false}]}
+2025-06-04 18:09:20,230 - INFO - Status of [f89cd694 - Sunshade_Net] doesn't need to change
+2025-06-04 18:09:20,325 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater: {"bn": "Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater", "e": [{"n": "Heater", "u": "Cel", "t": 1749053359.8464675, "v": false}]}
+2025-06-04 18:09:20,326 - INFO - Status of [fe3a3799 - Heater] doesn't need to change
+2025-06-04 18:09:23,219 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Cooler: {"bn": "Torino_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Cooler", "e": [{"n": "Cooler", "u": "Cel", "t": 1749053362.833489, "v": false}]}
+2025-06-04 18:09:23,220 - INFO - Status of [d0676e7b - Cooler] doesn't need to change
+2025-06-04 18:09:26,246 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan", "e": [{"n": "Exhaust_Fan", "u": "ppm", "t": 1749053365.8607569, "v": false}]}
+2025-06-04 18:09:26,246 - INFO - Status of [7e2e63ef - Exhaust_Fan] doesn't need to change
+2025-06-04 18:09:27,267 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33/Drip_Irrigation_Pipe: {"bn": "Torino_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33/Drip_Irrigation_Pipe", "e": [{"n": "Drip_Irrigation_Pipe", "u": "%", "t": 1749053366.8413951, "v": false}]}
+2025-06-04 18:09:27,267 - INFO - Status of [a3f7c79f - Drip_Irrigation_Pipe] doesn't need to change
+2025-06-04 18:09:32,320 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Light_Intensity/c3d47900/LED_Light: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Light_Intensity/c3d47900/LED_Light", "e": [{"n": "LED_Light", "u": "lx", "t": 1749053371.8388777, "v": false}]}
+2025-06-04 18:09:32,320 - INFO - Status of [b6c46f2c - LED_Light] doesn't need to change
+2025-06-04 18:09:33,243 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_01/Light_Intensity/f47ac10b/Sunshade_Net: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_01/Light_Intensity/f47ac10b/Sunshade_Net", "e": [{"n": "Sunshade_Net", "u": "lx", "t": 1749053372.8536258, "v": false}]}
+2025-06-04 18:09:33,243 - INFO - Status of [f89cd694 - Sunshade_Net] doesn't need to change
+2025-06-04 18:09:33,331 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater: {"bn": "Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater", "e": [{"n": "Heater", "u": "Cel", "t": 1749053372.8510995, "v": false}]}
+2025-06-04 18:09:33,331 - INFO - Status of [fe3a3799 - Heater] doesn't need to change
+2025-06-04 18:09:35,254 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan", "e": [{"n": "Exhaust_Fan", "u": "ppm", "t": 1749053374.8713884, "v": false}]}
+2025-06-04 18:09:35,255 - INFO - Status of [7e2e63ef - Exhaust_Fan] doesn't need to change
+2025-06-04 18:09:38,345 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator", "e": [{"n": "Carbon_Dioxide_Generator", "u": "ppm", "t": 1749053377.8641694, "v": false}]}
+2025-06-04 18:09:38,346 - INFO - Status of [baf49b45 - Carbon_Dioxide_Generator] doesn't need to change
+2025-06-04 18:09:44,217 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Cooler: {"bn": "Torino_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Cooler", "e": [{"n": "Cooler", "u": "Cel", "t": 1749053383.83411, "v": false}]}
+2025-06-04 18:09:44,218 - INFO - Status of [d0676e7b - Cooler] doesn't need to change
+2025-06-04 18:09:44,270 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan", "e": [{"n": "Exhaust_Fan", "u": "ppm", "t": 1749053383.8811982, "v": false}]}
+2025-06-04 18:09:44,270 - INFO - Status of [7e2e63ef - Exhaust_Fan] doesn't need to change
+2025-06-04 18:09:46,251 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_01/Light_Intensity/f47ac10b/Sunshade_Net: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_01/Light_Intensity/f47ac10b/Sunshade_Net", "e": [{"n": "Sunshade_Net", "u": "lx", "t": 1749053385.8641791, "v": false}]}
+2025-06-04 18:09:46,252 - INFO - Status of [f89cd694 - Sunshade_Net] doesn't need to change
+2025-06-04 18:09:46,344 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater: {"bn": "Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater", "e": [{"n": "Heater", "u": "Cel", "t": 1749053385.862679, "v": false}]}
+2025-06-04 18:09:46,344 - INFO - Status of [fe3a3799 - Heater] doesn't need to change
+2025-06-04 18:13:05,294 - INFO - Actuator:5917222f0682477d9d Connected to mqtt.eclipseprojects.io with result code: 0 

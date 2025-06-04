@@ -11,7 +11,7 @@ project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 if project_root not in sys.path:
     sys.path.insert(0, project_root)
 
-from Util.Utility import Log, FileUtils
+from Util.Utility import Log, FileUtils,PathUtils
 from MQTT.MyMQTT import MyMQTT
 
 import logging
@@ -37,7 +37,8 @@ class DynamoDBWriter(MyMQTT):
         super().start()
         self._paho_mqtt.on_message = self.on_message
         self._paho_mqtt.on_connect = self.on_connect
-        super().mySubscribe("UniTO_IotSmartFarm/Lingotto/#")
+        super().mySubscribe(FileUtils.load_config(os.path.join(PathUtils.project_path(),'config','cataLog.json'))["DynamoDB_SubscribeTopic"][0])
+        super().mySubscribe(FileUtils.load_config(os.path.join(PathUtils.project_path(),'config','cataLog.json'))["DynamoDB_SubscribeTopic"][1])
         
     def on_message(self, paho_mqtt, userdata, msg):
         try:
@@ -47,8 +48,8 @@ class DynamoDBWriter(MyMQTT):
             value = data['e'][0]['v'] if isinstance(data['e'][0]['v'], bool) else Decimal(str(data['e'][0]['v']))
             time = data['e'][0]['t']
             topic = data.get('bn', '')
-            deviceID = topic.split('/')[5]
-            deviceLocation = '/'.join(topic.split('/')[1:-2]) if len(topic.split('/')) == 6 else '/'.join(topic.split('/')[1:-3])
+            deviceID = topic.split('/')[5] if len(topic.split('/')) == 6 else topic.split('/')[7]
+            deviceLocation = '/'.join(topic.split('/')[1:-2]) if len(topic.split('/')) == 6 else '/'.join(topic.split('/')[1:-5])
             self.write_sensor_data(
                 deviceID=deviceID,
                 deviceType=deviceType,

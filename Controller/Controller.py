@@ -84,8 +84,8 @@ class Controller (MyMQTT):
 
             
     #publish the data to the broker    
-    def publish_data(self, actualPath, actuatorStatus,actuatorType):
-        self.publishTopic = self.sensorTopic + actualPath
+    def publish_data(self, actualActuator, actuatorStatus,actuatorType):
+        self.publishTopic = self.sensorTopic + actualActuator
         msg = {
             'bn': f'{self.publishTopic}',
             'e':[

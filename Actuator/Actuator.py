@@ -45,8 +45,10 @@ class Actuator (MyMQTT):
         # handle the message
         payload = msg.payload.decode('utf-8')  # decode the received message
         logger.info(f"Received message on topic {msg.topic}: {payload}")
-        if json.loads(payload)['e'][0]['v'] != self.status:
+        decodeData = json.loads(payload)
+        if decodeData['e'][0]['v'] != self.status:
             old_status = self.status
+            #update self.status
             self.status = json.loads(payload)['e'][0]['v']
             #obtain current time
             timestamp = time.time()
@@ -57,7 +59,7 @@ class Actuator (MyMQTT):
             self.lastStatusUpdate = formatted_time
             logger.info(f'{self.deviceType} - {self.deviceID} - {self.status} - {self.lastStatusUpdate}')
 
-            #update the actuators status of the cataLog
+            #update the actuators status of the cataLog and save the file
             actuatorList = FileUtils.load_config(os.path.join(PathUtils.project_path(),'config','cataLog.json'))
             for actuator in actuatorList["actuator_list"]:
                 if actuator['deviceID'] == self.deviceID:
@@ -67,16 +69,30 @@ class Actuator (MyMQTT):
                 
             logger.info(f'[{self.lastStatusUpdate}] successfully change the status of [{self.deviceID}] from [{old_status}] into [{self.status}]')
 
-            #save the file
             with open(os.path.join(PathUtils.project_path(),'config','cataLog.json'), 'w', encoding='utf-8') as f:
                 json.dump(actuatorList, f, indent=4) 
 
             logger.info(f'[{self.lastStatusUpdate}] successfully WRITE the status of [{self.deviceID}] into [{self.status}]')
             
-
+            #publish data to the broker
+            publishTopic = decodeData['bn'] + f"/{self.deviceID}/statusChanged"
+            actuator_publish_msg = {
+            'bn': f'{publishTopic}',
+            'e':[
+                {
+                    'n': f'{self.deviceType}',
+                    'u': ' ',
+                    't': time.time(),
+                    'v': self.status
+                }
+                ]
+            }
+            logger.info(f'Actuator Publish: {actuator_publish_msg}')
+            self.myPublish(publishTopic,actuator_publish_msg)
+            
             #push information to my TeleBot
             message = (
-                f'Actuator Status Changed :\n\n'
+                f'Actuator Status Changed :\n'
                 f"DeviceID: {self.deviceID}\n"
                 f"Device Type: {self.deviceType}\n"
                 f"Location: {self.deviceLocation}\n"

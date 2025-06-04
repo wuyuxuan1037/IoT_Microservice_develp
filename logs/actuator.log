@@ -1,75 +1,138 @@
-2025-06-03 23:59:06,357 - INFO - Actuator:625db7b4c1c5490b9e Connected to mqtt.eclipseprojects.io with result code: 0 
-2025-06-03 23:59:06,454 - INFO - Actuator:c7fd46db0d004831b1 Connected to mqtt.eclipseprojects.io with result code: 0 
-2025-06-03 23:59:06,559 - INFO - Actuator:a8973c8d377f442ebe Connected to mqtt.eclipseprojects.io with result code: 0 
-2025-06-03 23:59:06,682 - INFO - Actuator:c5a5c4e73b1b4667b9 Connected to mqtt.eclipseprojects.io with result code: 0 
-2025-06-03 23:59:06,780 - INFO - Actuator:fa366803b19c40a0ab Connected to mqtt.eclipseprojects.io with result code: 0 
-2025-06-03 23:59:06,897 - INFO - Actuator:0acf328996d9475bb3 Connected to mqtt.eclipseprojects.io with result code: 0 
-2025-06-03 23:59:06,993 - INFO - Actuator:8cafb3cb337b4c2c81 Connected to mqtt.eclipseprojects.io with result code: 0 
-2025-06-03 23:59:10,188 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net", "e": [{"n": "Sunshade_Net", "u": "lx", "t": 1748987949.8090413, "v": false}]}
-2025-06-03 23:59:10,188 - INFO - Status of [f89cd694 - Sunshade_Net] doesn't need to change
-2025-06-03 23:59:10,290 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater", "e": [{"n": "Heater", "u": "Cel", "t": 1748987949.8107939, "v": false}]}
-2025-06-03 23:59:10,290 - INFO - Status of [fe3a3799 - Heater] doesn't need to change
-2025-06-03 23:59:14,264 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light", "e": [{"n": "LED_Light", "u": "lx", "t": 1748987953.786533, "v": false}]}
-2025-06-03 23:59:14,264 - INFO - Status of [b6c46f2c - LED_Light] doesn't need to change
-2025-06-03 23:59:15,189 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan", "e": [{"n": "Exhaust_Fan", "u": "ppm", "t": 1748987954.8128338, "v": false}]}
-2025-06-03 23:59:15,194 - INFO - Status of [7e2e63ef - Exhaust_Fan] doesn't need to change
-2025-06-03 23:59:16,262 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator", "e": [{"n": "Carbon_Dioxide_Generator", "u": "ppm", "t": 1748987955.7890766, "v": false}]}
-2025-06-03 23:59:16,262 - INFO - Status of [baf49b45 - Carbon_Dioxide_Generator] doesn't need to change
-2025-06-03 23:59:18,179 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Cooler: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Cooler", "e": [{"n": "Cooler", "u": "Cel", "t": 1748987957.7925236, "v": false}]}
-2025-06-03 23:59:18,179 - INFO - Status of [d0676e7b - Cooler] doesn't need to change
-2025-06-03 23:59:20,230 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33/Drip_Irrigation_Pipe: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33/Drip_Irrigation_Pipe", "e": [{"n": "Drip_Irrigation_Pipe", "u": "%", "t": 1748987959.806429, "v": false}]}
-2025-06-03 23:59:20,231 - INFO - Status of [a3f7c79f - Drip_Irrigation_Pipe] doesn't need to change
-2025-06-03 23:59:23,213 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net", "e": [{"n": "Sunshade_Net", "u": "lx", "t": 1748987962.807483, "v": false}]}
-2025-06-03 23:59:23,213 - INFO - Status of [f89cd694 - Sunshade_Net] doesn't need to change
-2025-06-03 23:59:23,309 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater", "e": [{"n": "Heater", "u": "Cel", "t": 1748987962.813256, "v": false}]}
-2025-06-03 23:59:23,309 - INFO - Status of [fe3a3799 - Heater] doesn't need to change
-2025-06-03 23:59:24,197 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan", "e": [{"n": "Exhaust_Fan", "u": "ppm", "t": 1748987963.8182259, "v": false}]}
-2025-06-03 23:59:24,197 - INFO - Status of [7e2e63ef - Exhaust_Fan] doesn't need to change
-2025-06-03 23:59:31,267 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light", "e": [{"n": "LED_Light", "u": "lx", "t": 1748987970.794901, "v": false}]}
-2025-06-03 23:59:31,267 - INFO - Status of [b6c46f2c - LED_Light] doesn't need to change
-2025-06-03 23:59:33,207 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan", "e": [{"n": "Exhaust_Fan", "u": "ppm", "t": 1748987972.8284829, "v": false}]}
-2025-06-03 23:59:33,208 - INFO - Status of [7e2e63ef - Exhaust_Fan] doesn't need to change
-2025-06-03 23:59:35,304 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator", "e": [{"n": "Carbon_Dioxide_Generator", "u": "ppm", "t": 1748987974.8064768, "v": false}]}
-2025-06-03 23:59:35,304 - INFO - Status of [baf49b45 - Carbon_Dioxide_Generator] doesn't need to change
-2025-06-03 23:59:36,208 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net", "e": [{"n": "Sunshade_Net", "u": "lx", "t": 1748987975.8166509, "v": false}]}
-2025-06-03 23:59:36,208 - INFO - Status of [f89cd694 - Sunshade_Net] doesn't need to change
-2025-06-03 23:59:36,306 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater", "e": [{"n": "Heater", "u": "Cel", "t": 1748987975.8207583, "v": false}]}
-2025-06-03 23:59:36,307 - INFO - Status of [fe3a3799 - Heater] doesn't need to change
-2025-06-03 23:59:39,189 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Cooler: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Cooler", "e": [{"n": "Cooler", "u": "Cel", "t": 1748987978.803946, "v": false}]}
-2025-06-03 23:59:39,190 - INFO - Status of [d0676e7b - Cooler] doesn't need to change
-2025-06-03 23:59:42,230 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan", "e": [{"n": "Exhaust_Fan", "u": "ppm", "t": 1748987981.8499203, "v": false}]}
-2025-06-03 23:59:42,230 - INFO - Status of [7e2e63ef - Exhaust_Fan] doesn't need to change
-2025-06-03 23:59:43,239 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33/Drip_Irrigation_Pipe: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33/Drip_Irrigation_Pipe", "e": [{"n": "Drip_Irrigation_Pipe", "u": "%", "t": 1748987982.8172557, "v": false}]}
-2025-06-03 23:59:43,240 - INFO - Status of [a3f7c79f - Drip_Irrigation_Pipe] doesn't need to change
-2025-06-03 23:59:48,300 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light", "e": [{"n": "LED_Light", "u": "lx", "t": 1748987987.8138678, "v": false}]}
-2025-06-03 23:59:48,301 - INFO - Status of [b6c46f2c - LED_Light] doesn't need to change
-2025-06-03 23:59:49,209 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net", "e": [{"n": "Sunshade_Net", "u": "lx", "t": 1748987988.824516, "v": false}]}
-2025-06-03 23:59:49,209 - INFO - Status of [f89cd694 - Sunshade_Net] doesn't need to change
-2025-06-03 23:59:49,307 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater", "e": [{"n": "Heater", "u": "Cel", "t": 1748987988.8276637, "v": false}]}
-2025-06-03 23:59:49,307 - INFO - Status of [fe3a3799 - Heater] doesn't need to change
-2025-06-03 23:59:51,258 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan", "e": [{"n": "Exhaust_Fan", "u": "ppm", "t": 1748987990.84733, "v": false}]}
-2025-06-03 23:59:51,258 - INFO - Status of [7e2e63ef - Exhaust_Fan] doesn't need to change
-2025-06-03 23:59:54,292 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator", "e": [{"n": "Carbon_Dioxide_Generator", "u": "ppm", "t": 1748987993.8093448, "v": false}]}
-2025-06-03 23:59:54,292 - INFO - Status of [baf49b45 - Carbon_Dioxide_Generator] doesn't need to change
-2025-06-04 00:00:00,200 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Cooler: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Cooler", "e": [{"n": "Cooler", "u": "Cel", "t": 1748987999.813844, "v": false}]}
-2025-06-04 00:00:00,200 - INFO - Status of [d0676e7b - Cooler] doesn't need to change
-2025-06-04 00:00:00,235 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan", "e": [{"n": "Exhaust_Fan", "u": "ppm", "t": 1748987999.8537557, "v": false}]}
-2025-06-04 00:00:00,235 - INFO - Status of [7e2e63ef - Exhaust_Fan] doesn't need to change
-2025-06-04 00:00:02,211 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net", "e": [{"n": "Sunshade_Net", "u": "lx", "t": 1748988001.8318121, "v": false}]}
-2025-06-04 00:00:02,211 - INFO - Status of [f89cd694 - Sunshade_Net] doesn't need to change
-2025-06-04 00:00:02,322 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater", "e": [{"n": "Heater", "u": "Cel", "t": 1748988001.8446672, "v": false}]}
-2025-06-04 00:00:02,322 - INFO - Status of [fe3a3799 - Heater] doesn't need to change
-2025-06-04 00:00:05,482 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light", "e": [{"n": "LED_Light", "u": "lx", "t": 1748988004.8890722, "v": false}]}
-2025-06-04 00:00:05,482 - INFO - Status of [b6c46f2c - LED_Light] doesn't need to change
-2025-06-04 00:00:06,967 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33/Drip_Irrigation_Pipe: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33/Drip_Irrigation_Pipe", "e": [{"n": "Drip_Irrigation_Pipe", "u": "%", "t": 1748988006.0988817, "v": false}]}
-2025-06-04 00:00:06,967 - INFO - Status of [a3f7c79f - Drip_Irrigation_Pipe] doesn't need to change
-2025-06-04 00:00:09,937 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan", "e": [{"n": "Exhaust_Fan", "u": "ppm", "t": 1748988009.1714425, "v": false}]}
-2025-06-04 00:00:09,937 - INFO - Status of [7e2e63ef - Exhaust_Fan] doesn't need to change
-2025-06-04 00:00:13,294 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator", "e": [{"n": "Carbon_Dioxide_Generator", "u": "ppm", "t": 1748988012.8153203, "v": false}]}
-2025-06-04 00:00:13,294 - INFO - Status of [baf49b45 - Carbon_Dioxide_Generator] doesn't need to change
-2025-06-04 00:00:15,216 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net", "e": [{"n": "Sunshade_Net", "u": "lx", "t": 1748988014.83064, "v": false}]}
-2025-06-04 00:00:15,216 - INFO - Status of [f89cd694 - Sunshade_Net] doesn't need to change
-2025-06-04 00:00:15,317 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater", "e": [{"n": "Heater", "u": "Cel", "t": 1748988014.8350723, "v": false}]}
-2025-06-04 00:00:15,317 - INFO - Status of [fe3a3799 - Heater] doesn't need to change
-2025-06-04 00:00:18,244 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan", "e": [{"n": "Exhaust_Fan", "u": "ppm", "t": 1748988017.8635852, "v": false}]}
-2025-06-04 00:00:18,244 - INFO - Status of [7e2e63ef - Exhaust_Fan] doesn't need to change
+2025-06-04 10:40:16,394 - INFO - Actuator:0064799252e74e2688 Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-04 10:40:16,495 - INFO - Actuator:f1388df2c0a64a1f8a Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-04 10:40:16,619 - INFO - Actuator:449662e2341c4bff9c Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-04 10:40:16,722 - INFO - Actuator:a121ebfe93ed422a8a Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-04 10:40:16,839 - INFO - Actuator:0e0fbf92ab954be3ad Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-04 10:40:16,950 - INFO - Actuator:43dc75b395d3408383 Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-04 10:40:17,068 - INFO - Actuator:059d936fd2b14c81a5 Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-04 10:40:18,329 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan", "e": [{"n": "Exhaust_Fan", "u": "ppm", "t": 1749026417.9491131, "v": false}]}
+2025-06-04 10:40:18,329 - INFO - Status of [7e2e63ef - Exhaust_Fan] doesn't need to change
+2025-06-04 10:40:22,327 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net", "e": [{"n": "Sunshade_Net", "u": "lx", "t": 1749026421.940604, "v": false}]}
+2025-06-04 10:40:22,327 - INFO - Status of [f89cd694 - Sunshade_Net] doesn't need to change
+2025-06-04 10:40:22,425 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater", "e": [{"n": "Heater", "u": "Cel", "t": 1749026421.940604, "v": false}]}
+2025-06-04 10:40:22,425 - INFO - Status of [fe3a3799 - Heater] doesn't need to change
+2025-06-04 10:40:26,425 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light", "e": [{"n": "LED_Light", "u": "lx", "t": 1749026425.9456599, "v": false}]}
+2025-06-04 10:40:26,425 - INFO - Status of [b6c46f2c - LED_Light] doesn't need to change
+2025-06-04 10:40:27,340 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan", "e": [{"n": "Exhaust_Fan", "u": "ppm", "t": 1749026426.9553137, "v": false}]}
+2025-06-04 10:40:27,340 - INFO - Status of [7e2e63ef - Exhaust_Fan] doesn't need to change
+2025-06-04 10:40:28,426 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator", "e": [{"n": "Carbon_Dioxide_Generator", "u": "ppm", "t": 1749026427.9364014, "v": false}]}
+2025-06-04 10:40:28,426 - INFO - Status of [baf49b45 - Carbon_Dioxide_Generator] doesn't need to change
+2025-06-04 10:40:30,311 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Cooler: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Cooler", "e": [{"n": "Cooler", "u": "Cel", "t": 1749026429.9306684, "v": false}]}
+2025-06-04 10:40:30,311 - INFO - Status of [d0676e7b - Cooler] doesn't need to change
+2025-06-04 10:40:32,368 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33/Drip_Irrigation_Pipe: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33/Drip_Irrigation_Pipe", "e": [{"n": "Drip_Irrigation_Pipe", "u": "%", "t": 1749026431.940392, "v": false}]}
+2025-06-04 10:40:32,368 - INFO - Status of [a3f7c79f - Drip_Irrigation_Pipe] doesn't need to change
+2025-06-04 10:40:35,334 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net", "e": [{"n": "Sunshade_Net", "u": "lx", "t": 1749026434.9506788, "v": false}]}
+2025-06-04 10:40:35,334 - INFO - Status of [f89cd694 - Sunshade_Net] doesn't need to change
+2025-06-04 10:40:35,440 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater", "e": [{"n": "Heater", "u": "Cel", "t": 1749026434.9506788, "v": false}]}
+2025-06-04 10:40:35,440 - INFO - Status of [fe3a3799 - Heater] doesn't need to change
+2025-06-04 10:40:36,345 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan", "e": [{"n": "Exhaust_Fan", "u": "ppm", "t": 1749026435.9560091, "v": false}]}
+2025-06-04 10:40:36,345 - INFO - Status of [7e2e63ef - Exhaust_Fan] doesn't need to change
+2025-06-04 10:40:43,443 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light", "e": [{"n": "LED_Light", "u": "lx", "t": 1749026442.953848, "v": false}]}
+2025-06-04 10:40:43,443 - INFO - Status of [b6c46f2c - LED_Light] doesn't need to change
+2025-06-04 10:40:45,355 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan", "e": [{"n": "Exhaust_Fan", "u": "ppm", "t": 1749026444.9689975, "v": false}]}
+2025-06-04 10:40:45,355 - INFO - Status of [7e2e63ef - Exhaust_Fan] doesn't need to change
+2025-06-04 10:40:47,424 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator", "e": [{"n": "Carbon_Dioxide_Generator", "u": "ppm", "t": 1749026446.9438727, "v": false}]}
+2025-06-04 10:40:47,424 - INFO - Status of [baf49b45 - Carbon_Dioxide_Generator] doesn't need to change
+2025-06-04 10:40:48,362 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net", "e": [{"n": "Sunshade_Net", "u": "lx", "t": 1749026447.9654455, "v": false}]}
+2025-06-04 10:40:48,369 - INFO - Status of [f89cd694 - Sunshade_Net] doesn't need to change
+2025-06-04 10:40:48,450 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater", "e": [{"n": "Heater", "u": "Cel", "t": 1749026447.9654455, "v": false}]}
+2025-06-04 10:40:48,450 - INFO - Status of [fe3a3799 - Heater] doesn't need to change
+2025-06-04 10:40:51,321 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Cooler: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Cooler", "e": [{"n": "Cooler", "u": "Cel", "t": 1749026450.9363601, "v": false}]}
+2025-06-04 10:40:51,321 - INFO - Status of [d0676e7b - Cooler] doesn't need to change
+2025-06-04 10:40:54,365 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan", "e": [{"n": "Exhaust_Fan", "u": "ppm", "t": 1749026453.98013, "v": false}]}
+2025-06-04 10:40:54,365 - INFO - Status of [7e2e63ef - Exhaust_Fan] doesn't need to change
+2025-06-04 10:40:55,373 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33/Drip_Irrigation_Pipe: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33/Drip_Irrigation_Pipe", "e": [{"n": "Drip_Irrigation_Pipe", "u": "%", "t": 1749026454.9446347, "v": false}]}
+2025-06-04 10:40:55,373 - INFO - Status of [a3f7c79f - Drip_Irrigation_Pipe] doesn't need to change
+2025-06-04 10:41:00,439 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light", "e": [{"n": "LED_Light", "u": "lx", "t": 1749026459.960703, "v": false}]}
+2025-06-04 10:41:00,439 - INFO - Status of [b6c46f2c - LED_Light] doesn't need to change
+2025-06-04 10:41:01,358 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net", "e": [{"n": "Sunshade_Net", "u": "lx", "t": 1749026460.9672043, "v": false}]}
+2025-06-04 10:41:01,358 - INFO - Status of [f89cd694 - Sunshade_Net] doesn't need to change
+2025-06-04 10:41:01,452 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater", "e": [{"n": "Heater", "u": "Cel", "t": 1749026460.9703772, "v": false}]}
+2025-06-04 10:41:01,453 - INFO - Status of [fe3a3799 - Heater] doesn't need to change
+2025-06-04 10:41:03,374 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan", "e": [{"n": "Exhaust_Fan", "u": "ppm", "t": 1749026462.9888816, "v": false}]}
+2025-06-04 10:41:03,374 - INFO - Status of [7e2e63ef - Exhaust_Fan] doesn't need to change
+2025-06-04 10:41:06,427 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator", "e": [{"n": "Carbon_Dioxide_Generator", "u": "ppm", "t": 1749026465.9475646, "v": false}]}
+2025-06-04 10:41:06,428 - INFO - Status of [baf49b45 - Carbon_Dioxide_Generator] doesn't need to change
+2025-06-04 10:41:12,340 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Cooler: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Cooler", "e": [{"n": "Cooler", "u": "Cel", "t": 1749026471.946389, "v": false}]}
+2025-06-04 10:41:12,340 - INFO - Status of [d0676e7b - Cooler] doesn't need to change
+2025-06-04 10:41:12,393 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan", "e": [{"n": "Exhaust_Fan", "u": "ppm", "t": 1749026472.0097642, "v": false}]}
+2025-06-04 10:41:12,394 - INFO - Status of [7e2e63ef - Exhaust_Fan] doesn't need to change
+2025-06-04 10:41:14,369 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net", "e": [{"n": "Sunshade_Net", "u": "lx", "t": 1749026473.9763691, "v": false}]}
+2025-06-04 10:41:14,369 - INFO - Status of [f89cd694 - Sunshade_Net] doesn't need to change
+2025-06-04 10:41:14,454 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater", "e": [{"n": "Heater", "u": "Cel", "t": 1749026473.9763691, "v": false}]}
+2025-06-04 10:41:14,454 - INFO - Status of [fe3a3799 - Heater] doesn't need to change
+2025-06-04 10:41:17,452 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light", "e": [{"n": "LED_Light", "u": "lx", "t": 1749026476.9706438, "v": false}]}
+2025-06-04 10:41:17,457 - INFO - Status of [b6c46f2c - LED_Light] doesn't need to change
+2025-06-04 10:41:18,377 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33/Drip_Irrigation_Pipe: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33/Drip_Irrigation_Pipe", "e": [{"n": "Drip_Irrigation_Pipe", "u": "%", "t": 1749026477.9521978, "v": false}]}
+2025-06-04 10:41:18,378 - INFO - Drip_Irrigation_Pipe - a3f7c79f - False - 2025-06-04 10:41:18
+2025-06-04 10:41:18,379 - INFO - [2025-06-04 10:41:18] successfully change the status of [a3f7c79f] from [True] into [False]
+2025-06-04 10:41:18,381 - INFO - [2025-06-04 10:41:18] successfully WRITE the status of [a3f7c79f] into [False]
+2025-06-04 10:41:18,381 - INFO - Actuator Publish: {'bn': 'UniTO_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33/Drip_Irrigation_Pipe/a3f7c79f/statusChanged', 'e': [{'n': 'Drip_Irrigation_Pipe', 'u': ' ', 't': 1749026478.381019, 'v': False}]}
+2025-06-04 10:41:21,401 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan", "e": [{"n": "Exhaust_Fan", "u": "ppm", "t": 1749026481.0146973, "v": false}]}
+2025-06-04 10:41:21,401 - INFO - Exhaust_Fan - 7e2e63ef - False - 2025-06-04 10:41:21
+2025-06-04 10:41:21,401 - INFO - [2025-06-04 10:41:21] successfully change the status of [7e2e63ef] from [True] into [False]
+2025-06-04 10:41:21,406 - INFO - [2025-06-04 10:41:21] successfully WRITE the status of [7e2e63ef] into [False]
+2025-06-04 10:41:21,406 - INFO - Actuator Publish: {'bn': 'UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan/7e2e63ef/statusChanged', 'e': [{'n': 'Exhaust_Fan', 'u': ' ', 't': 1749026481.4063222, 'v': False}]}
+2025-06-04 10:41:25,501 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator", "e": [{"n": "Carbon_Dioxide_Generator", "u": "ppm", "t": 1749026485.0194204, "v": false}]}
+2025-06-04 10:41:25,501 - INFO - Carbon_Dioxide_Generator - baf49b45 - False - 2025-06-04 10:41:25
+2025-06-04 10:41:25,502 - INFO - [2025-06-04 10:41:25] successfully change the status of [baf49b45] from [True] into [False]
+2025-06-04 10:41:25,503 - INFO - [2025-06-04 10:41:25] successfully WRITE the status of [baf49b45] into [False]
+2025-06-04 10:41:25,504 - INFO - Actuator Publish: {'bn': 'UniTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator/baf49b45/statusChanged', 'e': [{'n': 'Carbon_Dioxide_Generator', 'u': ' ', 't': 1749026485.503601, 'v': False}]}
+2025-06-04 10:41:27,370 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net", "e": [{"n": "Sunshade_Net", "u": "lx", "t": 1749026486.9871898, "v": false}]}
+2025-06-04 10:41:27,370 - INFO - Sunshade_Net - f89cd694 - False - 2025-06-04 10:41:27
+2025-06-04 10:41:27,380 - INFO - [2025-06-04 10:41:27] successfully change the status of [f89cd694] from [True] into [False]
+2025-06-04 10:41:27,381 - INFO - [2025-06-04 10:41:27] successfully WRITE the status of [f89cd694] into [False]
+2025-06-04 10:41:27,381 - INFO - Actuator Publish: {'bn': 'UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net/f89cd694/statusChanged', 'e': [{'n': 'Sunshade_Net', 'u': ' ', 't': 1749026487.3818686, 'v': False}]}
+2025-06-04 10:41:27,460 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater", "e": [{"n": "Heater", "u": "Cel", "t": 1749026486.9804885, "v": false}]}
+2025-06-04 10:41:27,460 - INFO - Heater - fe3a3799 - False - 2025-06-04 10:41:27
+2025-06-04 10:41:27,468 - INFO - [2025-06-04 10:41:27] successfully change the status of [fe3a3799] from [True] into [False]
+2025-06-04 10:41:27,471 - INFO - [2025-06-04 10:41:27] successfully WRITE the status of [fe3a3799] into [False]
+2025-06-04 10:41:27,471 - INFO - Actuator Publish: {'bn': 'UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater/fe3a3799/statusChanged', 'e': [{'n': 'Heater', 'u': ' ', 't': 1749026487.4718843, 'v': False}]}
+2025-06-04 10:41:30,407 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan", "e": [{"n": "Exhaust_Fan", "u": "ppm", "t": 1749026490.0177386, "v": false}]}
+2025-06-04 10:41:30,407 - INFO - Status of [7e2e63ef - Exhaust_Fan] doesn't need to change
+2025-06-04 10:41:33,336 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Cooler: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Cooler", "e": [{"n": "Cooler", "u": "Cel", "t": 1749026492.9507828, "v": false}]}
+2025-06-04 10:41:33,336 - INFO - Cooler - d0676e7b - False - 2025-06-04 10:41:33
+2025-06-04 10:41:33,337 - INFO - [2025-06-04 10:41:33] successfully change the status of [d0676e7b] from [True] into [False]
+2025-06-04 10:41:33,338 - INFO - [2025-06-04 10:41:33] successfully WRITE the status of [d0676e7b] into [False]
+2025-06-04 10:41:33,338 - INFO - Actuator Publish: {'bn': 'UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Cooler/d0676e7b/statusChanged', 'e': [{'n': 'Cooler', 'u': ' ', 't': 1749026493.338988, 'v': False}]}
+2025-06-04 10:41:34,461 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light", "e": [{"n": "LED_Light", "u": "lx", "t": 1749026493.977227, "v": false}]}
+2025-06-04 10:41:34,462 - INFO - LED_Light - b6c46f2c - False - 2025-06-04 10:41:34
+2025-06-04 10:41:34,463 - INFO - [2025-06-04 10:41:34] successfully change the status of [b6c46f2c] from [True] into [False]
+2025-06-04 10:41:34,465 - INFO - [2025-06-04 10:41:34] successfully WRITE the status of [b6c46f2c] into [False]
+2025-06-04 10:41:34,465 - INFO - Actuator Publish: {'bn': 'UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light/b6c46f2c/statusChanged', 'e': [{'n': 'LED_Light', 'u': ' ', 't': 1749026494.4658282, 'v': False}]}
+2025-06-04 10:41:39,409 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan", "e": [{"n": "Exhaust_Fan", "u": "ppm", "t": 1749026499.0224957, "v": false}]}
+2025-06-04 10:41:39,409 - INFO - Status of [7e2e63ef - Exhaust_Fan] doesn't need to change
+2025-06-04 10:41:40,378 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net", "e": [{"n": "Sunshade_Net", "u": "lx", "t": 1749026499.9894695, "v": false}]}
+2025-06-04 10:41:40,378 - INFO - Status of [f89cd694 - Sunshade_Net] doesn't need to change
+2025-06-04 10:41:40,478 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater", "e": [{"n": "Heater", "u": "Cel", "t": 1749026499.992404, "v": false}]}
+2025-06-04 10:41:40,478 - INFO - Status of [fe3a3799 - Heater] doesn't need to change
+2025-06-04 10:41:41,390 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33/Drip_Irrigation_Pipe: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33/Drip_Irrigation_Pipe", "e": [{"n": "Drip_Irrigation_Pipe", "u": "%", "t": 1749026500.9625585, "v": false}]}
+2025-06-04 10:41:41,390 - INFO - Status of [a3f7c79f - Drip_Irrigation_Pipe] doesn't need to change
+2025-06-04 10:41:44,438 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator", "e": [{"n": "Carbon_Dioxide_Generator", "u": "ppm", "t": 1749026503.951582, "v": false}]}
+2025-06-04 10:41:44,438 - INFO - Status of [baf49b45 - Carbon_Dioxide_Generator] doesn't need to change
+2025-06-04 10:41:48,791 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan", "e": [{"n": "Exhaust_Fan", "u": "ppm", "t": 1749026508.2110655, "v": false}]}
+2025-06-04 10:41:48,791 - INFO - Status of [7e2e63ef - Exhaust_Fan] doesn't need to change
+2025-06-04 10:41:51,459 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light", "e": [{"n": "LED_Light", "u": "lx", "t": 1749026510.9739363, "v": false}]}
+2025-06-04 10:41:51,459 - INFO - Status of [b6c46f2c - LED_Light] doesn't need to change
+2025-06-04 10:41:53,387 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net", "e": [{"n": "Sunshade_Net", "u": "lx", "t": 1749026512.9982216, "v": false}]}
+2025-06-04 10:41:53,387 - INFO - Status of [f89cd694 - Sunshade_Net] doesn't need to change
+2025-06-04 10:41:53,678 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater", "e": [{"n": "Heater", "u": "Cel", "t": 1749026513.0970469, "v": false}]}
+2025-06-04 10:41:53,678 - INFO - Status of [fe3a3799 - Heater] doesn't need to change
+2025-06-04 10:41:54,447 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Cooler: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Cooler", "e": [{"n": "Cooler", "u": "Cel", "t": 1749026514.0632322, "v": false}]}
+2025-06-04 10:41:54,447 - INFO - Status of [d0676e7b - Cooler] doesn't need to change
+2025-06-04 10:41:57,419 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan", "e": [{"n": "Exhaust_Fan", "u": "ppm", "t": 1749026517.0376112, "v": false}]}
+2025-06-04 10:41:57,419 - INFO - Status of [7e2e63ef - Exhaust_Fan] doesn't need to change
+2025-06-04 10:47:41,935 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Cooler: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Cooler", "e": [{"n": "Cooler", "u": "Cel", "t": 1749026861.5473042, "v": false}]}
+2025-06-04 10:47:41,935 - INFO - Status of [d0676e7b - Cooler] doesn't need to change
+2025-06-04 10:47:46,687 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light", "e": [{"n": "LED_Light", "u": "lx", "t": 1749026866.2021828, "v": false}]}
+2025-06-04 10:47:46,687 - INFO - Status of [b6c46f2c - LED_Light] doesn't need to change
+2025-06-04 10:48:02,944 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Cooler: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Cooler", "e": [{"n": "Cooler", "u": "Cel", "t": 1749026882.5589025, "v": false}]}
+2025-06-04 10:48:02,944 - INFO - Status of [d0676e7b - Cooler] doesn't need to change
+2025-06-04 10:48:03,695 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light", "e": [{"n": "LED_Light", "u": "lx", "t": 1749026883.214664, "v": false}]}
+2025-06-04 10:48:03,695 - INFO - Status of [b6c46f2c - LED_Light] doesn't need to change
+2025-06-04 10:48:20,703 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light", "e": [{"n": "LED_Light", "u": "lx", "t": 1749026900.2189379, "v": false}]}
+2025-06-04 10:48:20,703 - INFO - Status of [b6c46f2c - LED_Light] doesn't need to change
+2025-06-04 10:48:23,946 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Cooler: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Cooler", "e": [{"n": "Cooler", "u": "Cel", "t": 1749026903.5623646, "v": false}]}
+2025-06-04 10:48:23,946 - INFO - Status of [d0676e7b - Cooler] doesn't need to change
+2025-06-04 10:48:37,732 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light", "e": [{"n": "LED_Light", "u": "lx", "t": 1749026917.2242887, "v": false}]}
+2025-06-04 10:48:37,732 - INFO - Status of [b6c46f2c - LED_Light] doesn't need to change

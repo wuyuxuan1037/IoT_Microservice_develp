@@ -54,7 +54,7 @@ class Controller (MyMQTT):
                     self.publish_data('/Drip_Irrigation_Pipe',True,'Drip_Irrigation_Pipe')
                 else:
                     self.publish_data('/Drip_Irrigation_Pipe',False,'Drip_Irrigation_Pipe')
-            case 'Lightness':  
+            case 'Light_Intensity':  
                 # when average value is higher than MAX, turn on the Sunshade_Net
                 if self.averageValue > self.thresholdMax:
                     self.publish_data('/Sunshade_Net',True,'Sunshade_Net')

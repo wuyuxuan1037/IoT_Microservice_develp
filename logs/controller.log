@@ -1,505 +1,294 @@
-2025-06-04 12:03:06,056 - INFO - Controller:f18275bec4e64868b8 Connected to mqtt.eclipseprojects.io with result code: 0 
-2025-06-04 12:03:06,153 - INFO - Controller:330d1a7dfefc416198 Connected to mqtt.eclipseprojects.io with result code: 0 
-2025-06-04 12:03:06,255 - INFO - Controller:1e76ddd2de244519a9 Connected to mqtt.eclipseprojects.io with result code: 0 
-2025-06-04 12:03:06,352 - INFO - Controller:212c739c08444c359a Connected to mqtt.eclipseprojects.io with result code: 0 
-2025-06-04 12:05:07,622 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b", "e": [{"n": "Lightness", "u": "lx", "t": 1749031507.2404656, "v": 487.0}]}
-2025-06-04 12:05:07,622 - INFO - Lightness - average value - 487.0
-2025-06-04 12:05:07,622 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net - PUBLISH TO ACTUATOR - 487.0 - False - 1000 - 10
-2025-06-04 12:05:07,622 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/LED_Light - PUBLISH TO ACTUATOR - 487.0 - False - 1000 - 10
-2025-06-04 12:05:07,622 - INFO - Lightness - UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/LED_Light -
-2025-06-04 12:05:07,625 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3", "e": [{"n": "Temperature", "u": "Cel", "t": 1749031507.2388802, "v": 44.3}]}
-2025-06-04 12:05:07,625 - INFO - Temperature - average value - 44.3
-2025-06-04 12:05:07,625 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1749031507.2435486, "v": 425.0}]}
-2025-06-04 12:05:07,625 - INFO - CO2_Concentration - average value - 425.0
-2025-06-04 12:05:07,625 - INFO - UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Cooler - PUBLISH TO ACTUATOR - 44.3 - False - 45 - 13
-2025-06-04 12:05:07,626 - INFO - UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Heater - PUBLISH TO ACTUATOR - 44.3 - False - 45 - 13
-2025-06-04 12:05:07,626 - INFO - Temperature - UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Heater -
-2025-06-04 12:05:07,626 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f/Exhaust_Fan - PUBLISH TO ACTUATOR - 425.0 - False - 1000 - 400
-2025-06-04 12:05:07,626 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f/Carbon_Dioxide_Generator - PUBLISH TO ACTUATOR - 425.0 - False - 1000 - 400
-2025-06-04 12:05:07,626 - INFO - CO2_Concentration - UniTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f/Carbon_Dioxide_Generator -
-2025-06-04 12:05:07,721 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749031507.2435486, "v": 79.0}]}
-2025-06-04 12:05:07,721 - INFO - Soil_Moisture - average value - 79.0
-2025-06-04 12:05:07,721 - INFO - UniTO_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 79.0 - False - 80 - 10
-2025-06-04 12:05:07,722 - INFO - Soil_Moisture - UniTO_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4/Drip_Irrigation_Pipe -
-2025-06-04 12:05:07,809 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900", "e": [{"n": "Lightness", "u": "lx", "t": 1749031507.2424855, "v": 959.0}]}
-2025-06-04 12:05:07,809 - INFO - Lightness - average value - 723.0
-2025-06-04 12:05:07,809 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/Sunshade_Net - PUBLISH TO ACTUATOR - 723.0 - False - 1000 - 10
-2025-06-04 12:05:07,809 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light - PUBLISH TO ACTUATOR - 723.0 - False - 1000 - 10
-2025-06-04 12:05:07,809 - INFO - Lightness - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light -
-2025-06-04 12:05:07,815 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98", "e": [{"n": "Temperature", "u": "Cel", "t": 1749031507.245565, "v": 17.5}]}
-2025-06-04 12:05:07,815 - INFO - Temperature - average value - 30.9
-2025-06-04 12:05:07,815 - INFO - UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Cooler - PUBLISH TO ACTUATOR - 30.9 - False - 45 - 13
-2025-06-04 12:05:07,815 - INFO - UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater - PUBLISH TO ACTUATOR - 30.9 - False - 45 - 13
-2025-06-04 12:05:07,816 - INFO - Temperature - UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater -
-2025-06-04 12:05:07,816 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d", "e": [{"n": "Temperature", "u": "Cel", "t": 1749031507.247536, "v": 42.0}]}
-2025-06-04 12:05:07,816 - INFO - Temperature - average value - 36.45
-2025-06-04 12:05:07,816 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Cooler - PUBLISH TO ACTUATOR - 36.45 - False - 45 - 13
-2025-06-04 12:05:07,816 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Heater - PUBLISH TO ACTUATOR - 36.45 - False - 45 - 13
-2025-06-04 12:05:07,816 - INFO - Temperature - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Heater -
-2025-06-04 12:05:07,817 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1749031507.247536, "v": 503.0}]}
-2025-06-04 12:05:07,817 - INFO - CO2_Concentration - average value - 464.0
-2025-06-04 12:05:07,817 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan - PUBLISH TO ACTUATOR - 464.0 - False - 1000 - 400
-2025-06-04 12:05:07,817 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Carbon_Dioxide_Generator - PUBLISH TO ACTUATOR - 464.0 - False - 1000 - 400
-2025-06-04 12:05:07,817 - INFO - CO2_Concentration - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Carbon_Dioxide_Generator -
-2025-06-04 12:05:07,817 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1749031507.2465582, "v": 784.0}]}
-2025-06-04 12:05:07,817 - INFO - CO2_Concentration - average value - 624.0
-2025-06-04 12:05:07,817 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Exhaust_Fan - PUBLISH TO ACTUATOR - 624.0 - False - 1000 - 400
-2025-06-04 12:05:07,817 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator - PUBLISH TO ACTUATOR - 624.0 - False - 1000 - 400
-2025-06-04 12:05:07,817 - INFO - CO2_Concentration - UniTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator -
-2025-06-04 12:05:07,843 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749031507.245565, "v": 29.5}]}
-2025-06-04 12:05:07,843 - INFO - Soil_Moisture - average value - 54.25
-2025-06-04 12:05:07,843 - INFO - UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 54.25 - False - 80 - 10
-2025-06-04 12:05:07,844 - INFO - Soil_Moisture - UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb/Drip_Irrigation_Pipe -
-2025-06-04 12:05:07,844 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749031507.2445416, "v": 46.5}]}
-2025-06-04 12:05:07,844 - INFO - Soil_Moisture - average value - 50.375
-2025-06-04 12:05:07,844 - INFO - UniTO_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 50.375 - False - 80 - 10
-2025-06-04 12:05:07,844 - INFO - Soil_Moisture - UniTO_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a/Drip_Irrigation_Pipe -
-2025-06-04 12:05:07,844 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749031507.2465582, "v": 47.0}]}
-2025-06-04 12:05:07,844 - INFO - Soil_Moisture - average value - 48.6875
-2025-06-04 12:05:07,844 - INFO - UniTO_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 48.6875 - False - 80 - 10
-2025-06-04 12:05:07,844 - INFO - Soil_Moisture - UniTO_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33/Drip_Irrigation_Pipe -
-2025-06-04 12:05:15,543 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d", "e": [{"n": "Temperature", "u": "Cel", "t": 1749031515.2549205, "v": 19.4}]}
-2025-06-04 12:05:15,544 - INFO - Temperature - average value - 27.925
-2025-06-04 12:05:15,544 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Cooler - PUBLISH TO ACTUATOR - 27.925 - False - 45 - 13
-2025-06-04 12:05:15,544 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Heater - PUBLISH TO ACTUATOR - 27.925 - False - 45 - 13
-2025-06-04 12:05:15,544 - INFO - Temperature - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Heater -
-2025-06-04 12:05:16,541 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749031516.251925, "v": 63.2}]}
-2025-06-04 12:05:16,541 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1749031516.251925, "v": 927.0}]}
-2025-06-04 12:05:16,541 - INFO - Soil_Moisture - average value - 55.94375
-2025-06-04 12:05:16,542 - INFO - CO2_Concentration - average value - 775.5
-2025-06-04 12:05:16,543 - INFO - UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 55.94375 - False - 80 - 10
-2025-06-04 12:05:16,544 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan - PUBLISH TO ACTUATOR - 775.5 - False - 1000 - 400
-2025-06-04 12:05:16,544 - INFO - Soil_Moisture - UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb/Drip_Irrigation_Pipe -
-2025-06-04 12:05:16,545 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Carbon_Dioxide_Generator - PUBLISH TO ACTUATOR - 775.5 - False - 1000 - 400
-2025-06-04 12:05:16,545 - INFO - CO2_Concentration - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Carbon_Dioxide_Generator -
-2025-06-04 12:05:18,532 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1749031518.2459962, "v": 949.0}]}
-2025-06-04 12:05:18,532 - INFO - CO2_Concentration - average value - 862.25
-2025-06-04 12:05:18,532 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f/Exhaust_Fan - PUBLISH TO ACTUATOR - 862.25 - False - 1000 - 400
-2025-06-04 12:05:18,532 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f/Carbon_Dioxide_Generator - PUBLISH TO ACTUATOR - 862.25 - False - 1000 - 400
-2025-06-04 12:05:18,532 - INFO - CO2_Concentration - UniTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f/Carbon_Dioxide_Generator -
-2025-06-04 12:05:20,544 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b", "e": [{"n": "Lightness", "u": "lx", "t": 1749031520.2548964, "v": 408.0}]}
-2025-06-04 12:05:20,544 - INFO - Lightness - average value - 565.5
-2025-06-04 12:05:20,544 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98", "e": [{"n": "Temperature", "u": "Cel", "t": 1749031520.2548964, "v": 32.0}]}
-2025-06-04 12:05:20,545 - INFO - Temperature - average value - 29.9625
-2025-06-04 12:05:20,545 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net - PUBLISH TO ACTUATOR - 565.5 - False - 1000 - 10
-2025-06-04 12:05:20,546 - INFO - UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Cooler - PUBLISH TO ACTUATOR - 29.9625 - False - 45 - 13
-2025-06-04 12:05:20,546 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/LED_Light - PUBLISH TO ACTUATOR - 565.5 - False - 1000 - 10
-2025-06-04 12:05:20,546 - INFO - Lightness - UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/LED_Light -
-2025-06-04 12:05:20,546 - INFO - UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater - PUBLISH TO ACTUATOR - 29.9625 - False - 45 - 13
-2025-06-04 12:05:20,547 - INFO - Temperature - UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater -
-2025-06-04 12:05:20,547 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749031520.2548964, "v": 48.3}]}
-2025-06-04 12:05:20,547 - INFO - Soil_Moisture - average value - 52.121875
-2025-06-04 12:05:20,548 - INFO - UniTO_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 52.121875 - False - 80 - 10
-2025-06-04 12:05:20,548 - INFO - Soil_Moisture - UniTO_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a/Drip_Irrigation_Pipe -
-2025-06-04 12:05:21,537 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749031521.2491677, "v": 43.3}]}
-2025-06-04 12:05:21,537 - INFO - Soil_Moisture - average value - 47.7109375
-2025-06-04 12:05:21,537 - INFO - UniTO_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 47.7109375 - False - 80 - 10
-2025-06-04 12:05:21,537 - INFO - Soil_Moisture - UniTO_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4/Drip_Irrigation_Pipe -
-2025-06-04 12:05:23,545 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d", "e": [{"n": "Temperature", "u": "Cel", "t": 1749031523.2588472, "v": 29.1}]}
-2025-06-04 12:05:23,546 - INFO - Temperature - average value - 29.53125
-2025-06-04 12:05:23,546 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Cooler - PUBLISH TO ACTUATOR - 29.53125 - False - 45 - 13
-2025-06-04 12:05:23,546 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Heater - PUBLISH TO ACTUATOR - 29.53125 - False - 45 - 13
-2025-06-04 12:05:23,547 - INFO - Temperature - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Heater -
-2025-06-04 12:05:24,538 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900", "e": [{"n": "Lightness", "u": "lx", "t": 1749031524.2508469, "v": 258.0}]}
-2025-06-04 12:05:24,538 - INFO - Lightness - average value - 411.75
-2025-06-04 12:05:24,539 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/Sunshade_Net - PUBLISH TO ACTUATOR - 411.75 - False - 1000 - 10
-2025-06-04 12:05:24,539 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light - PUBLISH TO ACTUATOR - 411.75 - False - 1000 - 10
-2025-06-04 12:05:24,539 - INFO - Lightness - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light -
-2025-06-04 12:05:25,549 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749031525.2607617, "v": 77.7}]}
-2025-06-04 12:05:25,549 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1749031525.2611315, "v": 618.0}]}
-2025-06-04 12:05:25,549 - INFO - Soil_Moisture - average value - 62.70546875
-2025-06-04 12:05:25,549 - INFO - CO2_Concentration - average value - 740.125
-2025-06-04 12:05:25,549 - INFO - UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 62.70546875 - False - 80 - 10
-2025-06-04 12:05:25,549 - INFO - Soil_Moisture - UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb/Drip_Irrigation_Pipe -
-2025-06-04 12:05:25,549 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan - PUBLISH TO ACTUATOR - 740.125 - False - 1000 - 400
-2025-06-04 12:05:25,549 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Carbon_Dioxide_Generator - PUBLISH TO ACTUATOR - 740.125 - False - 1000 - 400
-2025-06-04 12:05:25,550 - INFO - CO2_Concentration - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Carbon_Dioxide_Generator -
-2025-06-04 12:05:26,548 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1749031526.2559717, "v": 564.0}]}
-2025-06-04 12:05:26,549 - INFO - CO2_Concentration - average value - 652.0625
-2025-06-04 12:05:26,549 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Exhaust_Fan - PUBLISH TO ACTUATOR - 652.0625 - False - 1000 - 400
-2025-06-04 12:05:26,549 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator - PUBLISH TO ACTUATOR - 652.0625 - False - 1000 - 400
-2025-06-04 12:05:26,549 - INFO - CO2_Concentration - UniTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator -
-2025-06-04 12:05:28,543 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3", "e": [{"n": "Temperature", "u": "Cel", "t": 1749031528.2539513, "v": 30.2}]}
-2025-06-04 12:05:28,544 - INFO - Temperature - average value - 29.865625
-2025-06-04 12:05:28,544 - INFO - UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Cooler - PUBLISH TO ACTUATOR - 29.865625 - False - 45 - 13
-2025-06-04 12:05:28,544 - INFO - UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Heater - PUBLISH TO ACTUATOR - 29.865625 - False - 45 - 13
-2025-06-04 12:05:28,544 - INFO - Temperature - UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Heater -
-2025-06-04 12:05:29,537 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1749031529.251041, "v": 745.0}]}
-2025-06-04 12:05:29,537 - INFO - CO2_Concentration - average value - 698.53125
-2025-06-04 12:05:29,537 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f/Exhaust_Fan - PUBLISH TO ACTUATOR - 698.53125 - False - 1000 - 400
-2025-06-04 12:05:29,538 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f/Carbon_Dioxide_Generator - PUBLISH TO ACTUATOR - 698.53125 - False - 1000 - 400
-2025-06-04 12:05:29,538 - INFO - CO2_Concentration - UniTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f/Carbon_Dioxide_Generator -
-2025-06-04 12:05:30,534 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749031530.2489285, "v": 46.3}]}
-2025-06-04 12:05:30,534 - INFO - Soil_Moisture - average value - 54.502734375
-2025-06-04 12:05:30,535 - INFO - UniTO_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 54.502734375 - False - 80 - 10
-2025-06-04 12:05:30,535 - INFO - Soil_Moisture - UniTO_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33/Drip_Irrigation_Pipe -
-2025-06-04 12:05:31,551 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d", "e": [{"n": "Temperature", "u": "Cel", "t": 1749031531.265959, "v": 40.2}]}
-2025-06-04 12:05:31,551 - INFO - Temperature - average value - 35.032812500000006
-2025-06-04 12:05:31,551 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Cooler - PUBLISH TO ACTUATOR - 35.032812500000006 - False - 45 - 13
-2025-06-04 12:05:31,552 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Heater - PUBLISH TO ACTUATOR - 35.032812500000006 - False - 45 - 13
-2025-06-04 12:05:31,552 - INFO - Temperature - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Heater -
-2025-06-04 12:05:33,551 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b", "e": [{"n": "Lightness", "u": "lx", "t": 1749031533.2668796, "v": 967.0}]}
-2025-06-04 12:05:33,551 - INFO - Lightness - average value - 689.375
-2025-06-04 12:05:33,552 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net - PUBLISH TO ACTUATOR - 689.375 - False - 1000 - 10
-2025-06-04 12:05:33,552 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/LED_Light - PUBLISH TO ACTUATOR - 689.375 - False - 1000 - 10
-2025-06-04 12:05:33,552 - INFO - Lightness - UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/LED_Light -
-2025-06-04 12:05:33,553 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98", "e": [{"n": "Temperature", "u": "Cel", "t": 1749031533.2668796, "v": 21.1}]}
-2025-06-04 12:05:33,554 - INFO - Temperature - average value - 28.066406250000004
-2025-06-04 12:05:33,554 - INFO - UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Cooler - PUBLISH TO ACTUATOR - 28.066406250000004 - False - 45 - 13
-2025-06-04 12:05:33,555 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749031533.2668796, "v": 55.7}]}
-2025-06-04 12:05:33,555 - INFO - Soil_Moisture - average value - 55.1013671875
-2025-06-04 12:05:33,556 - INFO - UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater - PUBLISH TO ACTUATOR - 28.066406250000004 - False - 45 - 13
-2025-06-04 12:05:33,556 - INFO - Temperature - UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater -
-2025-06-04 12:05:33,557 - INFO - UniTO_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 55.1013671875 - False - 80 - 10
-2025-06-04 12:05:33,557 - INFO - Soil_Moisture - UniTO_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a/Drip_Irrigation_Pipe -
-2025-06-04 12:05:34,552 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1749031534.2633653, "v": 528.0}]}
-2025-06-04 12:05:34,552 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749031534.2633653, "v": 35.5}]}
-2025-06-04 12:05:34,552 - INFO - CO2_Concentration - average value - 613.265625
-2025-06-04 12:05:34,554 - INFO - Soil_Moisture - average value - 45.30068359375
-2025-06-04 12:05:34,554 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan - PUBLISH TO ACTUATOR - 613.265625 - False - 1000 - 400
-2025-06-04 12:05:34,554 - INFO - UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 45.30068359375 - False - 80 - 10
-2025-06-04 12:05:34,555 - INFO - Soil_Moisture - UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb/Drip_Irrigation_Pipe -
-2025-06-04 12:05:34,555 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Carbon_Dioxide_Generator - PUBLISH TO ACTUATOR - 613.265625 - False - 1000 - 400
-2025-06-04 12:05:34,555 - INFO - CO2_Concentration - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Carbon_Dioxide_Generator -
-2025-06-04 12:05:35,553 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749031535.2607603, "v": 29.1}]}
-2025-06-04 12:05:35,553 - INFO - Soil_Moisture - average value - 37.200341796875
-2025-06-04 12:05:35,553 - INFO - UniTO_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 37.200341796875 - False - 80 - 10
-2025-06-04 12:05:35,553 - INFO - Soil_Moisture - UniTO_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4/Drip_Irrigation_Pipe -
-2025-06-04 12:05:39,555 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d", "e": [{"n": "Temperature", "u": "Cel", "t": 1749031539.2689505, "v": 25.8}]}
-2025-06-04 12:05:39,555 - INFO - Temperature - average value - 26.933203125000002
-2025-06-04 12:05:39,555 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Cooler - PUBLISH TO ACTUATOR - 26.933203125000002 - False - 45 - 13
-2025-06-04 12:05:39,555 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Heater - PUBLISH TO ACTUATOR - 26.933203125000002 - False - 45 - 13
-2025-06-04 12:05:39,555 - INFO - Temperature - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Heater -
-2025-06-04 12:05:40,550 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1749031540.2645721, "v": 671.0}]}
-2025-06-04 12:05:40,550 - INFO - CO2_Concentration - average value - 642.1328125
-2025-06-04 12:05:40,551 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f/Exhaust_Fan - PUBLISH TO ACTUATOR - 642.1328125 - False - 1000 - 400
-2025-06-04 12:05:40,551 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f/Carbon_Dioxide_Generator - PUBLISH TO ACTUATOR - 642.1328125 - False - 1000 - 400
-2025-06-04 12:05:40,551 - INFO - CO2_Concentration - UniTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f/Carbon_Dioxide_Generator -
-2025-06-04 12:05:41,546 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900", "e": [{"n": "Lightness", "u": "lx", "t": 1749031541.2619717, "v": 389.0}]}
-2025-06-04 12:05:41,546 - INFO - Lightness - average value - 539.1875
-2025-06-04 12:05:41,547 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/Sunshade_Net - PUBLISH TO ACTUATOR - 539.1875 - False - 1000 - 10
-2025-06-04 12:05:41,547 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light - PUBLISH TO ACTUATOR - 539.1875 - False - 1000 - 10
-2025-06-04 12:05:41,547 - INFO - Lightness - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light -
-2025-06-04 12:05:43,567 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1749031543.2759137, "v": 571.0}]}
-2025-06-04 12:05:43,567 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749031543.2759137, "v": 18.7}]}
-2025-06-04 12:05:43,567 - INFO - CO2_Concentration - average value - 606.56640625
-2025-06-04 12:05:43,567 - INFO - Soil_Moisture - average value - 27.9501708984375
-2025-06-04 12:05:43,567 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan - PUBLISH TO ACTUATOR - 606.56640625 - False - 1000 - 400
-2025-06-04 12:05:43,567 - INFO - UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 27.9501708984375 - False - 80 - 10
-2025-06-04 12:05:43,567 - INFO - Soil_Moisture - UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb/Drip_Irrigation_Pipe -
-2025-06-04 12:05:43,567 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Carbon_Dioxide_Generator - PUBLISH TO ACTUATOR - 606.56640625 - False - 1000 - 400
-2025-06-04 12:05:43,567 - INFO - CO2_Concentration - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Carbon_Dioxide_Generator -
-2025-06-04 12:05:45,547 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1749031545.2588232, "v": 565.0}]}
-2025-06-04 12:05:45,547 - INFO - CO2_Concentration - average value - 585.783203125
-2025-06-04 12:05:45,547 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Exhaust_Fan - PUBLISH TO ACTUATOR - 585.783203125 - False - 1000 - 400
-2025-06-04 12:05:45,547 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator - PUBLISH TO ACTUATOR - 585.783203125 - False - 1000 - 400
-2025-06-04 12:05:45,547 - INFO - CO2_Concentration - UniTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator -
-2025-06-04 12:05:46,556 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b", "e": [{"n": "Lightness", "u": "lx", "t": 1749031546.2688122, "v": 522.0}]}
-2025-06-04 12:05:46,556 - INFO - Lightness - average value - 530.59375
-2025-06-04 12:05:46,557 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net - PUBLISH TO ACTUATOR - 530.59375 - False - 1000 - 10
-2025-06-04 12:05:46,557 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/LED_Light - PUBLISH TO ACTUATOR - 530.59375 - False - 1000 - 10
-2025-06-04 12:05:46,557 - INFO - Lightness - UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/LED_Light -
-2025-06-04 12:05:46,558 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98", "e": [{"n": "Temperature", "u": "Cel", "t": 1749031546.2688122, "v": 32.0}]}
-2025-06-04 12:05:46,558 - INFO - Temperature - average value - 29.466601562500003
-2025-06-04 12:05:46,558 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749031546.2688122, "v": 71.0}]}
-2025-06-04 12:05:46,559 - INFO - Soil_Moisture - average value - 49.47508544921875
-2025-06-04 12:05:46,559 - INFO - UniTO_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 49.47508544921875 - False - 80 - 10
-2025-06-04 12:05:46,559 - INFO - Soil_Moisture - UniTO_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a/Drip_Irrigation_Pipe -
-2025-06-04 12:05:46,559 - INFO - UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Cooler - PUBLISH TO ACTUATOR - 29.466601562500003 - False - 45 - 13
-2025-06-04 12:05:46,559 - INFO - UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater - PUBLISH TO ACTUATOR - 29.466601562500003 - False - 45 - 13
-2025-06-04 12:05:46,559 - INFO - Temperature - UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater -
-2025-06-04 12:05:47,560 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d", "e": [{"n": "Temperature", "u": "Cel", "t": 1749031547.2749484, "v": 17.1}]}
-2025-06-04 12:05:47,560 - INFO - Temperature - average value - 23.283300781250002
-2025-06-04 12:05:47,560 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Cooler - PUBLISH TO ACTUATOR - 23.283300781250002 - False - 45 - 13
-2025-06-04 12:05:47,560 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Heater - PUBLISH TO ACTUATOR - 23.283300781250002 - False - 45 - 13
-2025-06-04 12:05:47,560 - INFO - Temperature - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Heater -
-2025-06-04 12:05:49,546 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3", "e": [{"n": "Temperature", "u": "Cel", "t": 1749031549.258675, "v": 29.2}]}
-2025-06-04 12:05:49,546 - INFO - Temperature - average value - 26.241650390625
-2025-06-04 12:05:49,546 - INFO - UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Cooler - PUBLISH TO ACTUATOR - 26.241650390625 - False - 45 - 13
-2025-06-04 12:05:49,547 - INFO - UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Heater - PUBLISH TO ACTUATOR - 26.241650390625 - False - 45 - 13
-2025-06-04 12:05:49,547 - INFO - Temperature - UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Heater -
-2025-06-04 12:05:49,558 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749031549.2740982, "v": 37.6}]}
-2025-06-04 12:05:49,559 - INFO - Soil_Moisture - average value - 43.53754272460938
-2025-06-04 12:05:49,559 - INFO - UniTO_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 43.53754272460938 - False - 80 - 10
-2025-06-04 12:05:49,559 - INFO - Soil_Moisture - UniTO_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4/Drip_Irrigation_Pipe -
-2025-06-04 12:05:51,565 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1749031551.2782364, "v": 681.0}]}
-2025-06-04 12:05:51,565 - INFO - CO2_Concentration - average value - 633.3916015625
-2025-06-04 12:05:51,565 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f/Exhaust_Fan - PUBLISH TO ACTUATOR - 633.3916015625 - False - 1000 - 400
-2025-06-04 12:05:51,565 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f/Carbon_Dioxide_Generator - PUBLISH TO ACTUATOR - 633.3916015625 - False - 1000 - 400
-2025-06-04 12:05:51,565 - INFO - CO2_Concentration - UniTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f/Carbon_Dioxide_Generator -
-2025-06-04 12:05:52,578 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749031552.2893252, "v": 75.4}]}
-2025-06-04 12:05:52,578 - INFO - Soil_Moisture - average value - 59.46877136230469
-2025-06-04 12:05:52,578 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1749031552.2893252, "v": 516.0}]}
-2025-06-04 12:05:52,578 - INFO - CO2_Concentration - average value - 574.69580078125
-2025-06-04 12:05:52,578 - INFO - UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 59.46877136230469 - False - 80 - 10
-2025-06-04 12:05:52,578 - INFO - Soil_Moisture - UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb/Drip_Irrigation_Pipe -
-2025-06-04 12:05:52,578 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan - PUBLISH TO ACTUATOR - 574.69580078125 - False - 1000 - 400
-2025-06-04 12:05:52,578 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Carbon_Dioxide_Generator - PUBLISH TO ACTUATOR - 574.69580078125 - False - 1000 - 400
-2025-06-04 12:05:52,578 - INFO - CO2_Concentration - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Carbon_Dioxide_Generator -
-2025-06-04 12:05:53,539 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749031553.254064, "v": 52.7}]}
-2025-06-04 12:05:53,539 - INFO - Soil_Moisture - average value - 56.08438568115235
-2025-06-04 12:05:53,539 - INFO - UniTO_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 56.08438568115235 - False - 80 - 10
-2025-06-04 12:05:53,539 - INFO - Soil_Moisture - UniTO_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33/Drip_Irrigation_Pipe -
-2025-06-04 12:05:55,564 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d", "e": [{"n": "Temperature", "u": "Cel", "t": 1749031555.2799134, "v": 23.6}]}
-2025-06-04 12:05:55,564 - INFO - Temperature - average value - 24.920825195312503
-2025-06-04 12:05:55,564 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Cooler - PUBLISH TO ACTUATOR - 24.920825195312503 - False - 45 - 13
-2025-06-04 12:05:55,564 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Heater - PUBLISH TO ACTUATOR - 24.920825195312503 - False - 45 - 13
-2025-06-04 12:05:55,565 - INFO - Temperature - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Heater -
-2025-06-04 12:05:58,550 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900", "e": [{"n": "Lightness", "u": "lx", "t": 1749031558.2629194, "v": 245.0}]}
-2025-06-04 12:05:58,550 - INFO - Lightness - average value - 387.796875
-2025-06-04 12:05:58,550 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/Sunshade_Net - PUBLISH TO ACTUATOR - 387.796875 - False - 1000 - 10
-2025-06-04 12:05:58,550 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light - PUBLISH TO ACTUATOR - 387.796875 - False - 1000 - 10
-2025-06-04 12:05:58,550 - INFO - Lightness - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light -
-2025-06-04 12:05:59,568 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749031559.2771044, "v": 22.9}]}
-2025-06-04 12:05:59,568 - INFO - Soil_Moisture - average value - 39.49219284057617
-2025-06-04 12:05:59,569 - INFO - UniTO_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 39.49219284057617 - False - 80 - 10
-2025-06-04 12:05:59,569 - INFO - Soil_Moisture - UniTO_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a/Drip_Irrigation_Pipe -
-2025-06-04 12:05:59,569 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98", "e": [{"n": "Temperature", "u": "Cel", "t": 1749031559.2780828, "v": 23.1}]}
-2025-06-04 12:05:59,569 - INFO - Temperature - average value - 24.010412597656252
-2025-06-04 12:05:59,569 - INFO - UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Cooler - PUBLISH TO ACTUATOR - 24.010412597656252 - False - 45 - 13
-2025-06-04 12:05:59,570 - INFO - UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater - PUBLISH TO ACTUATOR - 24.010412597656252 - False - 45 - 13
-2025-06-04 12:05:59,570 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b", "e": [{"n": "Lightness", "u": "lx", "t": 1749031559.2771044, "v": 427.0}]}
-2025-06-04 12:05:59,570 - INFO - Temperature - UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater -
-2025-06-04 12:05:59,571 - INFO - Lightness - average value - 407.3984375
-2025-06-04 12:05:59,572 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net - PUBLISH TO ACTUATOR - 407.3984375 - False - 1000 - 10
-2025-06-04 12:05:59,572 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/LED_Light - PUBLISH TO ACTUATOR - 407.3984375 - False - 1000 - 10
-2025-06-04 12:05:59,572 - INFO - Lightness - UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/LED_Light -
-2025-06-04 12:06:01,591 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1749031561.3017604, "v": 545.0}]}
-2025-06-04 12:06:01,591 - INFO - CO2_Concentration - average value - 559.847900390625
-2025-06-04 12:06:01,591 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan - PUBLISH TO ACTUATOR - 559.847900390625 - False - 1000 - 400
-2025-06-04 12:06:01,591 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Carbon_Dioxide_Generator - PUBLISH TO ACTUATOR - 559.847900390625 - False - 1000 - 400
-2025-06-04 12:06:01,591 - INFO - CO2_Concentration - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Carbon_Dioxide_Generator -
-2025-06-04 12:06:01,591 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749031561.3017604, "v": 27.2}]}
-2025-06-04 12:06:01,591 - INFO - Soil_Moisture - average value - 33.346096420288085
-2025-06-04 12:06:01,591 - INFO - UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 33.346096420288085 - False - 80 - 10
-2025-06-04 12:06:01,591 - INFO - Soil_Moisture - UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb/Drip_Irrigation_Pipe -
-2025-06-04 12:06:02,568 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1749031562.2809215, "v": 461.0}]}
-2025-06-04 12:06:02,568 - INFO - CO2_Concentration - average value - 510.4239501953125
-2025-06-04 12:06:02,568 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f/Exhaust_Fan - PUBLISH TO ACTUATOR - 510.4239501953125 - False - 1000 - 400
-2025-06-04 12:06:02,569 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f/Carbon_Dioxide_Generator - PUBLISH TO ACTUATOR - 510.4239501953125 - False - 1000 - 400
-2025-06-04 12:06:02,569 - INFO - CO2_Concentration - UniTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f/Carbon_Dioxide_Generator -
-2025-06-04 12:06:03,577 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749031563.2879176, "v": 22.2}]}
-2025-06-04 12:06:03,578 - INFO - Soil_Moisture - average value - 27.77304821014404
-2025-06-04 12:06:03,578 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d", "e": [{"n": "Temperature", "u": "Cel", "t": 1749031563.2879176, "v": 21.6}]}
-2025-06-04 12:06:03,578 - INFO - Temperature - average value - 22.805206298828125
-2025-06-04 12:06:03,579 - INFO - UniTO_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 27.77304821014404 - False - 80 - 10
-2025-06-04 12:06:03,579 - INFO - Soil_Moisture - UniTO_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4/Drip_Irrigation_Pipe -
-2025-06-04 12:06:03,579 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Cooler - PUBLISH TO ACTUATOR - 22.805206298828125 - False - 45 - 13
-2025-06-04 12:06:03,579 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Heater - PUBLISH TO ACTUATOR - 22.805206298828125 - False - 45 - 13
-2025-06-04 12:06:03,579 - INFO - Temperature - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Heater -
-2025-06-04 12:06:04,557 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1749031564.2648942, "v": 735.0}]}
-2025-06-04 12:06:04,559 - INFO - CO2_Concentration - average value - 622.7119750976562
-2025-06-04 12:06:04,559 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Exhaust_Fan - PUBLISH TO ACTUATOR - 622.7119750976562 - False - 1000 - 400
-2025-06-04 12:06:04,559 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator - PUBLISH TO ACTUATOR - 622.7119750976562 - False - 1000 - 400
-2025-06-04 12:06:04,559 - INFO - CO2_Concentration - UniTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator -
-2025-06-04 12:06:10,560 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3", "e": [{"n": "Temperature", "u": "Cel", "t": 1749031570.2597542, "v": 39.4}]}
-2025-06-04 12:06:10,560 - INFO - Temperature - average value - 31.102603149414062
-2025-06-04 12:06:10,560 - INFO - UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Cooler - PUBLISH TO ACTUATOR - 31.102603149414062 - False - 45 - 13
-2025-06-04 12:06:10,561 - INFO - UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Heater - PUBLISH TO ACTUATOR - 31.102603149414062 - False - 45 - 13
-2025-06-04 12:06:10,561 - INFO - Temperature - UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Heater -
-2025-06-04 12:06:10,594 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1749031570.305253, "v": 472.0}]}
-2025-06-04 12:06:10,595 - INFO - CO2_Concentration - average value - 547.3559875488281
-2025-06-04 12:06:10,595 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749031570.305253, "v": 52.3}]}
-2025-06-04 12:06:10,596 - INFO - Soil_Moisture - average value - 40.03652410507202
-2025-06-04 12:06:10,596 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan - PUBLISH TO ACTUATOR - 547.3559875488281 - False - 1000 - 400
-2025-06-04 12:06:10,597 - INFO - UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 40.03652410507202 - False - 80 - 10
-2025-06-04 12:06:10,597 - INFO - Soil_Moisture - UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb/Drip_Irrigation_Pipe -
-2025-06-04 12:06:10,597 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Carbon_Dioxide_Generator - PUBLISH TO ACTUATOR - 547.3559875488281 - False - 1000 - 400
-2025-06-04 12:06:10,597 - INFO - CO2_Concentration - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Carbon_Dioxide_Generator -
-2025-06-04 12:06:11,589 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d", "e": [{"n": "Temperature", "u": "Cel", "t": 1749031571.3018553, "v": 34.7}]}
-2025-06-04 12:06:11,589 - INFO - Temperature - average value - 32.901301574707034
-2025-06-04 12:06:11,589 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Cooler - PUBLISH TO ACTUATOR - 32.901301574707034 - False - 45 - 13
-2025-06-04 12:06:11,589 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Heater - PUBLISH TO ACTUATOR - 32.901301574707034 - False - 45 - 13
-2025-06-04 12:06:11,589 - INFO - Temperature - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Heater -
-2025-06-04 12:06:12,574 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b", "e": [{"n": "Lightness", "u": "lx", "t": 1749031572.2840862, "v": 212.0}]}
-2025-06-04 12:06:12,574 - INFO - Lightness - average value - 309.69921875
-2025-06-04 12:06:12,575 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net - PUBLISH TO ACTUATOR - 309.69921875 - False - 1000 - 10
-2025-06-04 12:06:12,575 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/LED_Light - PUBLISH TO ACTUATOR - 309.69921875 - False - 1000 - 10
-2025-06-04 12:06:12,575 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749031572.2840862, "v": 70.7}]}
-2025-06-04 12:06:12,576 - INFO - Lightness - UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/LED_Light -
-2025-06-04 12:06:12,576 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98", "e": [{"n": "Temperature", "u": "Cel", "t": 1749031572.2840862, "v": 39.9}]}
-2025-06-04 12:06:12,577 - INFO - Temperature - average value - 36.40065078735351
-2025-06-04 12:06:12,576 - INFO - Soil_Moisture - average value - 55.36826205253601
-2025-06-04 12:06:12,577 - INFO - UniTO_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 55.36826205253601 - False - 80 - 10
-2025-06-04 12:06:12,577 - INFO - Soil_Moisture - UniTO_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a/Drip_Irrigation_Pipe -
-2025-06-04 12:06:12,578 - INFO - UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Cooler - PUBLISH TO ACTUATOR - 36.40065078735351 - False - 45 - 13
-2025-06-04 12:06:12,578 - INFO - UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater - PUBLISH TO ACTUATOR - 36.40065078735351 - False - 45 - 13
-2025-06-04 12:06:12,579 - INFO - Temperature - UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater -
-2025-06-04 12:06:13,577 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1749031573.2908936, "v": 644.0}]}
-2025-06-04 12:06:13,577 - INFO - CO2_Concentration - average value - 595.6779937744141
-2025-06-04 12:06:13,577 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f/Exhaust_Fan - PUBLISH TO ACTUATOR - 595.6779937744141 - False - 1000 - 400
-2025-06-04 12:06:13,577 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f/Carbon_Dioxide_Generator - PUBLISH TO ACTUATOR - 595.6779937744141 - False - 1000 - 400
-2025-06-04 12:06:13,577 - INFO - CO2_Concentration - UniTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f/Carbon_Dioxide_Generator -
-2025-06-04 12:06:15,550 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900", "e": [{"n": "Lightness", "u": "lx", "t": 1749031575.263765, "v": 641.0}]}
-2025-06-04 12:06:15,551 - INFO - Lightness - average value - 475.349609375
-2025-06-04 12:06:15,551 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/Sunshade_Net - PUBLISH TO ACTUATOR - 475.349609375 - False - 1000 - 10
-2025-06-04 12:06:15,552 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light - PUBLISH TO ACTUATOR - 475.349609375 - False - 1000 - 10
-2025-06-04 12:06:15,552 - INFO - Lightness - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light -
-2025-06-04 12:06:16,541 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749031576.2553122, "v": 28.2}]}
-2025-06-04 12:06:16,542 - INFO - Soil_Moisture - average value - 41.78413102626801
-2025-06-04 12:06:16,542 - INFO - UniTO_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 41.78413102626801 - False - 80 - 10
-2025-06-04 12:06:16,542 - INFO - Soil_Moisture - UniTO_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33/Drip_Irrigation_Pipe -
-2025-06-04 12:06:17,583 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749031577.2959034, "v": 63.8}]}
-2025-06-04 12:06:17,583 - INFO - Soil_Moisture - average value - 52.792065513134006
-2025-06-04 12:06:17,584 - INFO - UniTO_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 52.792065513134006 - False - 80 - 10
-2025-06-04 12:06:17,584 - INFO - Soil_Moisture - UniTO_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4/Drip_Irrigation_Pipe -
-2025-06-04 12:06:19,602 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d", "e": [{"n": "Temperature", "u": "Cel", "t": 1749031579.3153613, "v": 29.1}]}
-2025-06-04 12:06:19,603 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749031579.3153613, "v": 61.0}]}
-2025-06-04 12:06:19,603 - INFO - Temperature - average value - 32.75032539367676
-2025-06-04 12:06:19,603 - INFO - Soil_Moisture - average value - 56.896032756567
-2025-06-04 12:06:19,604 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Cooler - PUBLISH TO ACTUATOR - 32.75032539367676 - False - 45 - 13
-2025-06-04 12:06:19,604 - INFO - UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 56.896032756567 - False - 80 - 10
-2025-06-04 12:06:19,605 - INFO - Soil_Moisture - UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb/Drip_Irrigation_Pipe -
-2025-06-04 12:06:19,605 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Heater - PUBLISH TO ACTUATOR - 32.75032539367676 - False - 45 - 13
-2025-06-04 12:06:19,605 - INFO - Temperature - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Heater -
-2025-06-04 12:06:19,608 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1749031579.3153613, "v": 698.0}]}
-2025-06-04 12:06:19,608 - INFO - CO2_Concentration - average value - 646.838996887207
-2025-06-04 12:06:19,608 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan - PUBLISH TO ACTUATOR - 646.838996887207 - False - 1000 - 400
-2025-06-04 12:06:19,608 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Carbon_Dioxide_Generator - PUBLISH TO ACTUATOR - 646.838996887207 - False - 1000 - 400
-2025-06-04 12:06:19,609 - INFO - CO2_Concentration - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Carbon_Dioxide_Generator -
-2025-06-04 12:06:23,627 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1749031583.2660513, "v": 791.0}]}
-2025-06-04 12:06:23,627 - INFO - CO2_Concentration - average value - 718.9194984436035
-2025-06-04 12:06:23,628 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Exhaust_Fan - PUBLISH TO ACTUATOR - 718.9194984436035 - False - 1000 - 400
-2025-06-04 12:06:23,628 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator - PUBLISH TO ACTUATOR - 718.9194984436035 - False - 1000 - 400
-2025-06-04 12:06:23,628 - INFO - CO2_Concentration - UniTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator -
-2025-06-04 12:06:24,725 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1749031584.2959638, "v": 942.0}]}
-2025-06-04 12:06:24,725 - INFO - CO2_Concentration - average value - 830.4597492218018
-2025-06-04 12:06:24,726 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f/Exhaust_Fan - PUBLISH TO ACTUATOR - 830.4597492218018 - False - 1000 - 400
-2025-06-04 12:06:24,726 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f/Carbon_Dioxide_Generator - PUBLISH TO ACTUATOR - 830.4597492218018 - False - 1000 - 400
-2025-06-04 12:06:24,726 - INFO - CO2_Concentration - UniTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f/Carbon_Dioxide_Generator -
-2025-06-04 12:06:25,585 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b", "e": [{"n": "Lightness", "u": "lx", "t": 1749031585.2939985, "v": 640.0}]}
-2025-06-04 12:06:25,586 - INFO - Lightness - average value - 557.6748046875
-2025-06-04 12:06:25,586 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net - PUBLISH TO ACTUATOR - 557.6748046875 - False - 1000 - 10
-2025-06-04 12:06:25,586 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98", "e": [{"n": "Temperature", "u": "Cel", "t": 1749031585.2939985, "v": 44.6}]}
-2025-06-04 12:06:25,586 - INFO - Temperature - average value - 38.675162696838385
-2025-06-04 12:06:25,586 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749031585.2939985, "v": 52.2}]}
-2025-06-04 12:06:25,586 - INFO - Soil_Moisture - average value - 54.548016378283506
-2025-06-04 12:06:25,586 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/LED_Light - PUBLISH TO ACTUATOR - 557.6748046875 - False - 1000 - 10
-2025-06-04 12:06:25,587 - INFO - Lightness - UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/LED_Light -
-2025-06-04 12:06:25,587 - INFO - UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Cooler - PUBLISH TO ACTUATOR - 38.675162696838385 - False - 45 - 13
-2025-06-04 12:06:25,587 - INFO - UniTO_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 54.548016378283506 - False - 80 - 10
-2025-06-04 12:06:25,587 - INFO - Soil_Moisture - UniTO_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a/Drip_Irrigation_Pipe -
-2025-06-04 12:06:25,587 - INFO - UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater - PUBLISH TO ACTUATOR - 38.675162696838385 - False - 45 - 13
-2025-06-04 12:06:25,587 - INFO - Temperature - UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater -
-2025-06-04 12:06:27,603 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d", "e": [{"n": "Temperature", "u": "Cel", "t": 1749031587.3163643, "v": 15.6}]}
-2025-06-04 12:06:27,603 - INFO - Temperature - average value - 27.137581348419193
-2025-06-04 12:06:27,603 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Cooler - PUBLISH TO ACTUATOR - 27.137581348419193 - False - 45 - 13
-2025-06-04 12:06:27,603 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Heater - PUBLISH TO ACTUATOR - 27.137581348419193 - False - 45 - 13
-2025-06-04 12:06:27,603 - INFO - Temperature - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Heater -
-2025-06-04 12:06:28,614 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749031588.3291812, "v": 46.0}]}
-2025-06-04 12:06:28,614 - INFO - Soil_Moisture - average value - 50.27400818914175
-2025-06-04 12:06:28,614 - INFO - UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 50.27400818914175 - False - 80 - 10
-2025-06-04 12:06:28,614 - INFO - Soil_Moisture - UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb/Drip_Irrigation_Pipe -
-2025-06-04 12:06:28,618 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1749031588.3291812, "v": 913.0}]}
-2025-06-04 12:06:28,618 - INFO - CO2_Concentration - average value - 871.7298746109009
-2025-06-04 12:06:28,618 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan - PUBLISH TO ACTUATOR - 871.7298746109009 - False - 1000 - 400
-2025-06-04 12:06:28,618 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Carbon_Dioxide_Generator - PUBLISH TO ACTUATOR - 871.7298746109009 - False - 1000 - 400
-2025-06-04 12:06:28,618 - INFO - CO2_Concentration - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Carbon_Dioxide_Generator -
-2025-06-04 12:06:31,557 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3", "e": [{"n": "Temperature", "u": "Cel", "t": 1749031591.270475, "v": 20.9}]}
-2025-06-04 12:06:31,558 - INFO - Temperature - average value - 24.018790674209598
-2025-06-04 12:06:31,558 - INFO - UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Cooler - PUBLISH TO ACTUATOR - 24.018790674209598 - False - 45 - 13
-2025-06-04 12:06:31,558 - INFO - UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Heater - PUBLISH TO ACTUATOR - 24.018790674209598 - False - 45 - 13
-2025-06-04 12:06:31,559 - INFO - Temperature - UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Heater -
-2025-06-04 12:06:31,589 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749031591.3020775, "v": 22.6}]}
-2025-06-04 12:06:31,589 - INFO - Soil_Moisture - average value - 36.43700409457088
-2025-06-04 12:06:31,590 - INFO - UniTO_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 36.43700409457088 - False - 80 - 10
-2025-06-04 12:06:31,590 - INFO - Soil_Moisture - UniTO_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4/Drip_Irrigation_Pipe -
-2025-06-04 12:06:32,568 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900", "e": [{"n": "Lightness", "u": "lx", "t": 1749031592.2792177, "v": 894.0}]}
-2025-06-04 12:06:32,569 - INFO - Lightness - average value - 725.83740234375
-2025-06-04 12:06:32,569 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/Sunshade_Net - PUBLISH TO ACTUATOR - 725.83740234375 - False - 1000 - 10
-2025-06-04 12:06:32,569 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light - PUBLISH TO ACTUATOR - 725.83740234375 - False - 1000 - 10
-2025-06-04 12:06:32,569 - INFO - Lightness - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light -
-2025-06-04 12:06:35,594 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1749031595.3105521, "v": 477.0}]}
-2025-06-04 12:06:35,595 - INFO - CO2_Concentration - average value - 674.3649373054504
-2025-06-04 12:06:35,595 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f/Exhaust_Fan - PUBLISH TO ACTUATOR - 674.3649373054504 - False - 1000 - 400
-2025-06-04 12:06:35,595 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f/Carbon_Dioxide_Generator - PUBLISH TO ACTUATOR - 674.3649373054504 - False - 1000 - 400
-2025-06-04 12:06:35,596 - INFO - CO2_Concentration - UniTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f/Carbon_Dioxide_Generator -
-2025-06-04 12:06:35,611 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d", "e": [{"n": "Temperature", "u": "Cel", "t": 1749031595.3259964, "v": 18.0}]}
-2025-06-04 12:06:35,611 - INFO - Temperature - average value - 21.0093953371048
-2025-06-04 12:06:35,611 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Cooler - PUBLISH TO ACTUATOR - 21.0093953371048 - False - 45 - 13
-2025-06-04 12:06:35,612 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Heater - PUBLISH TO ACTUATOR - 21.0093953371048 - False - 45 - 13
-2025-06-04 12:06:35,612 - INFO - Temperature - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Heater -
-2025-06-04 12:06:37,628 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749031597.3378978, "v": 64.2}]}
-2025-06-04 12:06:37,628 - INFO - Soil_Moisture - average value - 50.31850204728544
-2025-06-04 12:06:37,628 - INFO - UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 50.31850204728544 - False - 80 - 10
-2025-06-04 12:06:37,628 - INFO - Soil_Moisture - UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb/Drip_Irrigation_Pipe -
-2025-06-04 12:06:37,629 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1749031597.3378978, "v": 799.0}]}
-2025-06-04 12:06:37,629 - INFO - CO2_Concentration - average value - 736.6824686527252
-2025-06-04 12:06:37,629 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan - PUBLISH TO ACTUATOR - 736.6824686527252 - False - 1000 - 400
-2025-06-04 12:06:37,629 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Carbon_Dioxide_Generator - PUBLISH TO ACTUATOR - 736.6824686527252 - False - 1000 - 400
-2025-06-04 12:06:37,629 - INFO - CO2_Concentration - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Carbon_Dioxide_Generator -
-2025-06-04 12:06:38,594 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749031598.3053355, "v": 75.2}]}
-2025-06-04 12:06:38,595 - INFO - Soil_Moisture - average value - 62.75925102364272
-2025-06-04 12:06:38,595 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b", "e": [{"n": "Lightness", "u": "lx", "t": 1749031598.3053355, "v": 921.0}]}
-2025-06-04 12:06:38,596 - INFO - Lightness - average value - 823.418701171875
-2025-06-04 12:06:38,596 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98", "e": [{"n": "Temperature", "u": "Cel", "t": 1749031598.3053355, "v": 22.2}]}
-2025-06-04 12:06:38,596 - INFO - Temperature - average value - 21.604697668552397
-2025-06-04 12:06:38,597 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net - PUBLISH TO ACTUATOR - 823.418701171875 - False - 1000 - 10
-2025-06-04 12:06:38,597 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/LED_Light - PUBLISH TO ACTUATOR - 823.418701171875 - False - 1000 - 10
-2025-06-04 12:06:38,597 - INFO - Lightness - UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/LED_Light -
-2025-06-04 12:06:38,598 - INFO - UniTO_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 62.75925102364272 - False - 80 - 10
-2025-06-04 12:06:38,598 - INFO - Soil_Moisture - UniTO_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a/Drip_Irrigation_Pipe -
-2025-06-04 12:06:38,598 - INFO - UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Cooler - PUBLISH TO ACTUATOR - 21.604697668552397 - False - 45 - 13
-2025-06-04 12:06:38,599 - INFO - UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater - PUBLISH TO ACTUATOR - 21.604697668552397 - False - 45 - 13
-2025-06-04 12:06:38,599 - INFO - Temperature - UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater -
-2025-06-04 12:06:39,544 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749031599.2592158, "v": 25.0}]}
-2025-06-04 12:06:39,544 - INFO - Soil_Moisture - average value - 43.87962551182136
-2025-06-04 12:06:39,545 - INFO - UniTO_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 43.87962551182136 - False - 80 - 10
-2025-06-04 12:06:39,545 - INFO - Soil_Moisture - UniTO_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33/Drip_Irrigation_Pipe -
-2025-06-04 12:06:42,558 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1749031602.268114, "v": 885.0}]}
-2025-06-04 12:06:42,558 - INFO - CO2_Concentration - average value - 810.8412343263626
-2025-06-04 12:06:42,558 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Exhaust_Fan - PUBLISH TO ACTUATOR - 810.8412343263626 - False - 1000 - 400
-2025-06-04 12:06:42,558 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator - PUBLISH TO ACTUATOR - 810.8412343263626 - False - 1000 - 400
-2025-06-04 12:06:42,558 - INFO - CO2_Concentration - UniTO_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator -
-2025-06-04 12:06:43,619 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d", "e": [{"n": "Temperature", "u": "Cel", "t": 1749031603.3310952, "v": 39.0}]}
-2025-06-04 12:06:43,619 - INFO - Temperature - average value - 30.3023488342762
-2025-06-04 12:06:43,620 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Cooler - PUBLISH TO ACTUATOR - 30.3023488342762 - False - 45 - 13
-2025-06-04 12:06:43,621 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Heater - PUBLISH TO ACTUATOR - 30.3023488342762 - False - 45 - 13
-2025-06-04 12:06:43,621 - INFO - Temperature - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Heater -
-2025-06-04 12:06:45,591 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749031605.303251, "v": 69.6}]}
-2025-06-04 12:06:45,591 - INFO - Soil_Moisture - average value - 56.73981275591068
-2025-06-04 12:06:45,592 - INFO - UniTO_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 56.73981275591068 - False - 80 - 10
-2025-06-04 12:06:45,592 - INFO - Soil_Moisture - UniTO_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4/Drip_Irrigation_Pipe -
-2025-06-04 12:06:46,635 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749031606.3487785, "v": 23.3}]}
-2025-06-04 12:06:46,636 - INFO - Soil_Moisture - average value - 40.01990637795534
-2025-06-04 12:06:46,636 - INFO - UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 40.01990637795534 - False - 80 - 10
-2025-06-04 12:06:46,636 - INFO - Soil_Moisture - UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb/Drip_Irrigation_Pipe -
-2025-06-04 12:06:46,700 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1749031606.3177907, "v": 827.0}]}
-2025-06-04 12:06:46,700 - INFO - CO2_Concentration - average value - 818.9206171631813
-2025-06-04 12:06:46,701 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f/Exhaust_Fan - PUBLISH TO ACTUATOR - 818.9206171631813 - False - 1000 - 400
-2025-06-04 12:06:46,701 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f/Carbon_Dioxide_Generator - PUBLISH TO ACTUATOR - 818.9206171631813 - False - 1000 - 400
-2025-06-04 12:06:46,701 - INFO - CO2_Concentration - UniTO_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f/Carbon_Dioxide_Generator -
-2025-06-04 12:06:46,798 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1749031606.3487785, "v": 747.0}]}
-2025-06-04 12:06:46,798 - INFO - CO2_Concentration - average value - 782.9603085815907
-2025-06-04 12:06:46,799 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan - PUBLISH TO ACTUATOR - 782.9603085815907 - False - 1000 - 400
-2025-06-04 12:06:46,799 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Carbon_Dioxide_Generator - PUBLISH TO ACTUATOR - 782.9603085815907 - False - 1000 - 400
-2025-06-04 12:06:46,800 - INFO - CO2_Concentration - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Carbon_Dioxide_Generator -
-2025-06-04 12:06:49,574 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900", "e": [{"n": "Lightness", "u": "lx", "t": 1749031609.2894742, "v": 810.0}]}
-2025-06-04 12:06:49,576 - INFO - Lightness - average value - 816.7093505859375
-2025-06-04 12:06:49,576 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/Sunshade_Net - PUBLISH TO ACTUATOR - 816.7093505859375 - False - 1000 - 10
-2025-06-04 12:06:49,576 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light - PUBLISH TO ACTUATOR - 816.7093505859375 - False - 1000 - 10
-2025-06-04 12:06:49,576 - INFO - Lightness - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light -
-2025-06-04 12:06:51,603 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b", "e": [{"n": "Lightness", "u": "lx", "t": 1749031611.31608, "v": 402.0}]}
-2025-06-04 12:06:51,603 - INFO - Lightness - average value - 609.3546752929688
-2025-06-04 12:06:51,604 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net - PUBLISH TO ACTUATOR - 609.3546752929688 - False - 1000 - 10
-2025-06-04 12:06:51,604 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/LED_Light - PUBLISH TO ACTUATOR - 609.3546752929688 - False - 1000 - 10
-2025-06-04 12:06:51,604 - INFO - Lightness - UniTO_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/LED_Light -
-2025-06-04 12:06:51,605 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749031611.31608, "v": 60.5}]}
-2025-06-04 12:06:51,605 - INFO - Soil_Moisture - average value - 50.25995318897767
-2025-06-04 12:06:51,605 - INFO - UniTO_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 50.25995318897767 - False - 80 - 10
-2025-06-04 12:06:51,606 - INFO - Soil_Moisture - UniTO_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a/Drip_Irrigation_Pipe -
-2025-06-04 12:06:51,700 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98", "e": [{"n": "Temperature", "u": "Cel", "t": 1749031611.31608, "v": 24.2}]}
-2025-06-04 12:06:51,701 - INFO - Temperature - average value - 27.2511744171381
-2025-06-04 12:06:51,701 - INFO - UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Cooler - PUBLISH TO ACTUATOR - 27.2511744171381 - False - 45 - 13
-2025-06-04 12:06:51,702 - INFO - UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater - PUBLISH TO ACTUATOR - 27.2511744171381 - False - 45 - 13
-2025-06-04 12:06:51,702 - INFO - Temperature - UniTO_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater -
-2025-06-04 12:06:51,797 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d", "e": [{"n": "Temperature", "u": "Cel", "t": 1749031611.332093, "v": 36.7}]}
-2025-06-04 12:06:51,797 - INFO - Temperature - average value - 31.975587208569053
-2025-06-04 12:06:51,797 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Cooler - PUBLISH TO ACTUATOR - 31.975587208569053 - False - 45 - 13
-2025-06-04 12:06:51,797 - INFO - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Heater - PUBLISH TO ACTUATOR - 31.975587208569053 - False - 45 - 13
-2025-06-04 12:06:51,797 - INFO - Temperature - UniTO_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Heater -
-2025-06-04 12:06:52,639 - INFO - Received message on topic UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3: {"bn": "UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3", "e": [{"n": "Temperature", "u": "Cel", "t": 1749031612.279302, "v": 39.7}]}
-2025-06-04 12:06:52,639 - INFO - Temperature - average value - 35.83779360428453
-2025-06-04 12:06:52,640 - INFO - UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Cooler - PUBLISH TO ACTUATOR - 35.83779360428453 - False - 45 - 13
-2025-06-04 12:06:52,640 - INFO - UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Heater - PUBLISH TO ACTUATOR - 35.83779360428453 - False - 45 - 13
-2025-06-04 12:06:52,640 - INFO - Temperature - UniTO_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Heater -
+2025-06-04 14:02:57,765 - INFO - Controller:a4b0f00380bc43868d Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-04 14:02:57,891 - INFO - Controller:88916c23c5c943ebaf Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-04 14:02:58,024 - INFO - Controller:eae79ac3a0084883b8 Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-04 14:02:58,115 - INFO - Controller:8734be03bc204f0bb1 Connected to mqtt.eclipseprojects.io with result code: 0 
+2025-06-04 14:03:50,132 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900", "e": [{"n": "Lightness", "u": "lx", "t": 1749038629.749796, "v": 702.0}]}
+2025-06-04 14:03:50,132 - INFO - Lightness - average value - 702.0
+2025-06-04 14:03:50,133 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/Sunshade_Net - PUBLISH TO ACTUATOR - 702.0 - False - 1000 - 10
+2025-06-04 14:03:50,133 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light - PUBLISH TO ACTUATOR - 702.0 - False - 1000 - 10
+2025-06-04 14:03:50,133 - INFO - Lightness - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light -
+2025-06-04 14:03:50,134 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3: {"bn": "Torino_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3", "e": [{"n": "Temperature", "u": "Cel", "t": 1749038629.7477138, "v": 21.4}]}
+2025-06-04 14:03:50,134 - INFO - Temperature - average value - 21.4
+2025-06-04 14:03:50,134 - INFO - Torino_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Cooler - PUBLISH TO ACTUATOR - 21.4 - False - 44 - 14
+2025-06-04 14:03:50,135 - INFO - Torino_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Heater - PUBLISH TO ACTUATOR - 21.4 - False - 44 - 14
+2025-06-04 14:03:50,135 - INFO - Temperature - Torino_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Heater -
+2025-06-04 14:03:50,136 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1749038629.7508564, "v": 752.0}]}
+2025-06-04 14:03:50,136 - INFO - CO2_Concentration - average value - 752.0
+2025-06-04 14:03:50,136 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f/Exhaust_Fan - PUBLISH TO ACTUATOR - 752.0 - False - 1000 - 400
+2025-06-04 14:03:50,136 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f/Carbon_Dioxide_Generator - PUBLISH TO ACTUATOR - 752.0 - False - 1000 - 400
+2025-06-04 14:03:50,136 - INFO - CO2_Concentration - Torino_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f/Carbon_Dioxide_Generator -
+2025-06-04 14:03:50,138 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a: {"bn": "Torino_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749038629.751885, "v": 76.6}]}
+2025-06-04 14:03:50,138 - INFO - Soil_Moisture - average value - 76.6
+2025-06-04 14:03:50,138 - INFO - Torino_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 76.6 - False - 80 - 10
+2025-06-04 14:03:50,138 - INFO - Soil_Moisture - Torino_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a/Drip_Irrigation_Pipe -
+2025-06-04 14:03:50,228 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b", "e": [{"n": "Lightness", "u": "lx", "t": 1749038629.7487786, "v": 884.0}]}
+2025-06-04 14:03:50,228 - INFO - Lightness - average value - 793.0
+2025-06-04 14:03:50,228 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net - PUBLISH TO ACTUATOR - 793.0 - False - 1000 - 10
+2025-06-04 14:03:50,228 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/LED_Light - PUBLISH TO ACTUATOR - 793.0 - False - 1000 - 10
+2025-06-04 14:03:50,228 - INFO - Lightness - Torino_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/LED_Light -
+2025-06-04 14:03:50,230 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98: {"bn": "Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98", "e": [{"n": "Temperature", "u": "Cel", "t": 1749038629.7530527, "v": 33.4}]}
+2025-06-04 14:03:50,230 - INFO - Temperature - average value - 27.4
+2025-06-04 14:03:50,230 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1749038629.7540646, "v": 803.0}]}
+2025-06-04 14:03:50,230 - INFO - CO2_Concentration - average value - 777.5
+2025-06-04 14:03:50,231 - INFO - Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Cooler - PUBLISH TO ACTUATOR - 27.4 - False - 44 - 14
+2025-06-04 14:03:50,231 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Exhaust_Fan - PUBLISH TO ACTUATOR - 777.5 - False - 1000 - 400
+2025-06-04 14:03:50,231 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator - PUBLISH TO ACTUATOR - 777.5 - False - 1000 - 400
+2025-06-04 14:03:50,231 - INFO - CO2_Concentration - Torino_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator -
+2025-06-04 14:03:50,232 - INFO - Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater - PUBLISH TO ACTUATOR - 27.4 - False - 44 - 14
+2025-06-04 14:03:50,232 - INFO - Temperature - Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater -
+2025-06-04 14:03:50,233 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4: {"bn": "Torino_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749038629.751885, "v": 57.9}]}
+2025-06-04 14:03:50,233 - INFO - Soil_Moisture - average value - 67.25
+2025-06-04 14:03:50,234 - INFO - Torino_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 67.25 - False - 80 - 10
+2025-06-04 14:03:50,234 - INFO - Soil_Moisture - Torino_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4/Drip_Irrigation_Pipe -
+2025-06-04 14:03:50,325 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1749038629.7540646, "v": 923.0}]}
+2025-06-04 14:03:50,326 - INFO - CO2_Concentration - average value - 850.25
+2025-06-04 14:03:50,326 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d", "e": [{"n": "Temperature", "u": "Cel", "t": 1749038629.7550733, "v": 36.6}]}
+2025-06-04 14:03:50,326 - INFO - Temperature - average value - 32.0
+2025-06-04 14:03:50,326 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan - PUBLISH TO ACTUATOR - 850.25 - False - 1000 - 400
+2025-06-04 14:03:50,326 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Cooler - PUBLISH TO ACTUATOR - 32.0 - False - 44 - 14
+2025-06-04 14:03:50,326 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Carbon_Dioxide_Generator - PUBLISH TO ACTUATOR - 850.25 - False - 1000 - 400
+2025-06-04 14:03:50,326 - INFO - CO2_Concentration - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Carbon_Dioxide_Generator -
+2025-06-04 14:03:50,326 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Heater - PUBLISH TO ACTUATOR - 32.0 - False - 44 - 14
+2025-06-04 14:03:50,326 - INFO - Temperature - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Heater -
+2025-06-04 14:03:50,330 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb: {"bn": "Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749038629.7530527, "v": 31.2}]}
+2025-06-04 14:03:50,330 - INFO - Soil_Moisture - average value - 49.225
+2025-06-04 14:03:50,330 - INFO - Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 49.225 - False - 80 - 10
+2025-06-04 14:03:50,330 - INFO - Soil_Moisture - Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb/Drip_Irrigation_Pipe -
+2025-06-04 14:03:50,330 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33: {"bn": "Torino_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749038629.7540646, "v": 33.9}]}
+2025-06-04 14:03:50,330 - INFO - Soil_Moisture - average value - 41.5625
+2025-06-04 14:03:50,330 - INFO - Torino_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 41.5625 - False - 80 - 10
+2025-06-04 14:03:50,330 - INFO - Soil_Moisture - Torino_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33/Drip_Irrigation_Pipe -
+2025-06-04 14:03:58,051 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d", "e": [{"n": "Temperature", "u": "Cel", "t": 1749038637.7564993, "v": 25.7}]}
+2025-06-04 14:03:58,052 - INFO - Temperature - average value - 28.85
+2025-06-04 14:03:58,052 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Cooler - PUBLISH TO ACTUATOR - 28.85 - False - 44 - 14
+2025-06-04 14:03:58,052 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Heater - PUBLISH TO ACTUATOR - 28.85 - False - 44 - 14
+2025-06-04 14:03:58,052 - INFO - Temperature - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Heater -
+2025-06-04 14:03:59,052 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1749038638.7651095, "v": 418.0}]}
+2025-06-04 14:03:59,052 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb: {"bn": "Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749038638.7651095, "v": 16.7}]}
+2025-06-04 14:03:59,052 - INFO - CO2_Concentration - average value - 634.125
+2025-06-04 14:03:59,052 - INFO - Soil_Moisture - average value - 29.13125
+2025-06-04 14:03:59,053 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan - PUBLISH TO ACTUATOR - 634.125 - False - 1000 - 400
+2025-06-04 14:03:59,053 - INFO - Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 29.13125 - False - 80 - 10
+2025-06-04 14:03:59,053 - INFO - Soil_Moisture - Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb/Drip_Irrigation_Pipe -
+2025-06-04 14:03:59,053 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Carbon_Dioxide_Generator - PUBLISH TO ACTUATOR - 634.125 - False - 1000 - 400
+2025-06-04 14:03:59,054 - INFO - CO2_Concentration - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Carbon_Dioxide_Generator -
+2025-06-04 14:04:01,040 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1749038640.7533772, "v": 561.0}]}
+2025-06-04 14:04:01,040 - INFO - CO2_Concentration - average value - 597.5625
+2025-06-04 14:04:01,041 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f/Exhaust_Fan - PUBLISH TO ACTUATOR - 597.5625 - False - 1000 - 400
+2025-06-04 14:04:01,041 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f/Carbon_Dioxide_Generator - PUBLISH TO ACTUATOR - 597.5625 - False - 1000 - 400
+2025-06-04 14:04:01,041 - INFO - CO2_Concentration - Torino_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f/Carbon_Dioxide_Generator -
+2025-06-04 14:04:03,048 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a: {"bn": "Torino_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749038642.7593076, "v": 24.9}]}
+2025-06-04 14:04:03,048 - INFO - Soil_Moisture - average value - 27.015625
+2025-06-04 14:04:03,049 - INFO - Torino_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 27.015625 - False - 80 - 10
+2025-06-04 14:04:03,049 - INFO - Soil_Moisture - Torino_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a/Drip_Irrigation_Pipe -
+2025-06-04 14:04:03,050 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98: {"bn": "Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98", "e": [{"n": "Temperature", "u": "Cel", "t": 1749038642.7593076, "v": 15.3}]}
+2025-06-04 14:04:03,050 - INFO - Temperature - average value - 22.075000000000003
+2025-06-04 14:04:03,050 - INFO - Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Cooler - PUBLISH TO ACTUATOR - 22.075000000000003 - False - 44 - 14
+2025-06-04 14:04:03,050 - INFO - Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater - PUBLISH TO ACTUATOR - 22.075000000000003 - False - 44 - 14
+2025-06-04 14:04:03,050 - INFO - Temperature - Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater -
+2025-06-04 14:04:03,054 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b", "e": [{"n": "Lightness", "u": "lx", "t": 1749038642.7593076, "v": 78.0}]}
+2025-06-04 14:04:03,054 - INFO - Lightness - average value - 435.5
+2025-06-04 14:04:03,054 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net - PUBLISH TO ACTUATOR - 435.5 - False - 1000 - 10
+2025-06-04 14:04:03,054 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/LED_Light - PUBLISH TO ACTUATOR - 435.5 - False - 1000 - 10
+2025-06-04 14:04:03,054 - INFO - Lightness - Torino_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/LED_Light -
+2025-06-04 14:04:04,041 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4: {"bn": "Torino_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749038643.7528956, "v": 16.6}]}
+2025-06-04 14:04:04,041 - INFO - Soil_Moisture - average value - 21.8078125
+2025-06-04 14:04:04,042 - INFO - Torino_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 21.8078125 - False - 80 - 10
+2025-06-04 14:04:04,042 - INFO - Soil_Moisture - Torino_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4/Drip_Irrigation_Pipe -
+2025-06-04 14:04:06,051 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d", "e": [{"n": "Temperature", "u": "Cel", "t": 1749038645.76328, "v": 22.6}]}
+2025-06-04 14:04:06,052 - INFO - Temperature - average value - 22.337500000000002
+2025-06-04 14:04:06,052 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Cooler - PUBLISH TO ACTUATOR - 22.337500000000002 - False - 44 - 14
+2025-06-04 14:04:06,052 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Heater - PUBLISH TO ACTUATOR - 22.337500000000002 - False - 44 - 14
+2025-06-04 14:04:06,052 - INFO - Temperature - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Heater -
+2025-06-04 14:04:07,041 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900", "e": [{"n": "Lightness", "u": "lx", "t": 1749038646.7578185, "v": 661.0}]}
+2025-06-04 14:04:07,041 - INFO - Lightness - average value - 548.25
+2025-06-04 14:04:07,042 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/Sunshade_Net - PUBLISH TO ACTUATOR - 548.25 - False - 1000 - 10
+2025-06-04 14:04:07,042 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light - PUBLISH TO ACTUATOR - 548.25 - False - 1000 - 10
+2025-06-04 14:04:07,042 - INFO - Lightness - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light -
+2025-06-04 14:04:08,057 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb: {"bn": "Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749038647.7693155, "v": 10.0}]}
+2025-06-04 14:04:08,057 - INFO - Soil_Moisture - average value - 15.90390625
+2025-06-04 14:04:08,057 - INFO - Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 15.90390625 - False - 80 - 10
+2025-06-04 14:04:08,057 - INFO - Soil_Moisture - Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb/Drip_Irrigation_Pipe -
+2025-06-04 14:04:08,059 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1749038647.7693155, "v": 680.0}]}
+2025-06-04 14:04:08,059 - INFO - CO2_Concentration - average value - 638.78125
+2025-06-04 14:04:08,060 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan - PUBLISH TO ACTUATOR - 638.78125 - False - 1000 - 400
+2025-06-04 14:04:08,060 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Carbon_Dioxide_Generator - PUBLISH TO ACTUATOR - 638.78125 - False - 1000 - 400
+2025-06-04 14:04:08,060 - INFO - CO2_Concentration - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Carbon_Dioxide_Generator -
+2025-06-04 14:04:09,052 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1749038648.7650478, "v": 769.0}]}
+2025-06-04 14:04:09,055 - INFO - CO2_Concentration - average value - 703.890625
+2025-06-04 14:04:09,055 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Exhaust_Fan - PUBLISH TO ACTUATOR - 703.890625 - False - 1000 - 400
+2025-06-04 14:04:09,055 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator - PUBLISH TO ACTUATOR - 703.890625 - False - 1000 - 400
+2025-06-04 14:04:09,055 - INFO - CO2_Concentration - Torino_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator -
+2025-06-04 14:04:11,044 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3: {"bn": "Torino_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3", "e": [{"n": "Temperature", "u": "Cel", "t": 1749038650.7576544, "v": 42.9}]}
+2025-06-04 14:04:11,044 - INFO - Temperature - average value - 32.61875
+2025-06-04 14:04:11,045 - INFO - Torino_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Cooler - PUBLISH TO ACTUATOR - 32.61875 - False - 44 - 14
+2025-06-04 14:04:11,045 - INFO - Torino_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Heater - PUBLISH TO ACTUATOR - 32.61875 - False - 44 - 14
+2025-06-04 14:04:11,045 - INFO - Temperature - Torino_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Heater -
+2025-06-04 14:04:12,046 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1749038651.7580655, "v": 883.0}]}
+2025-06-04 14:04:12,046 - INFO - CO2_Concentration - average value - 793.4453125
+2025-06-04 14:04:12,046 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f/Exhaust_Fan - PUBLISH TO ACTUATOR - 793.4453125 - False - 1000 - 400
+2025-06-04 14:04:12,046 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f/Carbon_Dioxide_Generator - PUBLISH TO ACTUATOR - 793.4453125 - False - 1000 - 400
+2025-06-04 14:04:12,046 - INFO - CO2_Concentration - Torino_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f/Carbon_Dioxide_Generator -
+2025-06-04 14:04:13,045 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33: {"bn": "Torino_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749038652.7551613, "v": 57.0}]}
+2025-06-04 14:04:13,045 - INFO - Soil_Moisture - average value - 36.451953125
+2025-06-04 14:04:13,045 - INFO - Torino_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 36.451953125 - False - 80 - 10
+2025-06-04 14:04:13,045 - INFO - Soil_Moisture - Torino_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33/Drip_Irrigation_Pipe -
+2025-06-04 14:04:14,060 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d", "e": [{"n": "Temperature", "u": "Cel", "t": 1749038653.764683, "v": 16.1}]}
+2025-06-04 14:04:14,060 - INFO - Temperature - average value - 24.359375
+2025-06-04 14:04:14,060 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Cooler - PUBLISH TO ACTUATOR - 24.359375 - False - 44 - 14
+2025-06-04 14:04:14,061 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Heater - PUBLISH TO ACTUATOR - 24.359375 - False - 44 - 14
+2025-06-04 14:04:14,061 - INFO - Temperature - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Heater -
+2025-06-04 14:04:16,057 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b", "e": [{"n": "Lightness", "u": "lx", "t": 1749038655.770816, "v": 48.0}]}
+2025-06-04 14:04:16,058 - INFO - Lightness - average value - 298.125
+2025-06-04 14:04:16,059 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a: {"bn": "Torino_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749038655.769823, "v": 71.9}]}
+2025-06-04 14:04:16,059 - INFO - Soil_Moisture - average value - 54.175976562500004
+2025-06-04 14:04:16,059 - INFO - Torino_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 54.175976562500004 - False - 80 - 10
+2025-06-04 14:04:16,060 - INFO - Soil_Moisture - Torino_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a/Drip_Irrigation_Pipe -
+2025-06-04 14:04:16,060 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net - PUBLISH TO ACTUATOR - 298.125 - False - 1000 - 10
+2025-06-04 14:04:16,060 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98: {"bn": "Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98", "e": [{"n": "Temperature", "u": "Cel", "t": 1749038655.769823, "v": 25.4}]}
+2025-06-04 14:04:16,062 - INFO - Temperature - average value - 24.8796875
+2025-06-04 14:04:16,061 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/LED_Light - PUBLISH TO ACTUATOR - 298.125 - False - 1000 - 10
+2025-06-04 14:04:16,063 - INFO - Lightness - Torino_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/LED_Light -
+2025-06-04 14:04:16,063 - INFO - Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Cooler - PUBLISH TO ACTUATOR - 24.8796875 - False - 44 - 14
+2025-06-04 14:04:16,063 - INFO - Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater - PUBLISH TO ACTUATOR - 24.8796875 - False - 44 - 14
+2025-06-04 14:04:16,064 - INFO - Temperature - Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater -
+2025-06-04 14:04:17,069 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1749038656.78095, "v": 589.0}]}
+2025-06-04 14:04:17,070 - INFO - CO2_Concentration - average value - 691.22265625
+2025-06-04 14:04:17,070 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan - PUBLISH TO ACTUATOR - 691.22265625 - False - 1000 - 400
+2025-06-04 14:04:17,071 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Carbon_Dioxide_Generator - PUBLISH TO ACTUATOR - 691.22265625 - False - 1000 - 400
+2025-06-04 14:04:17,071 - INFO - CO2_Concentration - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Carbon_Dioxide_Generator -
+2025-06-04 14:04:17,071 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb: {"bn": "Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749038656.78095, "v": 13.8}]}
+2025-06-04 14:04:17,072 - INFO - Soil_Moisture - average value - 33.987988281250004
+2025-06-04 14:04:17,072 - INFO - Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 33.987988281250004 - False - 80 - 10
+2025-06-04 14:04:17,073 - INFO - Soil_Moisture - Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb/Drip_Irrigation_Pipe -
+2025-06-04 14:04:18,053 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4: {"bn": "Torino_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749038657.765059, "v": 79.9}]}
+2025-06-04 14:04:18,053 - INFO - Soil_Moisture - average value - 56.94399414062501
+2025-06-04 14:04:18,054 - INFO - Torino_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 56.94399414062501 - False - 80 - 10
+2025-06-04 14:04:18,054 - INFO - Soil_Moisture - Torino_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4/Drip_Irrigation_Pipe -
+2025-06-04 14:04:22,061 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d", "e": [{"n": "Temperature", "u": "Cel", "t": 1749038661.7743902, "v": 44.6}]}
+2025-06-04 14:04:22,062 - INFO - Temperature - average value - 34.73984375
+2025-06-04 14:04:22,062 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Cooler - PUBLISH TO ACTUATOR - 34.73984375 - False - 44 - 14
+2025-06-04 14:04:22,062 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Heater - PUBLISH TO ACTUATOR - 34.73984375 - False - 44 - 14
+2025-06-04 14:04:22,062 - INFO - Temperature - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Heater -
+2025-06-04 14:04:23,063 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1749038662.7657964, "v": 490.0}]}
+2025-06-04 14:04:23,063 - INFO - CO2_Concentration - average value - 590.611328125
+2025-06-04 14:04:23,064 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f/Exhaust_Fan - PUBLISH TO ACTUATOR - 590.611328125 - False - 1000 - 400
+2025-06-04 14:04:23,064 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f/Carbon_Dioxide_Generator - PUBLISH TO ACTUATOR - 590.611328125 - False - 1000 - 400
+2025-06-04 14:04:23,064 - INFO - CO2_Concentration - Torino_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f/Carbon_Dioxide_Generator -
+2025-06-04 14:04:24,051 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900", "e": [{"n": "Lightness", "u": "lx", "t": 1749038663.7632558, "v": 944.0}]}
+2025-06-04 14:04:24,051 - INFO - Lightness - average value - 621.0625
+2025-06-04 14:04:24,052 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/Sunshade_Net - PUBLISH TO ACTUATOR - 621.0625 - False - 1000 - 10
+2025-06-04 14:04:24,052 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light - PUBLISH TO ACTUATOR - 621.0625 - False - 1000 - 10
+2025-06-04 14:04:24,052 - INFO - Lightness - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light -
+2025-06-04 14:04:26,080 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1749038665.7919059, "v": 841.0}]}
+2025-06-04 14:04:26,080 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb: {"bn": "Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749038665.7919059, "v": 46.5}]}
+2025-06-04 14:04:26,081 - INFO - Soil_Moisture - average value - 51.721997070312504
+2025-06-04 14:04:26,081 - INFO - CO2_Concentration - average value - 715.8056640625
+2025-06-04 14:04:26,081 - INFO - Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 51.721997070312504 - False - 80 - 10
+2025-06-04 14:04:26,081 - INFO - Soil_Moisture - Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb/Drip_Irrigation_Pipe -
+2025-06-04 14:04:26,081 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan - PUBLISH TO ACTUATOR - 715.8056640625 - False - 1000 - 400
+2025-06-04 14:04:26,081 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Carbon_Dioxide_Generator - PUBLISH TO ACTUATOR - 715.8056640625 - False - 1000 - 400
+2025-06-04 14:04:26,081 - INFO - CO2_Concentration - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Carbon_Dioxide_Generator -
+2025-06-04 14:04:28,061 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1749038667.7722137, "v": 633.0}]}
+2025-06-04 14:04:28,061 - INFO - CO2_Concentration - average value - 674.40283203125
+2025-06-04 14:04:28,062 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Exhaust_Fan - PUBLISH TO ACTUATOR - 674.40283203125 - False - 1000 - 400
+2025-06-04 14:04:28,062 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator - PUBLISH TO ACTUATOR - 674.40283203125 - False - 1000 - 400
+2025-06-04 14:04:28,062 - INFO - CO2_Concentration - Torino_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator -
+2025-06-04 14:04:29,068 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b", "e": [{"n": "Lightness", "u": "lx", "t": 1749038668.781204, "v": 775.0}]}
+2025-06-04 14:04:29,068 - INFO - Lightness - average value - 698.03125
+2025-06-04 14:04:29,068 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a: {"bn": "Torino_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749038668.781204, "v": 17.9}]}
+2025-06-04 14:04:29,069 - INFO - Soil_Moisture - average value - 34.81099853515625
+2025-06-04 14:04:29,069 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net - PUBLISH TO ACTUATOR - 698.03125 - False - 1000 - 10
+2025-06-04 14:04:29,069 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98: {"bn": "Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98", "e": [{"n": "Temperature", "u": "Cel", "t": 1749038668.781204, "v": 25.1}]}
+2025-06-04 14:04:29,069 - INFO - Torino_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 34.81099853515625 - False - 80 - 10
+2025-06-04 14:04:29,069 - INFO - Soil_Moisture - Torino_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a/Drip_Irrigation_Pipe -
+2025-06-04 14:04:29,069 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/LED_Light - PUBLISH TO ACTUATOR - 698.03125 - False - 1000 - 10
+2025-06-04 14:04:29,069 - INFO - Temperature - average value - 29.919921875
+2025-06-04 14:04:29,069 - INFO - Lightness - Torino_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/LED_Light -
+2025-06-04 14:04:29,069 - INFO - Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Cooler - PUBLISH TO ACTUATOR - 29.919921875 - False - 44 - 14
+2025-06-04 14:04:29,070 - INFO - Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater - PUBLISH TO ACTUATOR - 29.919921875 - False - 44 - 14
+2025-06-04 14:04:29,070 - INFO - Temperature - Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater -
+2025-06-04 14:04:30,070 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d", "e": [{"n": "Temperature", "u": "Cel", "t": 1749038669.780986, "v": 35.0}]}
+2025-06-04 14:04:30,070 - INFO - Temperature - average value - 32.4599609375
+2025-06-04 14:04:30,070 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Cooler - PUBLISH TO ACTUATOR - 32.4599609375 - False - 44 - 14
+2025-06-04 14:04:30,070 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Heater - PUBLISH TO ACTUATOR - 32.4599609375 - False - 44 - 14
+2025-06-04 14:04:30,070 - INFO - Temperature - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Heater -
+2025-06-04 14:04:32,057 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3: {"bn": "Torino_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3", "e": [{"n": "Temperature", "u": "Cel", "t": 1749038671.7663589, "v": 28.7}]}
+2025-06-04 14:04:32,058 - INFO - Temperature - average value - 30.57998046875
+2025-06-04 14:04:32,058 - INFO - Torino_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Cooler - PUBLISH TO ACTUATOR - 30.57998046875 - False - 44 - 14
+2025-06-04 14:04:32,059 - INFO - Torino_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Heater - PUBLISH TO ACTUATOR - 30.57998046875 - False - 44 - 14
+2025-06-04 14:04:32,059 - INFO - Temperature - Torino_IotSmartFarm/Lingotto/Area_A/Position_01/Temperature/9f42a1c3/Heater -
+2025-06-04 14:04:32,062 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4: {"bn": "Torino_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749038671.7663589, "v": 32.0}]}
+2025-06-04 14:04:32,062 - INFO - Soil_Moisture - average value - 33.40549926757812
+2025-06-04 14:04:32,063 - INFO - Torino_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 33.40549926757812 - False - 80 - 10
+2025-06-04 14:04:32,063 - INFO - Soil_Moisture - Torino_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4/Drip_Irrigation_Pipe -
+2025-06-04 14:04:34,065 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1749038673.776083, "v": 980.0}]}
+2025-06-04 14:04:34,066 - INFO - CO2_Concentration - average value - 827.201416015625
+2025-06-04 14:04:34,066 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f/Exhaust_Fan - PUBLISH TO ACTUATOR - 827.201416015625 - False - 1000 - 400
+2025-06-04 14:04:34,066 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f/Carbon_Dioxide_Generator - PUBLISH TO ACTUATOR - 827.201416015625 - False - 1000 - 400
+2025-06-04 14:04:34,066 - INFO - CO2_Concentration - Torino_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f/Carbon_Dioxide_Generator -
+2025-06-04 14:04:35,091 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1749038674.8027396, "v": 789.0}]}
+2025-06-04 14:04:35,092 - INFO - CO2_Concentration - average value - 808.1007080078125
+2025-06-04 14:04:35,092 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan - PUBLISH TO ACTUATOR - 808.1007080078125 - False - 1000 - 400
+2025-06-04 14:04:35,092 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb: {"bn": "Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749038674.8027396, "v": 11.3}]}
+2025-06-04 14:04:35,092 - INFO - Soil_Moisture - average value - 22.35274963378906
+2025-06-04 14:04:35,093 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Carbon_Dioxide_Generator - PUBLISH TO ACTUATOR - 808.1007080078125 - False - 1000 - 400
+2025-06-04 14:04:35,093 - INFO - CO2_Concentration - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Carbon_Dioxide_Generator -
+2025-06-04 14:04:35,093 - INFO - Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 22.35274963378906 - False - 80 - 10
+2025-06-04 14:04:35,093 - INFO - Soil_Moisture - Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb/Drip_Irrigation_Pipe -
+2025-06-04 14:04:36,057 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33: {"bn": "Torino_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749038675.7691483, "v": 49.2}]}
+2025-06-04 14:04:36,057 - INFO - Soil_Moisture - average value - 35.77637481689453
+2025-06-04 14:04:36,057 - INFO - Torino_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 35.77637481689453 - False - 80 - 10
+2025-06-04 14:04:36,057 - INFO - Soil_Moisture - Torino_IotSmartFarm/Lingotto/Area_D/Position_01/Soil_Moisture/a8830d33/Drip_Irrigation_Pipe -
+2025-06-04 14:04:38,069 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d", "e": [{"n": "Temperature", "u": "Cel", "t": 1749038677.7813592, "v": 32.6}]}
+2025-06-04 14:04:38,069 - INFO - Temperature - average value - 31.589990234375
+2025-06-04 14:04:38,069 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Cooler - PUBLISH TO ACTUATOR - 31.589990234375 - False - 44 - 14
+2025-06-04 14:04:38,070 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Heater - PUBLISH TO ACTUATOR - 31.589990234375 - False - 44 - 14
+2025-06-04 14:04:38,070 - INFO - Temperature - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Heater -
+2025-06-04 14:04:41,064 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900", "e": [{"n": "Lightness", "u": "lx", "t": 1749038680.7769752, "v": 507.0}]}
+2025-06-04 14:04:41,064 - INFO - Lightness - average value - 602.515625
+2025-06-04 14:04:41,064 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/Sunshade_Net - PUBLISH TO ACTUATOR - 602.515625 - False - 1000 - 10
+2025-06-04 14:04:41,064 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light - PUBLISH TO ACTUATOR - 602.515625 - False - 1000 - 10
+2025-06-04 14:04:41,064 - INFO - Lightness - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Lightness/c3d47900/LED_Light -
+2025-06-04 14:04:42,075 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b", "e": [{"n": "Lightness", "u": "lx", "t": 1749038681.784963, "v": 400.0}]}
+2025-06-04 14:04:42,075 - INFO - Lightness - average value - 501.2578125
+2025-06-04 14:04:42,075 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/Sunshade_Net - PUBLISH TO ACTUATOR - 501.2578125 - False - 1000 - 10
+2025-06-04 14:04:42,077 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/LED_Light - PUBLISH TO ACTUATOR - 501.2578125 - False - 1000 - 10
+2025-06-04 14:04:42,077 - INFO - Lightness - Torino_IotSmartFarm/Lingotto/Area_B/Position_01/Lightness/f47ac10b/LED_Light -
+2025-06-04 14:04:42,078 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a: {"bn": "Torino_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749038681.784963, "v": 13.0}]}
+2025-06-04 14:04:42,078 - INFO - Soil_Moisture - average value - 24.388187408447266
+2025-06-04 14:04:42,078 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98: {"bn": "Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98", "e": [{"n": "Temperature", "u": "Cel", "t": 1749038681.784963, "v": 21.5}]}
+2025-06-04 14:04:42,078 - INFO - Temperature - average value - 26.5449951171875
+2025-06-04 14:04:42,079 - INFO - Torino_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 24.388187408447266 - False - 80 - 10
+2025-06-04 14:04:42,079 - INFO - Soil_Moisture - Torino_IotSmartFarm/Lingotto/Area_C/Position_05/Soil_Moisture/ffee552a/Drip_Irrigation_Pipe -
+2025-06-04 14:04:42,079 - INFO - Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Cooler - PUBLISH TO ACTUATOR - 26.5449951171875 - False - 44 - 14
+2025-06-04 14:04:42,080 - INFO - Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater - PUBLISH TO ACTUATOR - 26.5449951171875 - False - 44 - 14
+2025-06-04 14:04:42,080 - INFO - Temperature - Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Temperature/d559dc98/Heater -
+2025-06-04 14:04:44,096 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1749038683.8060722, "v": 631.0}]}
+2025-06-04 14:04:44,096 - INFO - CO2_Concentration - average value - 719.5503540039062
+2025-06-04 14:04:44,096 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Exhaust_Fan - PUBLISH TO ACTUATOR - 719.5503540039062 - False - 1000 - 400
+2025-06-04 14:04:44,097 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Carbon_Dioxide_Generator - PUBLISH TO ACTUATOR - 719.5503540039062 - False - 1000 - 400
+2025-06-04 14:04:44,097 - INFO - CO2_Concentration - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/CO2_Concentration/faf26dec/Carbon_Dioxide_Generator -
+2025-06-04 14:04:44,098 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb: {"bn": "Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749038683.8060722, "v": 41.0}]}
+2025-06-04 14:04:44,098 - INFO - Soil_Moisture - average value - 32.69409370422363
+2025-06-04 14:04:44,098 - INFO - Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 32.69409370422363 - False - 80 - 10
+2025-06-04 14:04:44,099 - INFO - Soil_Moisture - Torino_IotSmartFarm/Lingotto/Area_A/Position_02/Soil_Moisture/203045fb/Drip_Irrigation_Pipe -
+2025-06-04 14:04:45,074 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1749038684.7878458, "v": 832.0}]}
+2025-06-04 14:04:45,074 - INFO - CO2_Concentration - average value - 775.7751770019531
+2025-06-04 14:04:45,074 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f/Exhaust_Fan - PUBLISH TO ACTUATOR - 775.7751770019531 - False - 1000 - 400
+2025-06-04 14:04:45,074 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f/Carbon_Dioxide_Generator - PUBLISH TO ACTUATOR - 775.7751770019531 - False - 1000 - 400
+2025-06-04 14:04:45,074 - INFO - CO2_Concentration - Torino_IotSmartFarm/Lingotto/Area_B/Position_02/CO2_Concentration/4b1e9d2f/Carbon_Dioxide_Generator -
+2025-06-04 14:04:46,063 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4: {"bn": "Torino_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4", "e": [{"n": "Soil_Moisture", "u": "%", "t": 1749038685.7730358, "v": 26.9}]}
+2025-06-04 14:04:46,064 - INFO - Soil_Moisture - average value - 29.797046852111816
+2025-06-04 14:04:46,064 - INFO - Torino_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4/Drip_Irrigation_Pipe - PUBLISH TO ACTUATOR - 29.797046852111816 - False - 80 - 10
+2025-06-04 14:04:46,064 - INFO - Soil_Moisture - Torino_IotSmartFarm/Lingotto/Area_C/Position_03/Soil_Moisture/a7b8c6d4/Drip_Irrigation_Pipe -
+2025-06-04 14:04:46,077 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d", "e": [{"n": "Temperature", "u": "Cel", "t": 1749038685.7889845, "v": 17.9}]}
+2025-06-04 14:04:46,078 - INFO - Temperature - average value - 22.22249755859375
+2025-06-04 14:04:46,078 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Cooler - PUBLISH TO ACTUATOR - 22.22249755859375 - False - 44 - 14
+2025-06-04 14:04:46,078 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Heater - PUBLISH TO ACTUATOR - 22.22249755859375 - False - 44 - 14
+2025-06-04 14:04:46,078 - INFO - Temperature - Torino_IotSmartFarm/Lingotto/Area_B/Position_03/Temperature/580f8d2d/Heater -
+2025-06-04 14:04:47,066 - INFO - Received message on topic Torino_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f: {"bn": "Torino_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f", "e": [{"n": "CO2_Concentration", "u": "ppm", "t": 1749038686.777622, "v": 440.0}]}
+2025-06-04 14:04:47,066 - INFO - CO2_Concentration - average value - 607.8875885009766
+2025-06-04 14:04:47,067 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Exhaust_Fan - PUBLISH TO ACTUATOR - 607.8875885009766 - False - 1000 - 400
+2025-06-04 14:04:47,067 - INFO - Torino_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator - PUBLISH TO ACTUATOR - 607.8875885009766 - False - 1000 - 400
+2025-06-04 14:04:47,067 - INFO - CO2_Concentration - Torino_IotSmartFarm/Lingotto/Area_B/Position_06/CO2_Concentration/9947c72f/Carbon_Dioxide_Generator -

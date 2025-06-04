@@ -159,7 +159,7 @@ class MyTelegramBot:
             s = response.json()          
             return (
                     f"Time: {s.get('Time')}\n"
-                    f"Lightness: {s.get('Lightness')}\n"
+                    f"Light_Intensity: {s.get('Light_Intensity')}\n"
                     f"Soil Moisture: {s.get('Soil_Moisture')}\n"
                     f"Temperature: {s.get('Temperature')}\n"
                     f"CO2 Concentration: {s.get('CO2_Concentration')}"
@@ -241,13 +241,13 @@ class MyTelegramBot:
 
     def add_sensor_start(self, chat_id):
         self.add_sensor_data[chat_id] = {}
-        self.bot.send_message(chat_id, "Please enter the sensor type (e.g. Temperature, Lightness, Soil_Moisture, CO2_Concentration):")
+        self.bot.send_message(chat_id, "Please enter the sensor type (e.g. Temperature, Light_Intensity, Soil_Moisture, CO2_Concentration):")
         self.bot.register_next_step_handler_by_chat_id(chat_id, self.add_sensor_type)
 
     def add_sensor_type(self, message):
         chat_id = message.chat.id
         self.add_sensor_data[chat_id]['type'] = message.text.strip()
-        if self.add_sensor_data[chat_id]['type'] not in ["Soil_Moisture","CO2_Concentration","Temperature","Lightness"]:
+        if self.add_sensor_data[chat_id]['type'] not in ["Soil_Moisture","CO2_Concentration","Temperature","Light_Intensity"]:
             self.bot.send_message(chat_id, "Wrong Sensor Type to Input!")
             return
         self.bot.send_message(chat_id, "Please enter the sensor location (e.g. Lingotto/Area_A/Position_01):")
@@ -265,7 +265,7 @@ class MyTelegramBot:
         match(self.add_sensor_data[chat_id]['type']):
             case 'Temperature':
                 self.add_sensor_data[chat_id]['unit'] = "Cel"
-            case 'Lightness':
+            case 'Light_Intensity':
                 self.add_sensor_data[chat_id]['unit'] = "lx"
             case 'Soil_Moisture':
                 self.add_sensor_data[chat_id]['unit'] = "%"
@@ -377,13 +377,13 @@ class MyTelegramBot:
                 
     def set_threshold_start(self, chat_id):
         self.add_sensor_data[chat_id] = {}
-        self.bot.send_message(chat_id, "Please enter the sensor type (e.g. Temperature, Lightness, Soil_Moisture, CO2_Concentration):")
+        self.bot.send_message(chat_id, "Please enter the sensor type (e.g. Temperature, Light_Intensity, Soil_Moisture, CO2_Concentration):")
         self.bot.register_next_step_handler_by_chat_id(chat_id, self.set_thresholdMax)
 
     def set_thresholdMax(self, message):
         chat_id = message.chat.id
         self.add_sensor_data[chat_id]['deviceType'] = message.text.strip()
-        if self.add_sensor_data[chat_id]['deviceType'] not in ["Soil_Moisture","CO2_Concentration","Temperature","Lightness"]:
+        if self.add_sensor_data[chat_id]['deviceType'] not in ["Soil_Moisture","CO2_Concentration","Temperature","Light_Intensity"]:
             self.bot.send_message(chat_id, "Wrong Sensor Type to Input!")
             return
         self.bot.send_message(chat_id, "Please enter the maximum value (unit: s):")

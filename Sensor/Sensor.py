@@ -15,7 +15,8 @@ logger = logging.getLogger('sensor')
 
 class Sensor (MyMQTT):
     
-    def __init__(self, deviceID, deviceType, deviceLocation, topic, unit, info_frequency, status):
+    def __init__(self, deviceID, deviceType, deviceLocation, 
+                topic, unit, info_frequency, status):
         
         #attribution
         self.deviceID = deviceID 
@@ -60,7 +61,7 @@ class Sensor (MyMQTT):
         elif deviceType == 'Soil_Moisture':  
             # 10%~80%
             return round(random.uniform(10, 80), 1)
-        elif deviceType == 'Lightness':  
+        elif deviceType == 'Light_Intensity':  
             # 10~1000 lx
             return round(random.uniform(10, 1000), 0)
         elif deviceType == 'CO2_Concentration':  

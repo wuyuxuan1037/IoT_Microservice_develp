@@ -15,7 +15,8 @@ logger = logging.getLogger('mqtt')
 
 class MyMQTT:
     
-    def __init__(self, client_id, notifier=None, configfile = os.path.join(PathUtils.project_path(),'config','cataLog.json')):
+    def __init__(self, client_id, notifier=None, 
+                configfile = os.path.join(PathUtils.project_path(),'config','cataLog.json')):
         # obtain config file
         self.config = FileUtils.load_config(configfile)
         self.broker = self.config["mqtt"]["broker"]
@@ -25,23 +26,8 @@ class MyMQTT:
         self.notifier = notifier
         self._topic = ""
         self._isSubscriber = False
-        # create an instance of paho.mqtt.client
         self._paho_mqtt = PahoMQTT.Client(client_id,True)  
-        # register the callback
-        # self._paho_mqtt.on_connect = self.on_connect
-        # self._paho_mqtt.on_message = self.on_message
         self._paho_mqtt.on_disconnect = self.on_disconnect
-        
-
-
-    # def on_connect (self, paho_mqtt, userdata,flag, rc):
-    #     logger.info(f'{self.clientID} Connected to {self.broker} with result code: {rc} ')
-
-    # def on_message (self,paho_mqtt,userdata, msg):
-        # A new message is received
-        # logger.info(f"Received Message on {msg.topic}: {msg.payload.decode()}")
-        # self.on_message(paho_mqtt,userdata, msg)
-        # self.notifier.notify (msg.topic, msg.payload, msg.qos, msg.retain)
     
     def myPublish (self, topic, msg):
         # publish a message with a certain topic

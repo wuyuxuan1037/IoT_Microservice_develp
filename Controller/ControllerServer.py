@@ -64,7 +64,7 @@ class ControllerServer:
         thresholdMax = cherrypy.request.json.get("thresholdMax")
         thresholdMin = cherrypy.request.json.get('thresholdMin')
         
-        if deviceType not in ["Soil_Moisture","CO2_Concentration","Temperature","Lightness"]:
+        if deviceType not in ["Soil_Moisture","CO2_Concentration","Temperature","Light_Intensity"]:
             return "Wrong Device Type!"
         
         #iterating the self.registered_controllers to change the value of the device
